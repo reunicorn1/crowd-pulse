@@ -50,6 +50,23 @@ To create a virtual environment and install the required dependencies on macOS, 
    source myenv/bin/activate
    ```
 5. Install the required dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
+
+## Data Preprocessing
+
+The `data_cleaning.py` script is used to preprocess text data in a CSV file. It performs various text preprocessing steps such as expanding contractions, converting emojis to text, converting text to lowercase, removing special characters, removing stopwords, and lemmatizing text.
+
+### Usage
+
+To preprocess a CSV file using the `data_cleaning.py` script:
+
+Run the `data_cleaning.py` script with the input and output file paths as arguments:
+
+```bash
+python data_cleaning.py {input_file} {output_file}
+```
+
+This command will read the data from `input_file`, preprocess the text data, and save the cleaned data to `output_file`.
