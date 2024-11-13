@@ -225,7 +225,8 @@ def clean_csv_file(input_filepath, output_filepath):
     # print the first line of the CSV file
     # print("First line of the CSV file:")
     # print(df.head(1))
-
+    df = df.dropna(subset=['post_body'])
+    df = df.dropna(subset=['post_title'])
     # Apply the clean_text function to the 'comment_text' column
     df['post_body'] = df['post_body'].apply(clean_text)
     df['post_title'] = df['post_title'].apply(clean_text)
