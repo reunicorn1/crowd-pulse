@@ -219,6 +219,7 @@ def clean_text(text, steps=None):
     return text
 
 # Function to clean and save a CSV file
+<<<<<<< HEAD
 def clean_csv_file(input_filepath, output_filepath):
     # Read the CSV file
     df = pd.read_csv(input_filepath, header=None, names=['subreddit', 'post_id', 'post_title', 'post_score', 'post_url', 'post_comms_num', 'post_body', 'post_timestamp'])
@@ -228,14 +229,41 @@ def clean_csv_file(input_filepath, output_filepath):
     df = df.dropna(subset=['post_body'])
     df = df.dropna(subset=['post_title'])
     # Apply the clean_text function to the 'comment_text' column
+=======
+def clean_csv_file(input_filepath=None, output_filepath=None, data=None):
+    """
+    Cleans a CSV file or a DataFrame.
+
+    Args:
+        input_filepath (str): The input CSV file path.
+        output_filepath (str): The output CSV file path.
+        data (pd.DataFrame): The input data as a DataFrame.
+        save (bool): Whether to save the cleaned data to a file. Default is True.
+
+    Returns:
+        pd.DataFrame: The cleaned data if save is False.
+
+    Raises:
+        ValueError: If neither input_filepath nor data is provided.
+    """
+    if input_filepath:
+        # Read the CSV file
+        df = pd.read_csv(input_filepath, header=None, names=['subreddit', 'post_id', 'post_title', 'post_score', 'post_url', 'post_comms_num', 'post_body', 'post_timestamp'])
+    elif data is not None:
+        df = data
+    else:
+        raise ValueError("Either input_filepath or data must be provided.")
+
+    # Clean the text data
+>>>>>>> 20477c7681ab673b02e9ae8041e54749438fbd8c
     df['post_body'] = df['post_body'].apply(clean_text)
-    df['post_title'] = df['post_title'].apply(clean_text)
 
-    # Save the cleaned data to a new CSV file
-    df.to_csv(output_filepath, index=False)
-    print(f"Processed {input_filepath} and saved to {output_filepath}")
+    if output_filepath:
+        # Save the cleaned data to a new CSV file
+        df.to_csv(output_filepath, index=False)
+    else:
+        return df
 
-# Main function to handle command-line arguments
 def main():
     parser = argparse.ArgumentParser(description='Clean text data in a CSV file.')
     parser.add_argument('input_file', type=str, help='The input CSV file to be cleaned.')
@@ -243,7 +271,7 @@ def main():
 
     args = parser.parse_args()
 
-    clean_csv_file(args.input_file, args.output_file)
+    clean_csv_file(input_filepath=args.input_file, output_filepath=args.output_file)
 
 if __name__ == '__main__':
     main()

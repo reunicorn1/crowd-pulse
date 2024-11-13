@@ -4,6 +4,24 @@ entry point
 """
 
 from reddit import Redditify
+from typing import Union
+from fastapi import FastAPI
+from data_cleaning import clean_csv_file
+import pandas as pd
+
+app = FastAPI()
+
+reddit = Redditify()
+
+@app.post("/analyze-sentiment")
+def analyze_sentiment(subreddit: str , keyword: str ):
+    if not subreddit and not keyword:
+        return {"error": "subreddit and keyword are required"}
+
+    reddit.fetch_posts(subreddit, keyword)
+    posts_processed = clean_csv_file(data=pd.DataFrame(reddit.posts))
+    return {"data": posts_processed} # TODO: add sentiment analysis
+
 
 def main():
     reddit = Redditify()
@@ -46,8 +64,5 @@ def main():
 
     reddit.fetch_posts('Philosophy', None, 2500)
     reddit.pandify()
-
-
-
 if __name__ == '__main__':
     main()
