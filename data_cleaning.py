@@ -221,14 +221,13 @@ def clean_text(text, steps=None):
 # Function to clean and save a CSV file
 def clean_csv_file(input_filepath, output_filepath):
     # Read the CSV file
-    df = pd.read_csv(input_filepath, header=None, names=['subreddit', 'post_id', 'post_title', 'comment_text', 'comment_score'])
-
-    # # Print the first line of the CSV file
+    df = pd.read_csv(input_filepath, header=None, names=['subreddit', 'post_id', 'post_title', 'post_score', 'post_url', 'post_comms_num', 'post_body', 'post_timestamp'])
+    # print the first line of the CSV file
     # print("First line of the CSV file:")
     # print(df.head(1))
 
     # Apply the clean_text function to the 'comment_text' column
-    df['comment_text'] = df['comment_text'].apply(clean_text)
+    df['post_body'] = df['post_body'].apply(clean_text)
     df['post_title'] = df['post_title'].apply(clean_text)
 
     # Save the cleaned data to a new CSV file

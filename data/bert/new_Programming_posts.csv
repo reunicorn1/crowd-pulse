@@ -1,0 +1,1143 @@
+subreddit,post_id,post_title,post_score,post_url,post_comms_num,post_body,post_timestamp
+Programming,1chs4ib,The State of the Subreddit (May 2024),653,https://www.reddit.com/r/programming/comments/1chs4ib/the_state_of_the_subreddit_may_2024/,151,"Hello fellow programs! 
+
+**tl;dr** some revisions to the rules to reduce low quality blogspam. The most notable are: banning **listicles** (""7 cool things I copy-pasted from somebody else!""), **extreme beginner articles** (""how to use a for loop""), and some **limitations on career posts** (they must be related to programming careers). Lastly, I want **feedback** on these changes and the subreddit in general and invite you to **vote** and **use the report button** when you see posts that violate the rules because they'll help us get to it faster.
+
+r/programming's mission is to **be the place with the highest quality programming content, where I can go to read something interesting and learn something new every day**. [Last time we spoke](https://www.reddit.com/r/programming/comments/173viwj/meta_the_future_of_rprogramming/) I introduced the rules that we've been moderating by to accomplish that. Subjectively, quality on the subreddit while not perfect is much improved since then. Since it's still mainly just me moderating it's hard to tell what's objectively bad vs what just annoys me personally, and to do that I've been keeping an eye on a few forms of content to see how they perform (using mostly votes and comment quantity & health).
+
+Based on that the notable changes are:
+
+* 🚫 **Listicles**. ""7 cool python functions"", ""14 ways to get promoted"". These are usually spammy content farms. If you found 15 amazing open source projects that will blow my mind, post those projects instead.
+* 🚫 **Extreme beginner content** (""how to write a for loop""). This is difficult to identify objectively (how can you tell it from good articles like ""how does kafka work?"" or ""getting started with linear algebra for ML""?) so there will be some back and forth on calibrating, but there has been a swath of very low quality [""tutorials""](https://www.reddit.com/r/programming/comments/1chogwb/first_program_of_java/) if you can even call them that, that I very much doubt anybody is actually learning anything from and they sit at 0 points. Since ""what is a variable?"" is probably not useful to anybody already reading r/programming this is a quick painless way to boost the average quality on the subreddit.
+* ⚠️ **Career posts must be related to software engineering careers**. To be honest I'm personally not a fan of career posts on r/programming at all (but shout out to [cscareerquestions](https://www.reddit.com/r/cscareerquestions/)!) but during the last rules revision they were doing pretty well so I know there is an audience for it that I don't want to get in the way of. Since then there has been growth in this category [all across the quality spectrum](https://www.reddit.com/domain/eng-leadership.com/) (with an accompanying rise in product management methodology like ""agile vs waterfall"", also across the quality spectrum). Going forward these posts must be distinctly related to software engineering careers rather than just generic working. This isn't a huge problem yet but I predict that it will be as the percentage of career content is growing.
+
+In all of these cases the category is more of a tell that the quality is probably low, so exceptions will be made where that's not the case. These are difficult categories to moderate by so I'll **probably make some mistakes** on the boundaries and that's okay, let me know and we'll figure it out.
+
+Some other categories that I'm **keeping an eye on** but not ruling on today are:
+
+* **Corporate blogs** simply describing their product in the guise of ""what is an authorisation framework?"" (I'm [looking at you Auth0](https://www.reddit.com/domain/a0.to/) and [others like it](https://www.reddit.com/r/programming/comments/1cgx739/what_is_ai_infrastructure_software/)). Pretty much anything with a rocket ship emoji in it. Companies use their blogs as marketing, branding, and recruiting tools and that's okay when it's ""writing a good article will make people think of us"" but it doesn't go here if it's just a literal advert. Usually they are titled in a way that I don't spot them until somebody reports it or mentions it in the comments.
+* **Generic AI content** that [isn't](https://www.reddit.com/r/programming/comments/1chll2o/ai_still_hasnt_figured_out_branding_yet_heres_why/) technical in content. ""Does Devin mean that programming is over?"", ""Will AI put farmers out of work?"", ""Is AI art?"". For a few weeks these were the titles of about 20 articles per day, some scoring high and some low. Fashions like this come and go but I'm keeping an eye on it.
+* **Newsletters**: There are a [few people](https://www.reddit.com/r/programming/comments/1cho9ye/big_tech_digest_15_introducing_meta_llama_3_at/) that post every edition of their newsletter to reddit, where that newsletter is really just aggregating content from elsewhere. It's clear that they are trying to grow a monetised audience using reddit, but that's okay if it's providing valuable curation or if the content is good and people like it. So we'll see.
+* **Career posts**. Personally I'd like r/programming to be a deeply technical place but as mentioned there's clearly an audience for career advice. That said, the posts that are scoring the highest in this category are mostly people upvoting to agree with a statement in the title, not something that anybody is learning from. (""Don't make your engineers context-switch."" ""Everybody should get private offices."" ""Micromanaging sucks."") The ones that one could actually learn from with an instructive lean mostly don't do well; people seem to not really be interested in how to have the best 1:1s with their managers or how you went from Junior to Senior in 18 hours (though [sometimes they are](https://www.reddit.com/domain/highgrowthengineer.com/)). That tells me that there's some subtlety to why these posts are scoring well and I'm keeping an eye on the category. What I don't want is for ""vote up if you want free snacks"" to push out the good stuff or to be a farm for the other 90% of content that's really just personal brand builders.
+
+I'm sure you're as annoyed as I am about these but they're fuzzy lines and difficult to come up with objective criteria around. As always **I'm looking for feedback** on these and if I'm missing any and any other points regarding the subreddit and moderation so let me know what you think.
+
+------
+
+## The rules!
+
+With all of that, here is the current set of the rules with the above changes included so I can link to them all in one place.
+
+✅ means that it's currently allowed, 🚫 means that it's not currently allowed, ⚠️ means that we leave it up if it is already popular but if we catch it young in its life we do try to remove it early.
+
+* ✅ Actual programming content. They probably have actual code in them. Language or library writeups, papers, technology descriptions. How an allocator works. How my new fancy allocator I just wrote works. How our startup built our Frobnicator. For many years this was the only category of allowed content.
+* ✅ Academic CS or programming papers
+* ✅ Programming news. ChatGPT can write code. A big new CVE just dropped. Curl 8.01 released now with Coffee over IP support.
+* ✅ Programmer career content. How to become a Staff engineer in 30 days. Habits of the best engineering managers. These must be related or specific to programming/software engineering careers in some way
+* ✅ Articles/news interesting *to* programmers but not about programming. Work from home is bullshit. Return to office is bullshit. There's a Steam sale on programming games. Terry Davis has died. How to SCRUMM. App Store commissions are going up. How to hire a more diverse development team. Interviewing programmers is broken.
+* ⚠️ General technology news. Google buys its last competitor. A self driving car hit a pedestrian. Twitter is collapsing. Oculus accidentally showed your grandmother a penis. Github sued when Copilot produces the complete works of Harry Potter in a code comment. Meta cancels work from home. Gnome dropped a feature I like. How to run Stable Diffusion to generate pictures of, uh, cats, yeah it's definitely just for cats. A bitcoin VR metaversed my AI and now my app store is mobile social local.
+* 🚫 Politics. The Pirate Party is winning in Sweden. Please vote for net neutrality. Big Tech is being sued in Europe for *gestures broadly*. Grace Hopper Conference is now 60% male.
+* 🚫 Gossip. Richard Stallman switches to Windows. Elon Musk farted. Linus Torvalds was a poopy-head on a mailing list. The People's Rust Foundation is arguing with the Rust Foundation For The People. Terraform has been forked into Terra and Form. Stack Overflow sucks now. Stack Overflow is good actually.
+* ✅ Demos with code. I wrote a game, here it is on GitHub
+* 🚫 Demos without code. I wrote a game, come buy it! Please give me feedback on my startup (totally not an ad nosirree). I stayed up all night writing a commercial text editor, here's the pricing page. I made a DALL-E image generator. I made the fifteenth animation of A* this week, here's a GIF.
+* 🚫 AskReddit type forum questions. What's your favourite programming language? Tabs or spaces? Does anyone else hate it when.
+* 🚫 Support questions. How do I write a web crawler? How do I get into programming? Where's my missing semicolon? Please do this obvious homework problem for me. Personally I feel very strongly about not allowing these because they'd quickly drown out all of the actual content I come to see, and there are already much more effective places to get them answered anyway. In real life the quality of the ones that we see is also universally very low.
+* 🚫 Surveys and 🚫 Job postings and anything else that is looking to extract value from a place a lot of programmers hang out without contributing anything itself.
+* 🚫 Meta posts. DAE think r/programming sucks? Why did you remove my post? Why did you ban this user that is totes not me I swear I'm just asking questions. Except this meta post. This one is okay because I'm a tyrant that the rules don't apply to (I assume you are saying about me to yourself right now).
+* 🚫 Images, memes, anything low-effort or low-content. Thankfully we very rarely see any of this so there's not much to remove but like support questions once you have a few of these they tend to totally take over because it's easier to make a meme than to write a paper and also easier to vote on a meme than to read a paper.
+* ⚠️ Posts that we'd normally allow but that are obviously, unquestioningly super low quality like blogspam copy-pasted onto a site with a bazillion ads. It has to be pretty bad before we remove it and even then sometimes these are the first post to get traction about a news event so we leave them up if they're the best discussion going on about the news event. There's a lot of grey area here with CVE announcements in particular: there are a lot of spammy security ""blogs"" that syndicate stories like this. Pretty much all listicles are disallowed under this rule. 7 cool python functions. 14 ways to get promoted. If you found 15 amazing open source projects that will blow my mind, post those projects instead.
+* ⚠️ Extreme beginner content. What is a variable. What is a `for` loop. Making an HTPT request using curl. Like listicles this is disallowed because of the quality typical to them, but high quality tutorials are still allowed and actively encouraged.
+* ⚠️ Posts that are duplicates of other posts or the same news event. We leave up either the first one or the healthiest discussion.
+* ⚠️ Posts where the title editorialises too heavily or especially is a lie or conspiracy theory.
+* Comments are only very loosely moderated and it's mostly 🚫 Bots of any kind (Beep boop you misspelled misspelled!) and 🚫 Incivility (You idiot, everybody knows that my favourite toy is better than your favourite toy.)
+However the number of obvious GPT comment bots is rising and will quickly become untenable for the number of active moderators we have.",2024-05-01 17:37:38
+Programming,1gq8fyd,Non-LLM Software Trends To Be Excited About,91,https://read.engineerscodex.com/p/5-non-llm-software-trends-to-be-excited,10,,2024-11-13 08:35:02
+Programming,1gpqh7z,Announcing .NET 9,523,https://devblogs.microsoft.com/dotnet/announcing-dotnet-9/,221,,2024-11-12 17:41:37
+Programming,1gppvpj,Don't Do This with Postgres,370,https://wiki.postgresql.org/wiki/Don%27t_Do_This,36,,2024-11-12 17:17:05
+Programming,1gqazit,WebVM 2.0: A complete Linux Desktop Environment in the browser via WebAssembly,2,https://labs.leaningtech.com/blog/webvm-20,0,,2024-11-13 11:41:28
+Programming,1gqaujf,How Distributed Systems Avoid Race Conditions using Pessimistic Locking?,2,https://newsletter.scalablethread.com/p/how-distributed-systems-avoid-race,0,,2024-11-13 11:32:30
+Programming,1gq88ju,Infamous N+1 Query Problem with Entity Framework Core,2,https://pathofengineer.com/posts/infamous-n1-query-problem-with-entity-framework-core/,0,,2024-11-13 08:18:46
+Programming,1gq1dc9,Wild set of circumstances leading to GitHub 2FA lockout. Don't do this...,9,https://gitlab.com/-/snippets/4768361,14,,2024-11-13 01:30:18
+Programming,1gqajhb,"Create, share and discover new VSCode themes at VSCode Themes Community",0,https://www.rlabs.art/vscode-themes-community,0,,2024-11-13 11:12:08
+Programming,1gq9k9x,Old but Gold: Modular Monoliths • Simon Brown,0,https://youtu.be/5OjqD-ow8GE,0,,2024-11-13 10:02:23
+Programming,1gq7u7d,"Data Science with Excel, Python, Transport Tycoon",0,https://www.youtube.com/watch?v=mrTOTDJAzNs,0,,2024-11-13 07:49:18
+Programming,1gpnyff,Is code an asset or a liability?,17,https://shiftmag.dev/is-code-an-asset-or-a-liability-4572/,32,,2024-11-12 15:57:27
+Programming,1gozrcm,emiT - a Time Travelling Programming language.,578,https://github.com/nimrag-b/emiT-C,90,,2024-11-11 18:48:14
+Programming,1gprdzt,I built an open-source cross-browser extension template :),7,https://github.com/turbostarter/extro,6,,2024-11-12 18:18:08
+Programming,1gq8b5k,How To Optimize CSS for Speed ,0,https://makemychance.com/optimize-css/,0,,2024-11-13 08:24:36
+Programming,1gp79ki,What made you a great dev won’t make you the best one — on diminishing returns,97,https://l.perspectiveship.com/re-diminishing-returns,8,,2024-11-11 23:59:32
+Programming,1gq8uy7,sayonaraToTheGoldenAgeOfScrum,0,https://mdalmijn.com/p/sayonara-to-the-golden-age-of-scrum,1,,2024-11-13 09:08:56
+Programming,1gq9lmp,Don'ts from recent breaches in modern security ,0,https://blog.kusho.ai/modern-security-vulnerabilities-lessons-from-recent-breaches/,3,,2024-11-13 10:05:03
+Programming,1gq63dt,Implementing Security in AI Applications Using RAG and FGA,0,https://www.permit.io/blog/building-ai-applications-with-enterprise-grade-security-using-fga-and-rag,0,,2024-11-13 05:47:08
+Programming,1gq605g,Seeking Feedback on Starting an Open Source IoT Automation Project,0,http://www.home-assistant.io,0,"I’m considering starting an open source project aimed at creating a flexible, easy-to-use IoT automation platform in the JavaScript ecosystem. While there are two popular automation platforms—OpenHAB (Java-based) and Home Assistant (Python-based)—I believe there’s a strong opportunity for a similar tool built around JavaScript, given its large community and ecosystem.
+
+The vision is to develop a platform similar to Home Assistant, but focused on automating a wide variety of environments, such as farms, homes, greenhouses, and gardens. Here’s a quick overview of the project scope and goals:
+
+Technology Stack: The backend will be built with Node.js, while the frontend will be developed in React. This will allow us to leverage the strengths of JavaScript across the stack and cater to JavaScript developers.
+Device Integration: The platform will provide examples and SDKs for connecting end devices, especially popular and affordable microcontrollers like ESP8266 and ESP32. These devices can act as sensors, switches, and controllers, expanding the project’s use cases across various applications.
+Customizability and Ease of Use: A key goal is to make the software highly customizable and intuitive, so users can easily set up and automate tasks with minimal configuration.
+Hardware Affordability: The software should be lightweight enough to run on low-cost hardware like Raspberry Pi, allowing more users to deploy it without major expenses.
+I’m looking for feedback and suggestions on a few areas:
+
+Architecture: Are there specific patterns or frameworks that would help make this project scalable and maintainable? What are the best practices for handling device communication (e.g., MQTT, WebSockets)?
+Funding: What are some potential funding sources or strategies for sustaining an open source project like this? I’m considering options like Patreon, GitHub Sponsors, or crowdfunding.
+Community Input: Is there an interest in a JavaScript-based automation platform for general-purpose automation across different environments? Any feature ideas or specific use cases that would make this more impactful?",2024-11-13 05:41:23
+Programming,1gphfov,Message Queues in System Design,9,https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023,5,,2024-11-12 10:05:13
+Programming,1gq7rww,Can you make Baymax in IRL?,0,https://www.nbcnews.com/news/amp/ncna240241,1,"When i ask this question, i am not talking about the inflatable body of baymax. I've found out that there is a group researching inflatable robots. 
+
+What i am curious about is how plausible is making the program running baymax? Like the tech behind him just scanning you to get all kinds of details (your hormonal levels?). Or the way he learns new things (like the fist bump 👊🏻)?
+
+Is it possible to code/program this?",2024-11-13 07:44:12
+Programming,1gpjywz,Git and jujutsu: in miniature,2,https://lottia.net/notes/0013-git-jujutsu-miniature.html,1,,2024-11-12 12:50:03
+Programming,1gpfhjp,The Art of Problem-Solving in Software Engineering: How to Make MySQL Better,12,https://enhancedformysql.github.io/The-Art-of-Problem-Solving-in-Software-Engineering_How-to-Make-MySQL-Better/,2,,2024-11-12 07:36:29
+Programming,1gotlpl,Are AI Assistants Making Us Worse Programmers?,169,https://rafaelquintanilha.com/are-ai-assistants-making-us-worse-programmers/,220,,2024-11-11 14:36:16
+Programming,1gpezt0,Traversals,10,https://blog.ploeh.dk//2024/11/11/traversals/,0,,2024-11-12 06:59:29
+Programming,1gpouil,Testing the Untestable,0,https://allenpike.com/2024/testing-automated-evals,0,,2024-11-12 16:34:43
+Programming,1golrpb,"Visual Basic 6 rebuilt in C# - complete with form designer and IDE, runs directly in browser (WASM)",567,https://bandysc.github.io/AvaloniaVisualBasic6/,112,,2024-11-11 06:18:45
+Programming,1gosqpl,When to Use Cosmos DB? Going deep with Azure's distributed document database.,118,https://www.pulumi.com/blog/when-to-use-azure-cosmos-db/,21,,2024-11-11 13:56:30
+Programming,1goyunr,Brian Kernighan Reflects on Unix: A History and a Memoir,46,https://www.youtube.com/watch?v=VloimYuCxBs,7,,2024-11-11 18:12:06
+Programming,1gq32yo,im a sophomore about to take my ap exam in programming. this is what i want to major and get my phd's and certificates in. what should i do to prepare myself?(sorry for the random video).,0,https://www.youtube.com/watch?v=yB-ztKj0cwg,4,,2024-11-13 02:56:45
+Programming,1gq0d1n,7 Things I Dislike about being a Software Engineer,0,https://youtu.be/w_S8FhgZUbU,0,,2024-11-13 00:41:41
+Programming,1gpncuf,Webhook Versioning: How to Version Webhooks,0,https://www.svix.com/blog/webhook-versioning/,0,,2024-11-12 15:31:47
+Programming,1gomf0c,Understanding LLMs from Scratch Using Middle School Math,158,https://towardsdatascience.com/understanding-llms-from-scratch-using-middle-school-math-e602d27ec876,5,,2024-11-11 07:02:27
+Programming,1gpcr7k,Building Dynamic Feature Toggling in React.js with CASL and Permit.io,2,https://www.permit.io/blog/dynamic-react-feature-toggling-2024-guide,0,,2024-11-12 04:36:40
+Programming,1gpam6o,Emergence Displayed by Esoteric Languages,5,https://medium.com/@owen.dechow/emergence-and-esoteric-languages-2b356b8e5044,0,,2024-11-12 02:41:11
+Programming,1gptssr,Merkle proof in the context of a blockchain from scratch in Go with gRPC,0,https://github.com/volodymyrprokopyuk/go-blockchain/blob/main/doc/merkle-proof.org,1,,2024-11-12 19:56:27
+Programming,1gprbx3,Introducing Copilot Edits,0,https://code.visualstudio.com/blogs/2024/11/12/introducing-copilot-edits,4,,2024-11-12 18:15:48
+Programming,1gpkte8,"Diagrams AI Can, and Cannot, Generate",0,https://www.ilograph.com/blog/posts/diagrams-ai-can-and-cannot-generate/,0,,2024-11-12 13:33:42
+Programming,1gpobq8, 🎩 Introducing SITS - Snake In The Shell 🐍: Your One-Stop Python Management Suite!,0,https://github.com/sfbales/SITS,0,,2024-11-12 16:13:19
+Programming,1gpb9rj,Building a Regex Engine in Motoko: Part 1 — Lexical Analysis,1,https://link.medium.com/w2QEghJbsOb,0,,2024-11-12 03:15:32
+Programming,1gpmiit,"To kill memory safety bugs in C code, try the TrapC fork",0,https://www.theregister.com/2024/11/12/trapc_memory_safe_fork/,8,,2024-11-12 14:54:46
+Programming,1gprhmr,I made a Twitter bot which allows you to tweet when you make a commit/your last commit every 10 mins.,0,https://github.com/Trex1332/TwitterMyCommits,0,,2024-11-12 18:22:08
+Programming,1gp2job,Everything you need to know before migrating to a decentralized data storage system,5,https://www.cerbos.dev/blog/data-management-in-microservices,5,,2024-11-11 20:39:45
+Programming,1got33f,TL;DR of my best software architecture reads of the week | Architecture Nugget,16,https://mondaynugget.com/architecture/2024/11/11/architecture-nugget/,15,,2024-11-11 14:12:35
+Programming,1gpibxb,Learning Systems Thinking • Diana Montalion & Charles Humble,0,https://www.buzzsprout.com/1714721/15982909,0,,2024-11-12 11:10:29
+Programming,1gpg1e7,The Ultimate Guide to CSS Mask Animation ,0,https://makemychance.com/css-mask-animation/,2,,2024-11-12 08:17:27
+Programming,1gplf7o,Mastering the Builder Pattern: Create a Dynamic AI Prompt Generator CLI,0,https://www.spithacode.com/blog/builder-design-pattern#the-typical-builder-design-pattern,0,,2024-11-12 14:03:22
+Programming,1gph30m,Mastering Design Patterns in JavaScript: Part 7 — The Command Pattern,0,https://medium.com/javascript-in-plain-english/mastering-design-patterns-in-javascript-part-6-the-command-pattern-851b0453fdf0?sk=b40b07db55c6ba5c6f37c22e70db0851,0,,2024-11-12 09:39:05
+Programming,1gotlhf,Brian Kernighan Reflects on Unix: A History and a Memoir,9,https://youtu.be/VloimYuCxBs,0,,2024-11-11 14:35:59
+Programming,1goxy56,8 Steps in Writing Analytical SQL Queries,3,https://www.crunchydata.com/blog/8-steps-in-writing-analytical-sql-queries,0,,2024-11-11 17:36:31
+Programming,1gpm8qr,The Future of Programming: Copilots vs. Agents (Part I),21,https://eastwind.substack.com/p/the-future-of-programming-copilots,6,,2024-11-12 14:42:13
+Programming,1godk0x,Way too many ways to wait on a child process with a timeout,104,https://gaultier.github.io/blog/way_too_many_ways_to_wait_for_a_child_process_with_a_timeout.html,8,,2024-11-10 23:01:33
+Programming,1go9h3o,I built a list of Open Source Boilerplates :),211,https://github.com/EinGuterWaran/awesome-opensource-boilerplates,33,,2024-11-10 20:04:06
+Programming,1go6i0z,Stop redundant engineering debates with Architectural Decision Records,126,https://strategizeyourcareer.com/p/no-more-redundant-engineering-debates,32,,2024-11-10 17:56:39
+Programming,1gozvg3,Building an API Integration Platform,0,https://zuplo.com/blog/2024/11/08/building-an-api-integration-platform,0,,2024-11-11 18:52:37
+Programming,1gpahfn,A complete guide on how to extract text from a board or on paper,0,https://medium.com/@sergioosson/extracting-text-from-a-board-unveiling-the-power-of-computer-vision-3811b823a630,4,,2024-11-12 02:34:37
+Programming,1gofkh9,What's unique about the Mill build tool,14,https://mill-build.org/mill/comparisons/unique.html,11,,2024-11-11 00:36:31
+Programming,1gny68r,GitQL 0.30.0 now support Composite types inspired by PostgreSQL,86,https://github.com/AmrDeveloper/gql,4,,2024-11-10 10:56:05
+Programming,1goy14m,There's a CMS in My IDE!,0,https://navendu.me/posts/cms-ide/,1,,2024-11-11 17:39:45
+Programming,1gp1xat,Data Engineer ROADMAP 2025: 4 Month Learning Path to Launch Your Career!,0,https://youtu.be/5b4CIon_1pY,0,,2024-11-11 20:15:32
+Programming,1gom9dm,Postgres Superpowers in Practice,0,https://event-driven.io/en/postgres_superpowers/,0,,2024-11-11 06:51:41
+Programming,1gosh1m,A curated list of open source boilerplates and starter templates to kickstart your next project.,0,https://github.com/EinGuterWaran/awesome-opensource-boilerplates,0,,2024-11-11 13:43:15
+Programming,1goxhsb,I just released ten new Coding Challenges (w/ 120+ questions),0,https://danlevy.net/challenges/,0,,2024-11-11 17:18:13
+Programming,1got2oi,How to level up your frontend skills,0,https://www.frontendjoy.com/p/how-to-level-up-your-frontend-skills,0,,2024-11-11 14:12:03
+Programming,1goy661,Master IntelliJ: Must-Know Shortcuts for Developers,0,https://youtu.be/kILdrZ6LPXE,0,,2024-11-11 17:45:25
+Programming,1gnucav,RISC-V Vector Extension overview,59,http://0x80.pl/notesen/2024-11-09-riscv-vector-extension.html,3,,2024-11-10 06:18:14
+Programming,1gouaac,On Being A Senior Engineer,0,https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/,4,,2024-11-11 15:06:37
+Programming,1goyxd6,llmcat - Copy Code from CLI to LLMs,0,https://azerkoculu.com/posts/llmcat-copy-code-from-cli-to-llms,8,,2024-11-11 18:15:05
+Programming,1goqrm2,Sharing a summary from GitHub's YouTube Channel: Using your repository for RAG: Learnings from GitHub Copilot Chat. Add comments below on what you think? ,0,https://www.getrecall.ai/summary/ai/using-your-repository-for-rag-learnings-from-github-copilot-chat,0,,2024-11-11 12:11:56
+Programming,1go74wv,"Chute: Scalable, Lock-Free MPMC Broadcast Queue with a Custom Algorithm.",6,https://github.com/tower120/chute,1,,2024-11-10 18:23:46
+Programming,1gp017b,"Hot Take: If You’re Not Using TypeScript, You’re Missing Out Big Time 🚀",0,https://garbagevalue.com/blog/why-you-must-know-typescript,7,,2024-11-11 18:59:08
+Programming,1gow1st,Build a ChatGPT App In C# with the OpenAI API! - Large Language Model Programming Tutorial,0,https://youtu.be/HuAEgGeaqeI,0,,2024-11-11 16:20:38
+Programming,1goqany,PSA: Most databases do not do checksums by default,0,https://avi.im/blag/2024/databases-checksum/,7,,2024-11-11 11:42:43
+Programming,1goonmy,We made a template project for backend development in Go,0,https://gitlab.com/leon_tnvm/go-be-template,0,,2024-11-11 09:48:09
+Programming,1gooewr,How to Run Story Node using VPS,0,https://blog.cubed.run/how-to-run-story-node-using-vps-step-by-step-guide-a17ad5d6220c,0,,2024-11-11 09:29:58
+Programming,1goptt1,A Personal NotebookLM and Perplexity-like AI Assistant with privacy.,0,https://github.com/MODSetter/SurfSense,0,,2024-11-11 11:11:53
+Programming,1gn80h2,Intel Spots A 3888.9% Performance Improvement In The Linux Kernel From One Line Of Code,944,https://www.phoronix.com/news/Intel-Linux-3888.9-Performance,89,,2024-11-09 11:21:51
+Programming,1golu8f,What is the current time around the world? Utilizing std::chrono with time zones in C++23,0,https://www.cppstories.com/2024/chrono_dates_zones/,5,,2024-11-11 06:23:14
+Programming,1goo4mf,GitHub trick to find the commit that deleted a file,0,https://devblogs.microsoft.com/oldnewthing/20240909-00/,2,,2024-11-11 09:08:41
+Programming,1gnjury,The Impossibility of Making an Elite Engineer,155,https://tidyfirst.substack.com/p/the-impossibility-of-making-an-elite,39,,2024-11-09 21:01:09
+Programming,1gooqmn,Functional programming in Go,0,https://bitfieldconsulting.com/posts/functional,4,,2024-11-11 09:54:43
+Programming,1gosuix,How to build an AI Agent,0,https://youtu.be/yAJdIt9zgI4,0,,2024-11-11 14:01:28
+Programming,1gopqof,"Retrieval augmented generation-based chat application
+",0,https://medium.com/@sergioosson/developing-a-customizable-rag-based-chat-application-with-full-stack-integration-af4341f85a59,0,,2024-11-11 11:05:52
+Programming,1gonrqj,Discovering fun useless programs on HN,0,https://blog.kusho.ai/what-are-useless-programs/,1,,2024-11-11 08:41:44
+Programming,1gomogm,"During my journey to create a modest 3D Game Engine for a few games, I had new debates about issues such as directional light, quaternions, uniform buffers, primitive 3D objects, basic renderer, and more.",0,https://www.youtube.com/@LiveGameProgramming/streams,0,,2024-11-11 07:20:49
+Programming,1gna6i6,How Google Ads Was Able to Support 4.77 Billion Users With a SQL Database,408,https://newsletter.systemdesign.one/p/cloud-spanner-database,71,,2024-11-09 13:32:46
+Programming,1gnew38,Modern Java Book,195,https://javabook.mccue.dev,44,"This is a book intended to teach someone the Java language, from scratch. 
+
+You will find that the content makes heavy use of recently released and, for the moment,
+preview features. This is intentional as much of the topic ordering doesn't work
+without at least Java 21.
+
+Right now I have several key areas where I could use some help:
+
+* Writing Challenges. Most of the early sections have challenges students can do to test
+their understanding of the topics covered and for practice. I've shifted my focus away from
+these to make more progress on the main content of the book. Any assistance would be appreciated.
+* Theming. A lot of the chapters are...bland. Purely technical. I find that when I have the imagination to ""theme"" the subjects they become higher quality and more engaging overall. See
+an anime you liked recently and think you can make the math chapters use the characters from it?
+Give it a shot!
+* Fixing Mechanical Issues. I don't have an editor and I don't often proofread. If you find mechanical errors
+in my grammar or find issues with the way topics are ordered I would welcome fixes.
+
+Notably I do not want to open the floodgates for contributions on the main chapter content
+just yet. This has the downside of slower progress but the upside of a more coherent result.
+
+My primary goals with this are
+
+* Get the ordering of topics right. By this I mean that every topic covered should have had its prerequisites covered in the topics previous. While ""lesson 1: Inheritance"" is clearly wrong
+in this regard, some things are more subtle.
+* Be a template for other people. This is a book. Not everyone likes books, some like youtube videos, some like over priced udemy courses, some attend College, etc. Everyone has different learning paths. I hope this to be of use to anyone looking to make a more up to date Java
+curriculum and hope that the vague order of things (which I consider superior to the content
+produced with the Java of years' past) is carried through.
+* Write as if the newest Java wasn't new. It's obvious when a book was written before Java 8
+because it always has newer additions with ""addendum: brand new stuff in Java 8."" But 
+the order language features were introduced is hardly a good order to teach them. You have
+to pretend that Java 23+  has always been *the* Java. Does it really make sense to show terrible
+C-style switch statements way before switch expressions?
+* Write as if the words Object Oriented Programming, Functional Programming, etc. didn't exist.
+While I understand that these all have definitions and are useful concepts to know about, introducing them early seems to lead to either dogma, rejection of said dogma, or some
+mix thereof. None of them are actually needed to understand the mechanics of and motivation
+behind what we would call ""object oriented"" or ""functional"" techniques. They certainly don't
+work as justification for adding getters and setters to every class.
+
+My immediate short term goal is to get this ""ready to go"" for when anonymous main classes is in a stable Java release. Thats the point at which we could start to:
+
+1. Have actual students go through it without also needing to explain the `--enable-preview` mechanism.
+2. Use the topic order to build other sorts of non-book resources like videos, curriculums, projects, etc.
+3. Convince actual teachers to change from ""objects first"" to something less insane.
+
+I haven't integrated `println` or `readln` yet, but will do so eventually.",2024-11-09 17:16:13
+Programming,1gonkvm,Alternative to becoming a Full Stack Developer ... Become a Generalist,0,https://www.dodgycoder.net/2024/10/alternatives-to-becoming-a-full-stack-developer-become-a-generalist.html,5,,2024-11-11 08:27:17
+Programming,1go50j1,Engineering With Java: Digest #40,3,https://javabulletin.substack.com/p/engineering-with-java-digest-40,0,,2024-11-10 16:52:48
+Programming,1gollfp,What Do Data Engineers ACTUALLY Do? 🛠️ Based on 100 Fortune 500 Job Listings,0,https://youtu.be/XzqYdCov-LA,0,,2024-11-11 06:08:15
+Programming,1gogrd2,Cline vsCode extension,0,https://github.com/cline/cline,1,"Not sure if this is the right sub...mods let me know.
+
+I have been using cline for the last several months and am doing my best to contribute to the project.
+
+I am looking for anyone else that might have some time.  I have some huge improvements I have mapped out and implemented a few successfully but am looking for some partners to help work through issues and provide input.
+
+Please dm me if you are interested in helping
+",2024-11-11 01:37:18
+Programming,1gof49t,"Online JSON Tool - Parse, Format, Search, Query JSON Paths",0,https://www.devtoolkits.tech/,5,,2024-11-11 00:14:14
+Programming,1gogmgl,Pony: Un Lenguaje de Programación basado en actores,0,https://emanuelpeg.blogspot.com/2024/11/pony-un-lenguaje-de-programacion-basado.html,0,,2024-11-11 01:30:19
+Programming,1gnpi6f,"Consolidated list of similar problems of all patterns in LeetCode, Check it out! ",7,https://grid47.xyz/lists/,1,,2024-11-10 01:35:26
+Programming,1gn5mg2,A way to sell technical ideas to business people as a programmer,98,https://newsletter.fractionalarchitect.io/p/35-a-tech-sales-guide-stop-selling,12,,2024-11-09 08:25:50
+Programming,1gndnck,Separating music into notes and instruments (audio source separation),20,https://matthew-bird.com/blogs/Audio-Decomposition.html,12,,2024-11-09 16:20:26
+Programming,1go8wux,Building browsers that ai agents can control...,0,https://userelic.com,3,,2024-11-10 19:39:50
+Programming,1go4ixc,Hashnode,0,https://nullbyte.hashnode.dev/custom-url-protocols-the-secret-to-opening-desktop-apps-from-the-web,6,"Hey everyone! I just published a new article diving into Custom URL Protocols and how they allow you to launch desktop applications directly from your browser. Ever wondered how apps like Notion, Steam, or even simple tools like Calculator can open from web links? This article breaks down the magic behind it, with practical steps on setting up your own protocols in Windows.",2024-11-10 16:31:38
+Programming,1go64bd,Should you do on-call rotations in your engineering org?,0,https://newsletter.eng-leadership.com/p/should-you-do-on-call-rotations-in,4,,2024-11-10 17:40:27
+Programming,1go3dvj,"An overdue reaction to ""Let's blame the developer who pressed deploy""",0,https://juriadam.substack.com/p/lets-blame-the-developer-who-pressed,9,,2024-11-10 15:40:48
+Programming,1gnx1il,OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models ,0,https://opencoder-llm.github.io/,1,,2024-11-10 09:33:38
+Programming,1go7apr,Why ruby might be better than python for teaching programming.,0,https://ronynn.github.io/ruby-might-be-better-than-python/,10,,2024-11-10 18:30:38
+Programming,1gnms4r,"Easy-to-use yet powerful SwiftUI framework for creating popups, popovers, sheets, alerts, toasts, banners, and more",2,https://github.com/Mijick/Popups,0,,2024-11-09 23:18:03
+Programming,1gn3e1m,Tower stacking game in 84 lines of pure JavaScript,67,https://slicker.me/javascript/tower.htm,4,,2024-11-09 05:49:13
+Programming,1go1yax,The styling dilemma in React,0,https://thetshaped.dev/p/the-styling-dilemma-in-react,6,,2024-11-10 14:33:58
+Programming,1gmn2mq,The case of a program that crashed on its first instruction,538,https://devblogs.microsoft.com/oldnewthing/20241108-00/?p=110490,61,,2024-11-08 16:50:16
+Programming,1gnhea5,"XMLStreamer: Python library designed for efficient, memory-friendly streaming and parsing of large XML feeds.",3,https://github.com/carlosplanchon/xmlstreamer,0,,2024-11-09 19:08:21
+Programming,1gnz8lq,How do popular gem writers take advantage of blocks?,0,https://newsletter.rubycademy.com/p/how-do-popular-gem-writers-take-advantage-of-blocks,1,,2024-11-10 12:06:50
+Programming,1gn7w7v,TAO - Meta's Scalable architecture powering world's largest social graph,13,https://engineeringatscale.substack.com/p/tao-metas-scalable-architecture-powering,1,,2024-11-09 11:13:44
+Programming,1gnadg2,"Sharing changes, visuals first",8,https://alexharri.com/blog/visuals-first,1,,2024-11-09 13:43:01
+Programming,1gncycr,An Opinionated Guide to Keyboard Thumb Keys,5,https://johnlindquist.com/an-opinionated-guide-to-keyboard-thumb-keys/,3,,2024-11-09 15:48:25
+Programming,1gn2p47,Basic Things,26,https://matklad.github.io/2024/03/22/basic-things.html,3,,2024-11-09 05:05:31
+Programming,1go5b30,Why GitHub Actually Won,0,https://blog.gitbutler.com/why-github-actually-won/,22,,2024-11-10 17:05:19
+Programming,1gncq1d,How NoSQL Databases Speed-Up Write-Heavy Workloads?,5,https://newsletter.scalablethread.com/p/how-lsm-trees-optimize-write-heavy,8,,2024-11-09 15:37:46
+Programming,1gmrxbs,"Following up ""Mother of all htmx demos""",101,https://david.guillot.me/en/posts/tech/following-up-mother-of-all-htmx-demos/,35,,2024-11-08 20:15:33
+Programming,1gn1iwd,How Unikraft Cloud reduces serverless cold starts to milliseconds with unikernels and microVMs,19,https://shivangsnewsletter.com/p/how-unikraft-cloud-reduces-serverless,0,,2024-11-09 03:57:28
+Programming,1gngus7,On Ousterhout's Dichotomy,0,https://matklad.github.io/2024/10/06/ousterhouts-dichotomy.html,0,,2024-11-09 18:43:55
+Programming,1gnr55h,Toward infinite context for code,0,https://sourcegraph.com/blog/towards-infinite-context-for-code,0,,2024-11-10 03:06:03
+Programming,1gnfimm,Database anonymization tool release. Greenmask v0.2.2,2,https://github.com/GreenmaskIO/greenmask/releases/tag/v0.2.2,0,,2024-11-09 17:44:30
+Programming,1gndxbg,My Simple Knowledge Management and Time Tracking System,1,https://henrikwarne.com/2024/11/09/my-simple-knowledge-management-and-time-tracking-system/,4,,2024-11-09 16:33:02
+Programming,1gndndk,Open source drone localization using RasPi 0w + RasPi cameras,0,https://matthew-bird.com/blogs/Drone-Rel-Pos.html,0,,2024-11-09 16:20:29
+Programming,1gndnbc,Beating the dinosaur game with ML,3,https://matthew-bird.com/blogs/Dino-Game-ML.html,1,,2024-11-09 16:20:24
+Programming,1gngenx,GraalVM + sistema operativo = GraalOS,0,https://emanuelpeg.blogspot.com/2024/11/graalvm-sistema-operativo-graalos.html,0,,2024-11-09 18:23:58
+Programming,1gmys4z,Open source 3D globe GitHubHQ-style traffic visualizer,10,https://x.com/breckyunits/status/1854886389776892403,3,,2024-11-09 01:28:50
+Programming,1gnlq3j,step by step code execution visualizer for Python,0,https://www.pynerds.com/visualize/,1,,2024-11-09 22:27:26
+Programming,1gnlyoj,Deploy Serverless Node.js REST API to AWS in 5 Minutes,0,https://www.youtube.com/watch?v=TOKJWdhcbio,0,"I've been working on a tool called Less that automates the creation and deployment of serverless components to AWS. No AWS or Cloud experience is necessary at all and there is almost no learning curve. For those of you that do grasp AWS concepts we are creating an API Gateway with Lambda functions behind the scenes.
+
+If you check out the video and/or docs and share your feedback I would greatly appreciate it. You can also learn how to create Web Sockets, Topics/Subscribers, CRON Jobs, and much more in the docs.
+
+Very much looking forward to your thoughts!",2024-11-09 22:38:51
+Programming,1gnlmhb,Introducing Python Dateonly Package: A Modular Alternative for Faster Date Operations Compared to datetime.,0,https://programmium.wordpress.com/2024/11/09/modular-faster-dateonly-operations-in-python/,0,,2024-11-09 22:22:49
+Programming,1gndwhs,Build a Sentiment Analysis App Using Streamlit and Hugging Face - Full Tutorial,0,https://youtu.be/Vengxj2280U,0,,2024-11-09 16:32:02
+Programming,1gmktol,How to make select in WinSock exceed the 64-socket limit,22,https://www.pixelstech.net/article/1730433482-How-to-make-select-in-WinSock-exceed-the-64-socket-limit,15,,2024-11-08 15:14:43
+Programming,1gm7rku,gccrs: An alternative compiler for Rust,233,https://blog.rust-lang.org/2024/11/07/gccrs-an-alternative-compiler-for-rust.html,45,,2024-11-08 02:11:31
+Programming,1gneudk,Booleans Are a Trap,0,https://katafrakt.me/2024/11/09/booleans-are-a-trap/,30,,2024-11-09 17:14:13
+Programming,1gnaxv9,"Doing ""Headless WordPress without WordPress""",0,https://gatographql.com/blog/introducing-headless-wordpress-without-wordpress,3,,2024-11-09 14:11:57
+Programming,1gnbhes,PSA: SQLite does not do checksums,0,https://avi.im/blag/2024/sqlite-bit-flip/,14,,2024-11-09 14:39:08
+Programming,1gmmokz,Everything you need to know about Quines - Self Replicating computer programs - a blog series.,8,https://darshan.hashnode.dev/series/quines,2,,2024-11-08 16:33:53
+Programming,1gn80v4,Essential C and C++ Programs for Computer Engineering Students,0,https://github.com/sourhub226/c-cpp-programs,1,,2024-11-09 11:22:34
+Programming,1gmabnx,Initial CUDA Performance Surprises,50,https://probablydance.com/2024/10/07/initial-cuda-performance-lessons/,2,,2024-11-08 04:27:51
+Programming,1gn66jy,Engineers Do Not Get To Make Startup Mistakes When They Build Ledgers,0,https://news.alvaroduran.com/p/engineers-do-not-get-to-make-startup,11,,2024-11-09 09:07:16
+Programming,1gmazid,"The web's clipboard, and how it stores data of different types",18,https://alexharri.com/blog/clipboard,2,,2024-11-08 05:06:00
+Programming,1gmraol,Getting Started with Oysape: A Powerful SSH and DevOps Tool,0,https://blog.aifetel.cc/getting-started-with-oysape-a-powerful-ssh-and-devops-tool,0,,2024-11-08 19:48:30
+Programming,1gn2pqa,System tests have failed,0,https://world.hey.com/dhh/system-tests-have-failed-d90af718,34,,2024-11-09 05:06:35
+Programming,1gllvlz,Pkl: Apple's New Configuration Language That Could Replace JSON and YAML,482,https://www.trevorlasn.com/blog/pkl-apple-new-configuration-language,374,,2024-11-07 08:29:30
+Programming,1gmdinx,Cyber Security: A Pre-War Reality Check - Bert Hubert's writings,2,https://berthub.eu/articles/posts/cyber-security-pre-war-reality-check/,1,,2024-11-08 07:58:15
+Programming,1gmbshe,"I created a cloud bogosort, so if you have a scratcher account you can partake in the journey for the first completed bogosort.",5,https://scratch.mit.edu/projects/1093429026/,9,,2024-11-08 05:55:39
+Programming,1gm1n51,Typed Variables for Valid Dev & Production Environments,20,https://runme.dev/blog/typed-env-vars,1,,2024-11-07 21:27:05
+Programming,1glxmmx,"Userland Disk I/O: Filesystems, file IO, and durability",26,https://transactional.blog/how-to-learn/disk-io,3,,2024-11-07 18:38:53
+Programming,1glu8ay,Why I love Rust for tokenising and parsing,38,https://xnacly.me/posts/2024/rust-pldev/,49,,2024-11-07 16:18:07
+Programming,1glqwhh,ASCII control characters in my terminal,42,https://jvns.ca/blog/2024/10/31/ascii-control-characters/,6,,2024-11-07 13:51:46
+Programming,1gmmbwd,"💥 Tech Talks Weekly #36: all the recently uploaded talks from tech conferences. This issue includes EuroRust 2024, CPH DevFest 2024, Clojure Conj 2024, Conf42 JS 2024 and many more!",0,https://www.techtalksweekly.io/p/tech-talks-weekly-36,1,,2024-11-08 16:19:17
+Programming,1gmlxda,I made a tool to improve dev experience when working with AWS Lambda and Terraform. Local execution and debugging of infrastructure deployed in to AWS.,0,https://github.com/uatec/teleform,0,,2024-11-08 16:02:10
+Programming,1glpv3x,Stuck in a Loop? Why Busy Engineers Still Feel Unfulfilled and How You Can Break Free,35,https://newsletter.enginuity.software/p/overcoming-career-plateaus,2,,2024-11-07 13:00:26
+Programming,1glxpep,JIT in ClickHouse,10,https://clickhouse.com/blog/clickhouse-just-in-time-compiler-jit,1,,2024-11-07 18:42:13
+Programming,1glu77y,Python & C++ inspired programming language that transpiles to C and can be embedded within C source files.,15,https://github.com/AnilBK/C-Preprocessor-Language,13,,2024-11-07 16:16:48
+Programming,1gmleav,Cell-Based Architecture Adoption Guidelines,0,https://www.infoq.com/articles/cell-based-architecture-adoption-guidelines/,0,,2024-11-08 15:39:33
+Programming,1gmlztp,Java-Based No-Code and Low-Code Application Bootstrapping Tools Review,0,https://www.infoq.com/articles/java-no-code-bootstrapping-tools/,0,,2024-11-08 16:05:03
+Programming,1gmndm3,API Lifecycle Management: The Role of AI,0,https://apidna.ai/?p=4588,0,,2024-11-08 17:02:56
+Programming,1gmqip7,CO: My Language,0,https://www.mycompiler.io/view/EAPuo7ynEbM,2,,2024-11-08 19:14:33
+Programming,1gmnu2x,[Video]Do you still need __init__.py file in Python packages?,0,https://youtu.be/HGr-LaPty-4,0,,2024-11-08 17:21:56
+Programming,1glw6e9,Monorepo - Our experience,7,https://ente.io/blog/monorepo-retrospective/,11,,2024-11-07 17:39:15
+Programming,1gltd85,"Resilient, Fault-tolerant, Robust, or Reliable?",11,https://www.thecoder.cafe/p/resilient-fault-tolerant-robust-reliable,0,,2024-11-07 15:42:06
+Programming,1gmkq06,Most Common SQLite Misconception,0,https://igorstechnoclub.com/most-common-sqlite-misconception,33,,2024-11-08 15:10:10
+Programming,1gmgvo9,Build a Live Activity Broadcast Election Results iOS App  |  Firestore DB | Cloud Functions | APNS,0,https://youtu.be/MnPvg2rO-Cw?si=4d8lzCbSKFmlmnBM,0,,2024-11-08 12:00:42
+Programming,1gmipr3,LadyBird: The True Alternative For Chrome and Other Web Browsers,0,https://medium.com/gitconnected/ladybird-the-true-alternative-for-chrome-and-other-web-browsers-bf3251b10811?sk=261a2af9f90ed5237956af0a4e410fc4,16,,2024-11-08 13:38:12
+Programming,1gmgsxn,Mastering Design Patterns in JavaScript: Part 6 — The Adapter Pattern ,0,https://codexstoney.medium.com/mastering-design-patterns-in-javascript-part-6-the-adapter-pattern-dc899a09f7d7?sk=65208d7002bae50053b74230130b13cd,5,,2024-11-08 11:55:54
+Programming,1glae25,"Visualizing binary files with ImHex's DSL, the ""pattern language""",130,https://xy2i.blogspot.com/2024/11/using-imhexs-pattern-language-to-parse.html,8,,2024-11-06 21:59:19
+Programming,1glz1tn,KDE Stack training,2,https://www.youtube.com/watch?v=cxR1Y28GGww,0,,2024-11-07 19:38:51
+Programming,1gmesw5,Java-Based No-Code and Low-Code Application Bootstrapping Tools Review,0,https://www.infoq.com/articles/java-no-code-bootstrapping-tools/,0,,2024-11-08 09:35:53
+Programming,1glpxy9,A Friendly Introduction to Container Queries,5,https://www.joshwcomeau.com/css/container-queries-introduction/,0,,2024-11-07 13:04:10
+Programming,1glzlj3,SkipScan under load,2,https://www.timescale.com/blog/skip-scan-under-load/,9,,2024-11-07 20:01:33
+Programming,1gmcgrd,The Ultimate Software Architect Knowledge Map,0,https://blog.bytebytego.com/p/ep128-the-ultimate-software-architect,2,,2024-11-08 06:40:09
+Programming,1gm8dg9,Hunting for Gems,0,https://www.railsexplained.com/pages/hunting-for-gems/,0,,2024-11-08 02:42:33
+Programming,1gkwcmt,What has case distinction but is neither uppercase nor lowercase?,274,https://devblogs.microsoft.com/oldnewthing/20241031-00/?p=110443,128,,2024-11-06 11:29:20
+Programming,1glogdt,A take at my own language - Human,3,https://github.com/TaufiqMohammad/Human,4,,2024-11-07 11:39:35
+Programming,1gm2s0l,GitCase: A Secure Way to Build and Share Your Developer Portfolio,0,https://gitcase.dev,2,,2024-11-07 22:15:41
+Programming,1glhbij,My Experience as a MIT Battlecode 2024 Finalist,6,https://dteather.com/blogs/battlecode24/,3,,2024-11-07 03:31:59
+Programming,1glpxsm,DynamoDB in an EDA World • Alex DeBrie,0,https://youtu.be/-nJmFYUiLqk,0,,2024-11-07 13:03:57
+Programming,1gm37rg,Making a Social Network - xpress.wtf,0,https://www.youtube.com/watch?v=SnklE0eQhTc,0,,2024-11-07 22:35:15
+Programming,1glslvu,Bento: trying to make performance-related data more accessible.,0,https://benbeben.vercel.app,0,,2024-11-07 15:08:48
+Programming,1glxzc5,Interview with Programmer Steve Yegge: 'The Evolution and Future of AI Coding',0,https://sourceforge.net/articles/the-evolution-and-future-of-ai-coding-sourcegraph-sourceforge-podcast-episode-24/,1,,2024-11-07 18:54:02
+Programming,1gkwvf4,Configuring SSH Keys for Multiple GitHub Accounts,58,https://stevenharman.net/configure-ssh-keys-for-multiple-github-accounts,13,,2024-11-06 12:01:22
+Programming,1glu1cl,Guarding Against Data Poisoning: A Critical Challenge in Machine Learning Model Integrity,0,https://ai.plainenglish.io/guarding-against-data-poisoning-a-critical-challenge-in-machine-learning-model-integrity-09540d634235,0,,2024-11-07 16:09:51
+Programming,1glvraz,"120 Dog Breeds, more than 10,000 Images: Deep Learning Tutorial for dogs classification",0,https://eranfeit.net/120-dog-breeds-more-than-10000-images-deep-learning-tutorial-for-dogs-classification/,2,,2024-11-07 17:21:52
+Programming,1gluzgt,How to choose Cloud CI/CD Platform?,0,https://newsletter.techworld-with-milan.com/p/what-is-cicd-pipeline,0,,2024-11-07 16:49:39
+Programming,1glxi63,Supercharging AI Coding Assistants with Gemini Models' Context,0,https://developers.googleblog.com/en/supercharging-ai-coding-assistants-with-massive-context/,0,,2024-11-07 18:34:12
+Programming,1gkpnx3,"Linux Built-In Tools Are So Powerful, You Can Build a Database With Them. Here's How",129,https://www.howtogeek.com/build-a-database-with-powerful-linux-built-in-tools/,56,,2024-11-06 03:56:05
+Programming,1glwnoz,Claude's new computer use can replace co-pilot?,0,https://blog.kusho.ai/what-is-claudes-new-computer-use-api-all-about/,1,,2024-11-07 17:59:06
+Programming,1gltyej,What Happened to These ‘Game-Changing’ JavaScript Projects in the last 10 years? And What’s Next?,0,https://medium.com/@apalshah/what-happened-to-these-game-changing-javascript-projects-in-the-last-10-years-and-what-s-next-a446f1e2b3d7?sk=c461d0b5af8e9c0dd728d0f0a50ebd19,14,,2024-11-07 16:06:21
+Programming,1gl9t7e,Exploring Postgres's arena allocator by writing an HTTP server from scratch,5,https://www.enterprisedb.com/blog/exploring-postgress-arena-allocator-writing-http-server-scratch,2,,2024-11-06 21:34:55
+Programming,1gloxcj,Makurai theme,0,https://github.com/Skardyy/makurai-theme,0,A dark theme for nvim and vscode inspired by ayu,2024-11-07 12:08:59
+Programming,1glhbq8,IMC Prosperity 2 Writeup,0,https://dteather.com/blogs/imc-prosperity-2/,0,,2024-11-07 03:32:19
+Programming,1glrrkj,The Pragmatic Engineer’s Career Advice for Tough Times,0,https://shiftmag.dev/the-pragmatic-engineers-career-advice-for-tough-times-4357/,1,,2024-11-07 14:31:43
+Programming,1gk4tqk,Hundreds of code libraries posted to NPM try to install malware on dev machines,658,https://arstechnica.com/security/2024/11/javascript-developers-targeted-by-hundreds-of-malicious-code-libraries/,146,,2024-11-05 11:47:52
+Programming,1gk6xf5,The president's doctor: Why your projects take forever,224,https://thoughtbot.com/blog/the-presidents-doctor,49,,2024-11-05 13:41:43
+Programming,1gk5yam,"No, Quantum Computers Won't Break All Encryption",179,https://www.trevorlasn.com/blog/quantum-computers-wont-break-encryption,45,,2024-11-05 12:52:25
+Programming,1glhjqr,Supervisores y Árboles de Supervisión en #Elixir,0,https://emanuelpeg.blogspot.com/2024/11/supervisores-y-arboles-de-supervision.html,0,,2024-11-07 03:45:01
+Programming,1gk47ls,"""SRE"" doesn't seem to mean anything useful any more",213,https://rachelbythebay.com/w/2024/09/03/ops/,72,,2024-11-05 11:06:41
+Programming,1gjxd0q,"98% of companies experienced ML project failures last year, with poor data
+cleansing and lackluster cost-performance the primary causes",734,https://info.sqream.com/hubfs/data%20analytics%20leaders%20survey%202024.pdf,98,,2024-11-05 03:20:21
+Programming,1gky4s1,Binary Tree Diameter: Algorithm and Implementation Guide,0,https://jsdevspace.substack.com/p/binary-tree-diameter-algorithm-and,0,,2024-11-06 13:10:32
+Programming,1gk3tov,PSA to anyone programming form validation logic for names this week,125,https://www.w3.org/International/questions/qa-personal-names,73,,2024-11-05 10:40:19
+Programming,1gl2lv2,Blog Post: How to Add a Blazor Server App to an ASP.NET Model/Controller Web API,0,https://danschnau.com/blog/how_to_add_a_Blazor_Server_App_to_an_ASPNET_Controller_Web_API,2,,2024-11-06 16:33:50
+Programming,1gl2igk,Why software only moves forward | Swizec Teller,0,https://swizec.com/blog/why-software-only-moves-forward/,2,,2024-11-06 16:29:42
+Programming,1gkxtp1," Introducing HTQL (Hyper Text Query Language) - Seeking Feedback, maybe contributors",0,https://github.com/AICDEV/htql,14,,2024-11-06 12:54:45
+Programming,1gl5irh,How I organized my time as a full-time CTO,0,https://newsletter.eng-leadership.com/p/how-i-organized-my-time-as-a-full,1,,2024-11-06 18:35:30
+Programming,1gky09u,Moving to a monorepo at Ente,0,https://ente.io/blog/monorepo-retrospective/,9,,2024-11-06 13:04:09
+Programming,1gjkh76,HTML Form Validation is heavily underused,213,https://expressionstatement.com/html-form-validation-is-heavily-underused,73,,2024-11-04 17:51:34
+Programming,1gjware,An unexpected discovery: Automated reasoning often makes systems more efficient and easier to maintain,31,https://aws.amazon.com/blogs/security/an-unexpected-discovery-automated-reasoning-often-makes-systems-more-efficient-and-easier-to-maintain/,2,,2024-11-05 02:24:16
+Programming,1gjpzqf,Devs need design patterns for real-life problems — a set of mental models,83,https://l.perspectiveship.com/re-mmo,8,,2024-11-04 21:36:12
+Programming,1gktum4,"Perhaps Rust needs ""defer""",0,https://gaultier.github.io/blog/perhaps_rust_needs_defer.html,5,,2024-11-06 08:29:32
+Programming,1gk3ub5,Archive of wiki.bash-hackers.org,6,https://github.com/flokoe/bash-hackers-wiki,0,,2024-11-05 10:41:34
+Programming,1gjx4r4,Reasons to write design docs,24,https://ntietz.com/blog/reasons-to-write-design-docs/,5,,2024-11-05 03:07:54
+Programming,1gk6lx6,P2PD 3: towards universal direct connections,3,https://roberts.pm/index.php/2024/11/05/p2pd/,0,,2024-11-05 13:26:14
+Programming,1gkrms3,Laravel SaaS Boilerplate - JetShip,0,https://demos.themeselection.com/jetship-laravel-boilerplate/,1,,2024-11-06 05:58:44
+Programming,1gjdf7y,tinylangs: programming languages in 50 lines of code,216,https://github.com/zserge/tinylangs/,29,,2024-11-04 12:48:55
+Programming,1gksb87,How to Integrate Tailwind with Django?,0,https://www.freecodecamp.org/news/how-to-integrate-tailwind-with-django/,3,,2024-11-06 06:42:55
+Programming,1gkt3nw,Insights into when to use AI and when to use a search engine while programming,0,https://www.linkedin.com/pulse/finding-right-balance-between-ai-search-johan-gorter-jpnwe/,1,,2024-11-06 07:36:21
+Programming,1gjurve,How I Improved Video Streaming with FFmpeg and Node.js,18,https://mayallo.com/video-processing-using-ffmpeg-nodejs/,3,,2024-11-05 01:08:48
+Programming,1gk7sjl,OKLCHanger VS Code extension,0,https://www.silvestar.codes/articles/oklchanger/,0,,2024-11-05 14:21:12
+Programming,1gkug6r,5 Prompt Engineering Tips for Developers,0,https://slobodan.me/posts/5-prompt-engineering-tips-for-developers/,6,,2024-11-06 09:13:34
+Programming,1gk32rf,Lightweight food recipes RestAPI with admin dashboard and docker 👌,3,https://github.com/mikebgrep/forkapi,0,,2024-11-05 09:44:12
+Programming,1gko7s6,Pattern Matching en Typescript con ts-pattern,0,https://emanuelpeg.blogspot.com/2024/11/pattern-matching-en-typescript-con-ts.html,0,,2024-11-06 02:33:04
+Programming,1gk4r78,Explore SQLite JSON Operations Using JDBC,1,https://www.blackslate.io/articles/explore-sqlite-json-operations-using-jdbc,0,,2024-11-05 11:43:11
+Programming,1gkj20s,Developing AI-powered Javadoc IntelliJ plugin,0,https://medium.com/@polivka-pavel/developing-ai-powered-javadoc-intellij-plugin-b3b89052aa5e,1,,2024-11-05 22:19:21
+Programming,1gjknda,"Sets, types and type checking",20,https://kaleidawave.github.io/posts/sets-types-and-type-checking/,2,,2024-11-04 17:58:44
+Programming,1gjif8u,Java 23: What's new?,27,https://youtu.be/jcrpdJA9U2Q?si=25tSMjyTCWIcm3OV,36,,2024-11-04 16:29:12
+Programming,1gkds3i,Essential Guide to Configuring ESLint in Your React App,0,https://medium.com/javascript-in-plain-english/essential-guide-to-configuring-eslint-in-your-react-app-565ef2cb7e1d,1,,2024-11-05 18:36:20
+Programming,1gkge2z,How to Improve SQL Queries performance,0,https://open.substack.com/pub/betterengineers/p/optimizing-sql-queries-best-practices?r=209a75&utm_campaign=post&utm_medium=web,4,,2024-11-05 20:25:38
+Programming,1gk1ded,Platform Strategy • Gregor Hohpe & James Lewis,0,https://www.buzzsprout.com/1714721/15982858,0,,2024-11-05 07:30:41
+Programming,1gk0zbj,DataChain: DBT for Unstructured Data,0,https://github.com/iterative/datachain,0,,2024-11-05 07:01:20
+Programming,1gk6z7p,Auto-Analyst — Adding marketing analytics AI agents,0,https://medium.com/firebird-technologies/auto-analyst-adding-marketing-analytics-ai-agents-45b3e1f6654c,0,,2024-11-05 13:44:07
+Programming,1gkaa4a,The Problem With Monoliths,0,https://www.gauge.sh/blog/the-problem-with-monoliths,11,,2024-11-05 16:10:53
+Programming,1gjgr5f,Cramming Solitaire onto a Nintendo E-Reader card,10,https://mattgreer.dev/blog/cramming-solitaire-onto-a-nintendo-ereader-card/,1,,2024-11-04 15:20:23
+Programming,1gkd2er,Is AI the hottest niche right now?,0,https://alexlazar.dev/on-ai-engineering-and-consulting-with-andy-walters/,14,,2024-11-05 18:06:56
+Programming,1gkdzcj,Why DX doesn't matter,0,https://yieldcode.blog/post/why-dx-doesnt-matter/,18,,2024-11-05 18:44:40
+Programming,1giqvp0,5 Lessons I learned the hard way from 10+ years as a software engineer,470,https://read.highgrowthengineer.com/p/5-lessons-i-learned-the-hard-way-from-10-years,127,,2024-11-03 16:32:55
+Programming,1gj2p6f,In Memory of Stiver,86,https://blog.jetbrains.com/idea/2024/11/in-memory-of-stiver/,3,"On October 20, the original author of the Fernflower Java decompiler, Stiver, passed away after a long fight against glioblastoma. [Not OC]",2024-11-04 01:17:02
+Programming,1gj7kcs,"Auth Wiki -  Clear definitions of key glossaries related to authentication, authorization, and identity management. ",33,https://auth.wiki/,9,,2024-11-04 05:55:17
+Programming,1gk2zpp,Mastering Design Patterns in JavaScript: Part 5 — The Decorator Pattern 🎩,0,https://codexstoney.medium.com/mastering-design-patterns-in-javascript-part-5-the-decorator-pattern-a728dd7418fd?sk=960a4f746d8462ced36b33372ec379b2,0,,2024-11-05 09:37:33
+Programming,1gjnth4,Hetzner Server Comparison: Which Server Delivers the Best Value?,2,https://achromatic.dev/blog/hetzner-server-comparison,6,,2024-11-04 20:06:51
+Programming,1giu01w,LLM Frameworks are Like ORMs in the 80s,185,https://tselai.com/llm-frameworks,119,,2024-11-03 18:45:53
+Programming,1gk3pj7,How to Create an interactive color-shifting hover card with Tailwind CSS and JavaScript,0,https://lexingtonthemes.com/tutorials/how-to-create-an-interactive-color-shifting-hover-card-with-tailwind-css-and-alpinejs/,0,,2024-11-05 10:32:05
+Programming,1gjpob8,[blog] Functors to Monads: A Story of Shapes in Haskell,0,https://blog.jle.im/entry/functors-to-monads-a-story-of-shapes.html,0,,2024-11-04 21:23:00
+Programming,1gk03bb,Versioning Strategies Explained: SemVer to CalVer and Beyond. And Which One Should You Choose?,0,https://medium.com/@apalshah/versioning-strategies-explained-semver-to-calver-and-beyond-and-which-one-should-you-choose-cb7fe0b1ff9b?sk=70995162730fc56dc308c6263fe2a640,0,,2024-11-05 05:59:50
+Programming,1gijbgw,Is copilot a huge security vulnerability?,690,https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot,264,"It is my understanding that copilot sends all files from your codebase to the cloud in order to process them…
+
+I checked docs and with copilot chat itself and there is no way to have a configuration file, local or global, to instruct copilot to not read files, like a .gitignore
+
+So, in the case that you retain untracked files like a .env that populates environment variables, when opening it, copilot will send this file to the cloud exposing your development credentials.
+
+The same issue can arise if you accidentally open “ad-hoc” a file to edit it with vsc, like say your ssh config…
+
+Copilot offers exclusions via a configuration on the repository on github https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot
+
+That’s quite unwieldy and practically useless when it comes to opening ad-hoc, out of project files for editing.
+
+Please don’t make this a debate about storing secrets on a project, it’s a beaten down topic and out of scope of this post.
+
+The real question is how could such an omission exist and such a huge security vulnerability introduced by Microsoft?
+
+I would expect some sort of “explicit opt-in” process for copilot to be allowed to roam on a file, folder or project… wouldn’t you?
+
+Or my understanding is fundamentally wrong?",2024-11-03 09:43:42
+Programming,1gjnqmc,Live Friday Afternoon Coding Video; zrok Office Hours,0,https://www.youtube.com/watch?v=-SDOwnVE7LE,1,,2024-11-04 20:03:41
+Programming,1gimzn8,"Software Development is a Cultural Ecology. Work with it, not against it. Stop writing coding conventions and policy documents. Instead, start changing the development ""environment"" to make the-right-thing(TM) the path of least resistance.",228,https://anderssundman.medium.com/welcome-to-the-jungle-b0864a76d7f0,72,,2024-11-03 13:36:21
+Programming,1gjlsqr,Database anonymization tool release. Greenmask v0.2.1,1,https://github.com/GreenmaskIO/greenmask/releases/tag/v0.2.1,0,,2024-11-04 18:44:37
+Programming,1gk1xoo,Why .Net core is powerful ,0,https://medium.com/@djemma50/level-up-your-skills-why-net-core-is-a-must-learn-for-modern-developers-8daeadd320b4,3,Why every developer should learn about. Net core framework ,2024-11-05 08:13:52
+Programming,1gk2f5n,You don't need Application Performance Monitoring,0,https://www.bugsink.com/blog/you-dont-need-application-performance-monitoring/,16,,2024-11-05 08:52:33
+Programming,1gjipkp,Made a python poker project(base/intermediate level) to have a better understanding of fundamentals and have a good starting point for a card based game,0,http://github.com/ThatGabrieleC/5-card-Poker,0,"This is my first project, let me know what you think,  if you find it useful or have some requests",2024-11-04 16:40:56
+Programming,1gilzhk,I Waited 10 Billion Cycles and All I Got Was This Loading Screen,200,https://blog.preyneyv.dev/doing-less-with-more,48,,2024-11-03 12:43:00
+Programming,1gk0obt,Tips for using Cursor AI to accelerate development (and have fun),0,https://medium.com/towards-artificial-intelligence/5-cursor-ai-pro-tips-5a8d605f93fb,0,,2024-11-05 06:39:35
+Programming,1gjh1lr,Making Code Examples Interactive with Codapi,1,https://navendu.me/posts/adding-interactive-code-examples-codapi/,0,,2024-11-04 15:32:47
+Programming,1gihakr,"The original author of the Fernflower Java decompiler, Stiver, has died",380,https://blog.jetbrains.com/idea/2024/11/in-memory-of-stiver/,8,,2024-11-03 07:04:37
+Programming,1gjbvo5,CLI tool to analyze and report TODO comments in JavaScript and TypeScript Git repositories,2,https://github.com/azat-io/todoctor,4,,2024-11-04 11:19:38
+Programming,1giu0fa,"C++, Complexity, and Compiler Bugs",36,https://azeemba.com/posts/cpp-complexity-compiler-bugs.html,27,,2024-11-03 18:46:20
+Programming,1gji062,Innovations in Serverless & Event-Driven Solutions • Ben Ellerby & Julian Wood,0,https://youtu.be/IeEXy9tUL6I,0,,2024-11-04 16:11:53
+Programming,1gjl5ss,Determining service boundaries and decomposing your monolith,0,https://www.cerbos.dev/blog/determining-service-boundaries-and-decomposing-monolith,2,,2024-11-04 18:18:57
+Programming,1gjgdrb,Cool Math Game [ Console Python ] Beginner made,0,https://github.com/UndefiendUserNull/Cool-Math-Game,3,,2024-11-04 15:04:32
+Programming,1gja1pb,"How to create a bubble animation with Tailwind CSS and JavaScript
+",0,https://lexingtonthemes.com/tutorials/how-to-create-a-bubble-animation-with-tailwind-css-and-javascript/,0,,2024-11-04 09:03:49
+Programming,1giozwi,5 (Wrong) Regex To Parse Parentheses,17,https://aartaka.me/paren-regex,21,,2024-11-03 15:10:48
+Programming,1gje119,"Comprehensive Go Web Frameworks Comparison: Gin, Echo, and BeeGo - Vitalii Honchar",0,https://vitaliihonchar.com/blog/go/web-frameworks-comparison,0,,2024-11-04 13:19:33
+Programming,1gjh68g,Developing a Telegram Chatbot Using Python 3,0,https://ai.plainenglish.io/developing-a-chatbot-using-python-3-6f5f9ebafbc7,0,,2024-11-04 15:38:21
+Programming,1gi2oyz,More than 30% of PRs in public GitHub repos are from bots,577,https://twitter.com/valyala/status/1852675989588873244,79,,2024-11-02 18:16:33
+Programming,1gjgcio,A Series of Consecutive Webinars on AI Agents by Industry Leaders,0,https://open.substack.com/pub/diamantai/p/agentcraft-hackathon-kickoff-educational?utm_source=share&utm_medium=android&r=336pe4,0,"In 10 days from now, and just after the kickoff of our online AgentCraft hackathon in conjunction with LangChain, we’ll be providing extra value for our audience with a free series of 5 short lectures on agents from top industry experts.
+
+Find the exact agenda and links in the attached link.
+enjoy ☺️",2024-11-04 15:03:08
+Programming,1gistfe,Generate ER-Diagram using SQL script - SQL2ER,6,https://github.com/tusharad/sql2er,2,,2024-11-03 17:55:38
+Programming,1gjhixz,"Designing the Future of Coding at JetBrains.
+
+Our research team at JetBrains aims to design the blueprint for the future of AI-driven software development.
+
+We believe that it will enable us to create an entirely new class of developer tools.",0,https://www.linkedin.com/pulse/designing-future-coding-jetbrains-pavel-mikhailovskii-4b2ke,5,,2024-11-04 15:52:53
+Programming,1ginfnb,Latest release of C++ DataFrame,9,https://github.com/hosseinmoein/DataFrame,0,,2024-11-03 13:58:12
+Programming,1gikfx7,Fitting Flappy Bird (Assets Included) onto a QR Code ,12,https://www.youtube.com/watch?v=CDMbnNxvrVM,7,,2024-11-03 11:06:21
+Programming,1git9xs,CellSplit: Programmable bots in Agar.io-like environment,2,https://www.cellsplit.org/bots,1,,2024-11-03 18:15:10
+Programming,1gjbf24,"Why Avoiding Technical Debt Might Be Your Biggest Mistake: Embrace Progress, Not Perfection",0,https://shahriyarshahrabi.medium.com/why-avoiding-technical-debt-might-be-your-biggest-mistake-embrace-progress-not-perfection-b13a3fe2c91f,11,,2024-11-04 10:48:09
+Programming,1gil42w,How to use Reducer in React for better State Management: 2 effective ways for simpler design and architecture,5,https://thetshaped.dev/p/how-to-use-reducer-in-react-for-better-and-simpler-state-management,0,,2024-11-03 11:51:22
+Programming,1gj7tge,New Parser Generator on the Block,0,https://algodal.itch.io/algodal-parser-generator-tool,19,,2024-11-04 06:12:07
+Programming,1giw7kh,Laravel Under The Hood - A Little Bit of Macros,0,https://blog.oussama-mater.tech/laravel-a-little-bit-of-macros/,0,,2024-11-03 20:20:28
+Programming,1ghv63m,Why doesn't Cloudflare use containers in their infrastructure?,353,https://shivangsnewsletter.com/p/why-doesnt-cloudflare-use-containers,139,,2024-11-02 12:20:06
+Programming,1gi124a,"C Until It Is No Longer C
+",128,https://aartaka.me/c-not-c,66,,2024-11-02 17:02:44
+Programming,1gi4fbf,"Breaking CityHash64, MurmurHash2/3, wyhash, and more...",42,https://orlp.net/blog/breaking-hash-functions/,5,,2024-11-02 19:34:43
+Programming,1git8nl,"120 Dog Breeds, more than 10,000 Images: Deep Learning Tutorial for dogs classification 🐕‍🦺",0,https://medium.com/p/b0008357e39c,1,,2024-11-03 18:13:37
+Programming,1giawg4,Made a cool startup script that helps you quit smoking,10,https://github.com/0x0elliot/viceChecker,8,,2024-11-03 00:38:10
+Programming,1giwl1h,I made a 3D Text Editor in React from Scratch,0,https://www.youtube.com/watch?v=HWbdZlhi0WM,2,,2024-11-03 20:36:41
+Programming,1gh7vgg,Notepad++ is 21 years old,2338,https://sht.ac/2kzVlI,243,,2024-11-01 15:19:49
+Programming,1git27q,Bootstrapping CRUD with Pongo,0,https://event-driven.io/en/crud_with_pongo/,0,,2024-11-03 18:06:06
+Programming,1gineoj,Responsive Registration Form in HTML and CSS,0,https://jvcodes.com/responsive-registration-form-in-html-and-css/,0,,2024-11-03 13:56:50
+Programming,1gi3i24,Bold 0.4 - PrettyPrinting in the debugger,10,https://bold-edit.com/changelog/0.4.html,8,,2024-11-02 18:52:36
+Programming,1ghrr5h,Weird Lexical Syntax,78,https://justine.lol/lex/,19,,2024-11-02 08:12:25
+Programming,1giuiem,Why Your API is ‘Broken by Design’ Without JSON Schema,0,https://medium.com/@apalshah/why-your-api-is-broken-by-design-without-json-schema-9f406216c903?sk=d37c8e3e4e57724a5e63b7d85a7e57a5,12,,2024-11-03 19:07:44
+Programming,1girqal,PR Review Tool - making code reviews way easier (free & open source),0,https://www.npmjs.com/package/pr-reviewer,4,"PR Review/description CLI
+
+PR Review Tool - making code reviews way easier 💻✨
+
+Yo dev fam! Just built a CLI tool that does all the boring review stuff and writes up PR descriptions automatically. It uses AI to check out your Git diffs, breaks things down, and gives you a solid review or description. Basically, it’s saving me from endless code reviews and awkward explanations in team meetings 
+
+It’s anything new, but is actually helping me in daily basis.
+
+What it does:
+- Auto Code Reviews – Gives you a quick rundown on issues, best practices, and improvements
+- Easy PR Descriptions – No more struggling to explain changes; it even makes diagrams 🙌
+- Three Modes – Full review, short summary, or just a quick “this is what’s up” option
+- Clean Diff View – Organizes changes by file so you don’t get lost in the details
+- Logs Everything – So if something goes wrong, you know exactly where to look
+
+To run it, it’s as simple as:
+- pr-reviewer -b feature/your-branch for a basic review
+- Or pr-reviewer -b feature/your-branch -m description -t main if you want a detailed PR write-up
+
+Bonus: you can totally customize this as much as you want. The only thing you need is an OpenAI API key, and you're good to go.
+
+Check it out here: pr-reviewer on npm https://www.npmjs.com/package/pr-reviewer
+
+Would love any feedback! Let me know what you think, and feel free to suggest features or changes 🙏n",2024-11-03 17:09:03
+Programming,1giox8w,Discipline over Motivation in the engineering industry,0,https://newsletter.eng-leadership.com/p/discipline-over-motivation-in-the,2,,2024-11-03 15:07:30
+Programming,1gis2k3,Python arguments playlist,0,https://www.youtube.com/playlist?list=PL6lxxT7IdTxEUYw0etp-KL8JSYk3M_9Pg,0,,2024-11-03 17:23:47
+Programming,1gh1vlq,Linus Torvalds Lands A 2.6% Performance Improvement With Minor Linux Kernel Patch,1936,https://www.phoronix.com/news/Linus-2.6p-Faster-Scale-Patch,291,,2024-11-01 10:02:49
+Programming,1ghpb0h,Exponential rate limiting,46,https://dotat.at/@/2024-09-02-ewma.html,1,,2024-11-02 05:08:30
+Programming,1ghsxl0,Animated explanation on how DRAM works in GPUs and why should you care,17,https://www.youtube.com/watch?v=huhg3V4ZRW0,1,,2024-11-02 09:47:17
+Programming,1ghbwr1,From Naptime to Big Sleep: Google's security AI Agent has found its first real-world vulnerability in an open-source codebase,214,https://googleprojectzero.blogspot.com/2024/10/from-naptime-to-big-sleep.html,22,,2024-11-01 18:10:46
+Programming,1ghrvch,Superstreamer - OSS streaming toolkit from video source to player,6,https://github.com/matvp91/superstreamer,9,,2024-11-02 08:21:57
+Programming,1ghlapi,Classic 3D videogame shadow techniques,17,https://30fps.net/pages/videogame-shadows/,2,,2024-11-02 01:20:10
+Programming,1gi824f,Build a Secure Transaction System with Django Rest Framework (DRF) - Step-by-Step Guide,0,https://youtu.be/81k2pj436wA,0,,2024-11-02 22:21:57
+Programming,1ghgewg,How to Build Smaller Container Images: Docker Multi-Stage Builds,20,https://labs.iximiuz.com/tutorials/docker-multi-stage-builds,6,,2024-11-01 21:27:56
+Programming,1gh9ltr,"Moving off Heroku, slowly",40,https://jamie.ideasasylum.com/2024/10/30/moving-off-heroku-slowly,5,,2024-11-01 16:32:36
+Programming,1gheza4,Made a video that should work as an intro to ROM hacking for translation for those interested!,13,https://www.youtube.com/watch?v=CHE03KiiQ7k,6,,2024-11-01 20:24:10
+Programming,1gh4i8t,"A bit about OSS Licenses, explained with LEGO analogy",49,https://kftray.app/blog/posts/9-oss-legos,11,,2024-11-01 12:45:47
+Programming,1ghs7is,Simple Tips for Bug Bounty Beginners: Escalating Open-Redirect to XSS,0,https://medium.com/@anishnarayan/simple-tips-for-bug-bounty-beginners-escalating-to-xss-xss-series-part-2-1d6b75ecf942,0,,2024-11-02 08:49:28
+Programming,1gi54e4,the death of the architect,0,https://explaining.software/archive/the-death-of-the-architect/,12,,2024-11-02 20:05:54
+Programming,1ghmr77,Simple sdl3 raycaster,2,https://github.com/nfriel/raycast_sdl3,8,,2024-11-02 02:37:42
+Programming,1ghfmub,pg_mooncake: columnstore table in Postgres writing iceberg/delta.,7,https://github.com/Mooncake-Labs/pg_mooncake/,2,,2024-11-01 20:53:34
+Programming,1ggqcua,"My key takeaways from Microsoft research paper about pull requests effectiveness factors. Together with Delft University, they reduced PR lifetime from 197.2 hours to 77.65 hours",393,https://reviewnudgebot.com/blog/how-to-accelerate-code-reviews-with-nudges-insights-from-microsofts-study/,73,,2024-10-31 22:04:18
+Programming,1gi0zc7,Introducing the New BIP38 Desktop Application: Secure Your Private Keys Across 150+ Cryptocurrencies,0,http://github.com/meherett/python-bip38,0,,2024-11-02 16:59:29
+Programming,1gh2o4m,Always-free Vue & Node admin panel framework,67,https://adminforth.dev/,1,,2024-11-01 10:59:01
+Programming,1ggwhoa,Embeddings are underrated,85,https://technicalwriting.dev/data/embeddings.html,35,,2024-11-01 03:25:44
+Programming,1ght84o,Git Setup CLI Program,0,https://github.com/ApexV2/git-setup,0,,2024-11-02 10:09:43
+Programming,1gh1zc9,GitHub - brunodev85/winlator: Android application for running Windows applications with Wine and Box86/Box64,17,https://github.com/brunodev85/winlator,2,,2024-11-01 10:10:12
+Programming,1gh99kc,Side Quests That Supercharged A Tech Executive’s Career,15,https://pathtostaff.substack.com/p/side-quests-that-supercharged-a-tech,13,,2024-11-01 16:18:25
+Programming,1ghu1iy,Building an Internal Chatbot That Knows All Your Docs: a Step-by-step guide,0,https://medium.com/taranis-ag/building-an-internal-chatbot-that-knows-all-your-docs-a-step-by-step-guide-d910dfb26041,0,,2024-11-02 11:08:00
+Programming,1gheinm,Debugging spiky memory in our backend,2,https://www.linkedin.com/pulse/debugging-spiky-memory-our-backend-mohamed-habib-s8cye/?trackingId=7V%2FSeWVUSOKREniiJR8wKQ%3D%3D,0,,2024-11-01 20:03:47
+Programming,1gh2uqq,disposables: Run your test dependencies in disposable containers.,12,https://github.com/akashrawal/disposables,2,,2024-11-01 11:10:44
+Programming,1gh1cpv,Many Armed Banditism,10,https://voidflower.dev/blog/many-armed-banditism,0,,2024-11-01 09:22:56
+Programming,1gh5ti4,LLQL: Running SQL Query on LLVM IR/BC with Pattern Matchers,3,https://github.com/AmrDeveloper/LLQL,0,,2024-11-01 13:48:18
+Programming,1ghffjy,Revisiting Reliability in Large-Scale Machine Learning Research Clusters,0,https://glennklockwood.com/garden/papers/revisiting-reliability-in-large-scale-machine-learning-research-clusters,0,,2024-11-01 20:44:31
+Programming,1ghmprh,Open-sourced QueryFlip: Auto-switching between Google & ChatGPT based on query length,0,https://github.com/cbora/query-flip,0,,2024-11-02 02:35:32
+Programming,1ggobtp,"Week 2 of ""52 Weeks of SRE"": Application Monitoring Fundamentals. Learn the theory and put it into practice with this in-depth article.",152,https://jpereira.me/week-2-monitoring-fundamentals/,7,,2024-10-31 20:32:29
+Programming,1ghcsu1,DuckDB over Pandas/Polars ,0,https://pgrs.net/2024/11/01/duckdb-over-pandas-polars/,1,,2024-11-01 18:48:45
+Programming,1gh2svu,Why those particular integer multiplies?,4,https://fgiesen.wordpress.com/2024/10/26/why-those-particular-integer-multiplies/,0,,2024-11-01 11:07:19
+Programming,1ggweqo,Amazon Aurora PostgreSQL Limitless Database is now generally available,10,https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-limitless-database-is-now-generally-available/,0,,2024-11-01 03:20:50
+Programming,1ggj3xg,Australia/Lord_Howe is the weirdest timezone,70,https://ssoready.com/blog/engineering/truths-programmers-timezones/,14,,2024-10-31 16:47:56
+Programming,1gguns9,A horror story for Halloween,13,https://meowbark.dev/A-Halloween-scary-story,5,"Hi everyone. 
+
+Happy Halloween. I wrote a horror story inspired by real events. Check it out!",2024-11-01 01:41:10
+Programming,1gh7la9,Andrew Favia | Python has a hidden small text editor available. With Emacs Keybindings.,1,https://andrewfavia.dev/posts/text-editor-in-python/,2,,2024-11-01 15:07:38
+Programming,1gh75fg,Raspberry Pi Performance Update: NUMA Memory Configuration Gains,1,https://news.squeak.org/2024/11/01/raspberry-pi-performance-update-numa-memory-configuration-gains/,0,,2024-11-01 14:48:39
+Programming,1ghigws,Reverse Engineering Minified Code Using OpenAI,0,https://glama.ai/blog/2024-08-29-reverse-engineering-minified-code-using-openai,2,,2024-11-01 23:03:31
+Programming,1gganlz,Why Pascal Deserves a Second Look,187,https://timcoatesinsights.wordpress.com/2024/10/31/why-pascal-deserves-a-second-look/,172,,2024-10-31 09:44:40
+Programming,1ggaljn,Who stands to benefit from a proposed split of JavaScript?,175,https://leaddev.com/technical-direction/should-javascript-really-be-split-in-two,190,,2024-10-31 09:40:13
+Programming,1ggg67q,Typesetting Engines: A Programmer's Perspective (LaTeX vs. Typst vs. HTML),30,https://blog.ppresume.com/posts/on-typesetting-engines,17,,2024-10-31 14:42:12
+Programming,1ghaau7,Microservices and APIs: How They Work Together,0,https://apidna.ai/?p=4539,0,,2024-11-01 17:01:56
+Programming,1ggf4c1,"Disposable Web Servers: Solve it, then Toss it",18,https://www.bugsink.com/blog/disposable-web-servers/,2,,2024-10-31 13:56:02
+Programming,1gfpgq4,Why sprints are taking the joy out of building software,957,https://zaidesanton.substack.com/p/why-sprints-are-broken,428,,2024-10-30 15:37:06
+Programming,1gh9pl6,It's a joke about the basic life of a programmer in code language; lua,0,https://pastebin.com/fWQDVF6M,0,,2024-11-01 16:37:02
+Programming,1gghls8,A brief interview with Moonbit creator Hongbo Zhang,11,https://pldb.io/blog/hongboZhang.html,0,,2024-10-31 15:43:29
+Programming,1ggb04w,State Of CSS 2024 Results | CSS-Tricks,17,https://css-tricks.com/state-of-css-2024-results/,6,,2024-10-31 10:10:11
+Programming,1ggllsj,Cramming Solitaire onto a Nintendo E-Reader card,2,https://mattgreer.dev/blog/cramming-solitaire-onto-a-nintendo-ereader-card/,1,,2024-10-31 18:35:16
+Programming,1ggf3hg,Demo: Exploiting leaked timestamps from Google Chrome extensions,6,https://fingerprint.com/blog/exploiting-leaked-timestamps-google-chrome-extensions/,0,,2024-10-31 13:55:00
+Programming,1gfrv3k,Australia/Lord_Howe is the weirdest timezone,190,https://ssoready.com/blog/engineering/truths-programmers-timezones/,18,,2024-10-30 17:17:18
+Programming,1gglquh,"💥 Tech Talks Weekly #35: Design Patterns for Resilient Data Pipelines, Constructive Code Reviews, Exciting new features in C# 9 - 12, Async Functions In Python 2.1, Vertical Slice Architecture, and many more!",0,https://www.techtalksweekly.io/p/ttw-35-design-patterns-for-resilient,0,,2024-10-31 18:41:23
+Programming,1ggzb8a,Using GPT-4o for web scraping,0,https://blancas.io/blog/ai-web-scraper/,1,,2024-11-01 06:36:47
+Programming,1gg9fds,Pylon: Enables TypeScript developers to easily build GraphQL APIs,6,https://github.com/getcronit/pylon,5,,2024-10-31 08:08:38
+Programming,1ggabxo,Create a URL Shortener Service with Pure Rails,3,https://youtu.be/-9cdUvVFVFY?si=vHiFMjkC77l2Gs_V,1,,2024-10-31 09:19:32
+Programming,1gggz3z,Fetching Time records from ActiveCollab API,0,https://www.createit.com/blog/fetching-time-records-from-activecollab-api/,0,,2024-10-31 15:16:48
+Programming,1gggnwj,Safety and Liveness,0,https://www.thecoder.cafe/p/safety-liveness,0,,2024-10-31 15:03:15
+Programming,1gfljj7,Lessons learned from a successful Rust rewrite,118,https://gaultier.github.io/blog/lessons_learned_from_a_successful_rust_rewrite.html,28,,2024-10-30 12:40:12
+Programming,1gg5q98,"K4 - New high-performance open-source LSM tree based, transactional, durable storage engine ",4,https://github.com/guycipher/k4,1,,2024-10-31 03:47:14
+Programming,1gg9jsm,The Dual Nature of Events in Event-Driven Architecture,1,https://www.reactivesystems.eu/2024/10/31/the-dual-nature-of-events-in-eda.html,1,,2024-10-31 08:18:20
+Programming,1gfbwpe,"You Want Modules, Not Microservices",515,https://blogs.newardassociates.com/blog/2023/you-want-modules-not-microservices.html,227,,2024-10-30 02:03:40
+Programming,1gg53cc,math4devs.com: List of mathematical symbols with their JavaScript equivalent.,4,https://math4devs.com/,4,,2024-10-31 03:11:54
+Programming,1gghpow,com-lihaoyi issue bounties Oct 2024,0,https://github.com/orgs/com-lihaoyi/discussions/6,0,,2024-10-31 15:48:12
+Programming,1ggake4,A Primes Potpourri coded in Python,0,https://coe.psu.ac.th/ad/primes/,0,,2024-10-31 09:37:47
+Programming,1gghdhx,Tip of the day #3: Convert a CSV to a markdown or HTML table,0,https://gaultier.github.io/blog/tip_of_day_3.html,0,,2024-10-31 15:33:39
+Programming,1ggjb5c,There is no such thing as a global method (in Ruby),0,https://zverok.space/blog/2024-10-21-global_functions.html,0,,2024-10-31 16:56:43
+Programming,1gfv393,Polipo: The First Figma Compiler,11,https://www.polipo.io/blog/polipo-the-first-figma-compiler,18,,2024-10-30 19:31:14
+Programming,1gfqt90,Understanding The HTTP Deprecation Header,18,https://zuplo.com/blog/2024/10/25/http-deprecation-header,3,,2024-10-30 16:33:21
+Programming,1gfzupi,The PACELC Theorem,5,https://www.thecoder.cafe/p/pacelc,0,,2024-10-30 22:56:55
+Programming,1ggf6xx,"Frontent Architecture, Backend Architecture or just Architecture?",0,https://www.architecture-weekly.com/p/frontent-architecture-backend-architecture,0,,2024-10-31 13:59:28
+Programming,1ggq2cx,The more time I spend developing the more frustrated I get that so many open source projects aren't truly open source. Once the maintainers can no longer maintain their projects they get abandoned and there is no way to update them.,0,https://medium.com/@loic.joachim/github-needs-to-handle-open-source-like-wikipedia-74f6219a2eee,11,,2024-10-31 21:50:42
+Programming,1ggi3gr,"The most successful open-source fork, worth $6B",0,https://quesma.com/blog-detail/elastic-vs-grafana,0,,2024-10-31 16:04:35
+Programming,1gf74ja,"Devs deserve good one-on-ones — 3 takeaways from 1,500 meetings",289,https://l.perspectiveship.com/re-o3,77,,2024-10-29 22:16:13
+Programming,1gf0vf9,VSCode October 2024 (version 1.95) (90% of the features are Copilot-related),530,https://code.visualstudio.com/updates/v1_95,223,,2024-10-29 17:54:10
+Programming,1ggd62b,Github introduces sparks,0,https://bytesofai.com/2024/10/31/github-unveils-spark-a-new-era-of-customizable-mini-applications/,10,,2024-10-31 12:21:37
+Programming,1gfzk8e,Sorting for Rendering,2,https://linebender.org/wiki/gpu/sorting/,2,,2024-10-30 22:43:46
+Programming,1gfiif5,Tip of the day #2: A safer arena allocator,21,https://gaultier.github.io/blog/tip_of_the_day_2.html,7,,2024-10-30 09:29:51
+Programming,1gfqoj3,Advent of SQL: 24 Days of SQL Challenges,5,http://Adventofsql.com,0,,2024-10-30 16:27:57
+Programming,1gfq59e,The history of the Monokai color scheme,4,https://monokai.pro/history,7,,2024-10-30 16:05:27
+Programming,1ggdtub,Is Agile Dead? Why Large Enterprises Are Moving Away from Agile and How It Impacts Developers ,0,https://sht.ac/RqmPSR,29,,2024-10-31 12:55:50
+Programming,1gfqb3n,High Performance Open Source EBPF Based Linux IPv4/v6 Firewall Project,2,https://github.com/netfoundry/zfw,0,,2024-10-30 16:12:10
+Programming,1gfrrxx,Software Development Fragmentation,3,https://yieldcode.blog/post/software-development-fragmentation/,1,,2024-10-30 17:13:37
+Programming,1gg8avg,Avoiding Circular Imports in Python,0,https://youtu.be/zRwg7w93klA?si=1OXRgY2P_yMJWO_-,0,,2024-10-31 06:38:09
+Programming,1gga472,Why I don't rely on AI for programming (too much),0,https://www.jonashietala.se/blog/2024/10/31/why_i_dont_rely_on_ai_for_programming_too_much/,10,,2024-10-31 09:03:12
+Programming,1gfpr1x,Essential Best Practices for Securing your Applications (Inspired by the recent ShipFast controversy). Your feedback is much appreciated!,2,https://jpereira.me/security-first-essential-best-practices-for-securing-your-application/,0,,2024-10-30 15:49:06
+Programming,1gesfdh,Unsafe Rust Is Harder Than C,355,https://chadaustin.me/2024/10/intrusive-linked-list-in-rust/,212,,2024-10-29 11:35:33
+Programming,1gfu25z,"GitHub - hypermodeinc/modus: Modus: an open source, serverless framework for building intelligent functions and APIs, powered by WebAssembly",0,https://github.com/hypermodeinc/modus,0,,2024-10-30 18:47:58
+Programming,1gg8852,blazed.js,0,https://www.npmjs.com/package/blazed.js,17,"Hey folks!
+
+Introducing blazed.js!
+It's a blazing fast, light-weight, high performance promise based http client for nodejs
+
+It can perform tons of http requests like GET,POST,PUT, etc. which are supported by nodejs
+
+It's promise based like other axios, got,etc. out there
+
+So here's my library 
+https://www.npmjs.com/package/blazed.js
+
+You can install it by doing
+
+npm i blazed.js
+
+It would highly appreciated if you guys provide your valuable feedback regarding this library!
+
+Thanks for reading :)",2024-10-31 06:32:19
+Programming,1gftcpu," A huge list of all PyCon deep dives (a.k.a. ""Tutorials"") grouped by year and ordered by view count",0,https://www.techtalksweekly.io/p/ttw-extra-8-pycon-deep-dives-aka,0,,2024-10-30 18:18:46
+Programming,1gfs2fx,ASP.NET Core Authentication Behind Proxies,0,https://a0.to/reddit/aspnet-core-authentication,0,,2024-10-30 17:25:33
+Programming,1gfr6no,Template for making VSCode extensions using TRPC for webview panel message passing,0,https://philipwee.com/blog/TRPC%20implementation%20for%20VSCode%20extension%20message%20passing,0,,2024-10-30 16:49:19
+Programming,1gfqm7s,"Longevity, or abandonware?",1,https://keygen.sh/blog/longevity-or-abandonware/,0,,2024-10-30 16:25:14
+Programming,1geyz9i,"ChartDB: Visualize database schemas with a single query (Postgres, MySQL, MSSQL, SQLite, Clickhouse, MariaDB)",79,https://github.com/chartdb/chartdb,14,,2024-10-29 16:35:27
+Programming,1gfpip5,Supabase and ClickHouse Partnership,0,https://clickhouse.com/blog/supabase-partnership-native-postgres-replication-clickhouse-fdw,0,,2024-10-30 15:39:30
+Programming,1gfodhx,"I made an open-source, local time tracker",0,https://github.com/CodeClimbersIO,0,,2024-10-30 14:51:25
+Programming,1gg4yc1,Just learned why Rust doesn't allow multiple mutable references. Not what I thought.,0,https://manishearth.github.io/blog/2015/05/17/the-problem-with-shared-mutability/,17,"I'll start off by saying that I am professionally a web developer and never really learned systems level languages in school. So I've been on a journey to learn systems level development and some embedded development too. It's been a bit difficult as I made assumptions when learning higher level languages about how things worked under the hood. Had to unlearn all of my assumptions.
+
+But I taught myself the basics of C and made a very basic http server, only single threaded, not very impressive. Then I started learning Rust. Learning C first really helped but I still had tones of gaps. I finally got to the bottom of almost all of the memory safety issues in C and how rust prevents them, but there was one I didn't understand. Why can you not have multiple mutable references, even in a single thread. 
+
+At first I assumed it had to do with some sort of concurrency issue, and maybe it technically wasn't unsafe in a single threaded context, rust just did have a good solution for this case. And since Rusts rules are exhaustive it just blocked it for that reason.
+
+But in the end it comes down to a concept in C called restrict pointers. I won't pretend to fully understand restrict pointers, but basically a restricted pointer tells the compiler that no other pointer will be used to reference the underlying data. So I learned in Rust all references are the equivalent of restricted pointers in C. Now I understand the rule, but I still don't understand why.
+
+So restricted pointers are used to actually optimize the output assembly from the compiler. It's just for optimization, but rust enforces this optimization. It's totally fair anyways, I have never been in a situation when I needed multiple mutable references anyways haha!
+
+There are a few other reasons that we can't have multiple mutable. For example the Rust enum type can hold values, and that causes some particular issues for references. As well as iterator invalidation. However both of these seem to be able to be solved if reference were not treated as restricted. But I could be wrong. Would love to hear other opinions on this!
+
+Not sure if other people had the same question that I did, but it took me months for me to even stumble on restricted pointers in C after reading portions of the [Rustonomicon](https://doc.rust-lang.org/nomicon/) which I understood maybe 20% of lol. Hope this helps someone else on their journey!",2024-10-31 03:04:10
+Programming,1geuere,Vector Databases Are the Wrong Abstraction,96,https://www.timescale.com/blog/vector-databases-are-the-wrong-abstraction/,9,,2024-10-29 13:18:33
+Programming,1gf428u,Flox | It's Time to Bring Nix to Work,22,https://flox.dev/blog/its-time-to-bring-nix-to-work/,31,,2024-10-29 20:05:32
+Programming,1gg081j,Scrum doesn't have to suck,0,https://blog.raed.dev/posts/scrum_doesnt_have_to_suck,2,,2024-10-30 23:13:29
+Programming,1gfl0cn,All books recommended on Ask HN,3,https://hackernewsbookrecommendations.com/,0,,2024-10-30 12:11:51
+Programming,1gfpcee,New to the web platform in October,0,https://web.dev/blog/web-platform-10-2024?hl=en,1,,2024-10-30 15:31:52
+Programming,1gfs742,Getting Started with LangchainJS: Build a Flexible AI Prompt Service,0,https://passarella.dev/p/getting-started-with-langchainjs-build-a-flexible-ai-prompt-service,0,"Hey everyone, I wrote an article for those wanting to start with AI and LangchainJS. It's useful for personal projects or new generative AI features at your work. In the article I quickly go through some basic Langchain concepts and build a reusable and easily extendable class.",2024-10-30 17:30:57
+Programming,1gewbrp,Randal Schwartz: Half My Life with Perl,17,https://lu.ma/giz69577,5,,2024-10-29 14:44:13
+Programming,1gfq6wd,You Keep Using That Word • Sam Newman,0,https://youtu.be/IawEKBxjs14,0,,2024-10-30 16:07:18
+Programming,1gebdgl,Russia Mulls Forking Linux in Response to Developer Exclusions,458,https://cyberinsider.com/russia-mulls-forking-linux-in-response-to-developer-exclusions/,217,,2024-10-28 19:50:41
+Programming,1gfmvtc,Comparing performance of concurrent HTTP requests in different languages,0,https://github.com/jordinl/concurrent-http-requests-comparison,11,,2024-10-30 13:45:20
+Programming,1gfi49i,TypeScript Style Guide,0,https://mkosir.github.io/typescript-style-guide/,0,,2024-10-30 08:59:29
+Programming,1gf2x7r,Leverage KV stores: persisting Trees and Graphs,5,https://danlevy.net/one-weird-trick-to-speed-up-feature-teams/,3,,2024-10-29 19:18:26
+Programming,1gfqk7w,"I built a free AI PR reviewer that actually understands your entire codebase (1-click install, no config needed, currently Total Free) 🚀",0,https://github.com/marketplace/llamapreview/,2,,2024-10-30 16:22:51
+Programming,1gfkulb,Bitwise operation in C++,0,https://www.learninglowlevel.com/posts/cm2uzx6nu0000wodqs0y6lnc5,1,,2024-10-30 12:02:58
+Programming,1gfqxqo,Google CEO says over 25% of new Google code is generated by AI,0,https://arstechnica.com/ai/2024/10/google-ceo-says-over-25-of-new-google-code-is-generated-by-ai/,15,,2024-10-30 16:38:40
+Programming,1gfkpbm,Why is Golang's Compilation Speed So Fast?,0,https://www.pixelstech.net/article/1728356198-Why-is-Golang-s-Compilation-Speed-So-Fast,35,,2024-10-30 11:55:05
+Programming,1gfuiwt,(P)OOP Programming | Why OOP Is Bad,0,https://medium.com/@2code/p-oop-programming-8f32f2f0d54f,9,,2024-10-30 19:07:15
+Programming,1gf3voq,A Better Merge Workflow with Jujutsu | ofcrse by Benjamin Tan,3,https://ofcr.se/jujutsu-merge-workflow,0,,2024-10-29 19:58:20
+Programming,1gfjwg6,In case you missed: Express 5 was released,0,https://github.com/expressjs/express/releases/tag/v5.0.0,6,,2024-10-30 11:06:13
+Programming,1geoh5z,Assembling a Game Boy Game with Meson,25,https://terinstock.com/post/2024/10/Assembling-a-Game-Boy-Game-with-Meson/,1,,2024-10-29 06:51:38
+Programming,1gf79t4,Building Open-Source Tool for PII Masking,0,https://github.com/HydroXai/pii-masker-v1,0,,2024-10-29 22:22:46
+Programming,1gfo8d6,There is No Such Thing as a Unit Test,0,https://www.awwsmm.com/blog/there-is-no-such-thing-as-a-unit-test,56,,2024-10-30 14:45:04
+Programming,1gezp93,(2010) Code Bubbles - Visualising and editing code in an infinite canvas using bubbles to contain code fragments (there's a video showing how it would work),1,https://dl.acm.org/doi/abs/10.1145/1753326.1753706,0,,2024-10-29 17:05:28
+Programming,1gep9r7,Parsing the Cohost Export with DuckDB,6,https://james-forbes.com/posts/cohost-export,1,,2024-10-29 07:54:34
+Programming,1gdtd6q,"Write code that is easy to delete, not easy to extend",1116,https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to,175,,2024-10-28 03:55:33
+Programming,1gexrms,How to Extract API Routes Using JavaScript Babel Parser and AST: A Step-by-Step Guide,0,https://differ.blog/p/how-to-extract-api-routes-using-javascript-babel-parser-and-ast-a-step-by-step-guide-d0de8c,0,,2024-10-29 15:45:44
+Programming,1gfaoml,Unix 1-liner using jq,0,https://codefaster.substack.com/p/unix-1-liner-using-jq,0,,2024-10-30 01:01:40
+Programming,1ge4cqu,Steve Ballmer's incorrect binary search interview question,75,https://blog.jgc.org/2024/09/steve-ballmers-binary-search-interview.html,30,,2024-10-28 15:07:12
+Programming,1gf3vya,"Introduction to Reflection - C# .NET Tutorial
+",0,https://youtu.be/b1_Qxw71xNg?si=RurJMq3xkHovokAd,1,,2024-10-29 19:58:37
+Programming,1ge3zqh,It's not just MV3 - Chrome's extension development experience is a problem,68,https://medium.com/@mitchellkossoris/its-not-just-mv3-chrome-s-extension-development-experience-is-a-problem-e20a7707f760,13,,2024-10-28 14:52:42
+Programming,1geze6z,Developer's Guide to Deprecating REST APIs,0,https://zuplo.com/blog/2024/10/24/deprecating-rest-apis,0,,2024-10-29 16:53:09
+Programming,1gf48hj,How to Implement Server-Sent Events in Go,0,https://www.youtube.com/watch?v=nvijc5J-JAQ,0,,2024-10-29 20:12:46
+Programming,1gf1yel,Introducing Wasmer 5.0: with iOS support and experimental V8 backend,0,https://wasmer.io/posts/introducing-wasmer-v5,0,,2024-10-29 18:38:35
+Programming,1gf76vw,🚀 Speeding Up MP3 Compilation by 380%,0,https://poxate.com/blog/speeding-up-by-300,3,,2024-10-29 22:19:09
+Programming,1gdxzc5,Using SQLite as Storage for Web Server Static Content,131,https://clace.io/blog/sqlite/,61,,2024-10-28 09:35:31
+Programming,1gewo2s,"4 Ways to Create Date Bins in Postgres: interval, date_trunc, extract, and to_char",0,https://www.crunchydata.com/blog/4-ways-to-create-date-bins-in-postgres-interval-date_trunc-extract-and-to_char,1,,2024-10-29 14:59:16
+Programming,1ged835,"Lions, tigers, and high-DPI, oh my",10,https://anukari.com/blog/devlog/lions-tigers-and-high-dpi-oh-my,15,,2024-10-28 21:06:56
+Programming,1ge7xc6,Model Predictive Control in the browser using WASM,17,https://garethx.com/posts/cart-pole-mpc,2,,2024-10-28 17:30:27
+Programming,1gew2n7,"Elastic accidentally marks repo as private, build pipelines fail.",0,https://stackoverflow.com/questions/79137292/what-happened-to-elasticsearch-elasticsearch,9,,2024-10-29 14:33:07
+Programming,1geppll,Scraping VRT News Journaal with Puppeteer and Github Actions,1,https://badgerbadgerbadgerbadger.dev/posts/misc/2024-10-21-scraping-vrt-journaal/,1,,2024-10-29 08:28:45
+Programming,1ge0s73,Does Open Source AI really exist?,30,https://tante.cc/2024/10/16/does-open-source-ai-really-exist/,10,,2024-10-28 12:29:06
+Programming,1gezmzy,"Bringing developer choice to Copilot with Anthropic’s Claude 3.5 Sonnet, Google’s Gemini 1.5 Pro, and OpenAI’s o1-preview",0,https://github.blog/news-insights/product-news/bringing-developer-choice-to-copilot/,1,,2024-10-29 17:03:02
+Programming,1gevfrb,"Strip TypeScript types in Node.js, Deno, and Bun",0,https://gist.github.com/guest271314/ee61e282a3ce4b3ee104ae77c6ab255e,0,,2024-10-29 14:05:29
+Programming,1gerzon,"Continuation of my learning of Hexagonal Archicture, now trying to create a simple Port/Adapter",0,https://pulunomoe.hashnode.dev/building-puluauth-a-journey-in-exploring-hexagonal-architecture-part-2,3,,2024-10-29 11:11:36
+Programming,1gepqd7,Bootstrapping Microservices • Ashley Davis & Damian Maclennan,0,https://www.buzzsprout.com/1714721/15976755,0,,2024-10-29 08:30:29
+Programming,1gdviiu,"Jujutsu: a new, Git-compatible version control system [LWN.net]",56,https://lwn.net/Articles/958468/,37,,2024-10-28 06:21:27
+Programming,1geuvkg,"Write code that is easy to delete, not easy to extend",0,https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to,3,,2024-10-29 13:40:17
+Programming,1gdi1wu,When having more CPUs froze a Netflix platform,267,https://netflixtechblog.com/investigation-of-a-workbench-ui-latency-issue-faa017b4653d,23,"""Overall, we hope you enjoyed the irony of:
+
+1 The extension used to monitor CPU usage causing CPU contention.
+2 An interesting case where the more CPUs you have, the slower you get!""
+",2024-10-27 18:44:34
+Programming,1geqfor,How I write code using Cursor,0,https://www.arguingwithalgorithms.com/posts/cursor-review.html,0,,2024-10-29 09:24:55
+Programming,1gef1zi,"di-wise: 🧙‍♀️ Lightweight and flexible dependency injection library for JavaScript and TypeScript, w/wo ECMAScript decorators.",1,https://github.com/exuanbo/di-wise,4,,2024-10-28 22:24:36
+Programming,1gemby7,Most Important Interview Questions & Practice Test on OOP Concepts  ,0,https://javatechonline.com/interview-questions-object-oriented-programming/,0,,2024-10-29 04:22:14
+Programming,1ge5vfq,Extend NGINX With The New JavaScript Module,5,https://www.i-programmer.info/news/87-web-development/17580-extend-nginx-with-the-new-javascript-module.html,2,,2024-10-28 16:07:45
+Programming,1geprme,SQL JOINS: Defeat the Monster!,0,https://www.rubycademy.com/blog/sql-joins,0,,2024-10-29 08:33:09
+Programming,1getkre,Is it worth becoming a Software Engineer in 2024?,0,https://medium.com/@rhyskentish/is-it-worth-becoming-a-software-engineer-in-2024-d304a894543c,10,,2024-10-29 12:38:58
+Programming,1geo003,"Online tools offer many functions for hashing, encoding, decoding, encryption, decryption, formatting, generating.  Includes MD5, SHA-256, SHA-512, SHA-3, Keccak, Base64, Base32, JSON, XML, and QR code related tools",0,https://emn178.github.io/online-tools/,3,,2024-10-29 06:13:52
+Programming,1gdvs4b,How to use ipdb the interactive python debugger,7,https://www.youtube.com/watch?v=EnC9ciDkXqA,0,,2024-10-28 06:41:38
+Programming,1geoshi,Data-Oriented vs. Domain-Oriented: Should DDD Be the Default for All Projects?,0,https://argosco.io/data-oriented-vs-domain-oriented-should-ddd-be-the-default-for-all-projects/clean-architecture/,4,,2024-10-29 07:16:06
+Programming,1geoph7,I solved 1000+ Leetcode problems and captured them in a blog,0,https://grid47.xyz/leetcode/,3,,2024-10-29 07:09:31
+Programming,1gem46v,Programming for newbie?,0,http://codewars.com,5,"Hello. I am 13 years old (yes, I know app is 17+; I hope this is not going to be taken down). When I was around twelve, I started learning Python, and it is around 6 month of experience from that day to today (I started programming when I was like 12.5 years old), and while i have pretty good knowledge of many functions, know about classes/objects, know stuff like chr()/ord(), “”.join(lst), bin(num) etc., i feel confused when i do min-projects. 
+For example, for learning python itself I use Programiz, and since I finished master course on it, I moved on to Codewars. Should I call myself dumb if I cannot solve exercises harder than 5-6 kyu??
+Please, if somebody can tell other ways to learn, or advices about learning programming languages, since I want to be web-developer, which probably would need to good knowledge of JS, HTML, CSS.
+
+I also posted the Codewars link on top.
+
+(English is not my first language; sorry for any mistakes!)",2024-10-29 04:09:06
+Programming,1gelrdy,DeWALT Mobile Pro App from Delmar,0,https://www.protoolreviews.com/dewalt-mobile-pro-app-delmar/,0,"Old Dewalt Calculator app.
+
+Im sorry if this is not the place for this question but i am out of ideas. I need to code a calculator that has all the features as an old app for my business. i tried looking online for exiting ones and they are not great. I tried chat gpt 4 for several hours and could not do it. Can anyone help? It is basically a calculator that you can add feet, inches and inch fractions. ",2024-10-29 03:49:03
+Programming,1gelfqx,Choosing between Flutter and React Native in 2024,0,https://www.dodgycoder.net/2024/10/choosing-between-flutter-and-react.html,1,,2024-10-29 03:30:58
+Programming,1gd89ba,Using /tmp/ and /var/tmp/ Safely,232,https://systemd.io/TEMPORARY_DIRECTORIES/,58,,2024-10-27 10:47:27
+Programming,1gekmrp,Which name is better for my application?,0,https://www.reddit.com/user/PhpWebStudy/comments/1gekmci/which_name_is_better_for_my_application/,0,,2024-10-29 02:47:40
+Programming,1ge4nxv,13 Ways to Optimize Docker Builds,0,https://overcast.blog/13-ways-to-optimize-docker-builds-ba1151b256f3,0,,2024-10-28 15:19:44
+Programming,1gdalg9,CQRS facts and myths explained,117,https://event-driven.io/en/cqrs_facts_and_myths_explained/,32,,2024-10-27 13:09:27
+Programming,1gegm31,A .NET-based PDF generator now available via a JSON Web API,0,https://github.com/MorabaaSoftwareSolutions/QuestPDF.Server,5,,2024-10-28 23:33:17
+Programming,1gegaz6,We're forking Flutter. This is why.,0,https://flutterfoundation.dev/blog/posts/we-are-forking-flutter-this-is-why/,8,,2024-10-28 23:19:25
+Programming,1ge3fnc,Spring Boot with SAML2 and Keycloak - Piotr's TechBlog,0,https://piotrminkowski.com/2024/10/28/spring-boot-with-saml2-and-keycloak/,0,,2024-10-28 14:29:04
+Programming,1gdyo5n,supabase-vs-clerk,2,https://www.devtoolsacademy.com/blog/supabase-vs-clerk,0,,2024-10-28 10:24:21
+Programming,1ge7e1f,Building Resilient and Scalable Systems by default,0,https://dariuszgafka.medium.com/building-resilient-and-scalable-systems-by-default-ac6ca5c2083b,0,,2024-10-28 17:08:42
+Programming,1gdcao3,Infrastructure costs that might kill your app,63,https://newsletter.fractionalarchitect.io/p/33-be-careful-exploding-costs-that,7,,2024-10-27 14:33:01
+Programming,1ge6ehz,Tips and Best Practices for API Authentication,0,https://zuplo.com/blog/2024/07/19/api-authentication,0,,2024-10-28 16:28:43
+Programming,1gd2bmw,Why Engineers should be at the Product Strategy Table,407,https://open.substack.com/pub/thehustlingengineer/p/why-engineers-should-be-at-the-product?r=yznlc&utm_medium=ios,104,,2024-10-27 03:42:01
+Programming,1ge08k4,Chain of Models and Actions,0,https://github.com/kris-hansen/comanda,0,"Written in Go - Comanda, an open-source CLI tool that lets you create workflows across LLMs like OpenAI, Anthropic, and Ollama using YAML. It’s designed to simplify complex model chains and automate tasks without repetitive code. Comanda helps you use the right model for the right task in the right sequence. 
+",2024-10-28 12:00:25
+Programming,1geab24,"Last 3 days to participate in Hacktoberfest
+",0,https://github.com/juspay/hyperswitch/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest,0,,2024-10-28 19:06:49
+Programming,1gduesv,How AutoMQ Reduces Nearly 100% of Kafka Cross-Zone Data Transfer Cost,3,https://medium.com/thedeephub/how-automq-reduces-nearly-100-of-kafka-cross-zone-data-transfer-cost-e1a3478ec240,0,,2024-10-28 05:01:31
+Programming,1ge3b4e,The Problem with window.localStorage,0,https://www.trevorlasn.com/blog/the-problem-with-local-storage,1,,2024-10-28 14:23:42
+Programming,1ge32g2,"On Waterfall, Agile, and Writing Programs (Somewhat) Declaratively",0,https://github.com/kde-baskets-user/dede/blob/main/README.md,0,,2024-10-28 14:13:24
+Programming,1gd9exk,Better Java Builds with the Mill Build Tool,64,https://www.youtube.com/watch?v=Dry6wMRN6MI,14,,2024-10-27 12:02:51
+Programming,1ge9gc5,The first Open Source AI Definition (OSAID 1.0) is published by the Open Source Initiative (OSI),0,https://opensource.org/blog/the-open-source-initiative-announces-the-release-of-the-industrys-first-open-source-ai-definition,2,,2024-10-28 18:32:11
+Programming,1geeth5,Software Engineering at Palantir,0,https://nabeelqu.co/reflections-on-palantir,4,,2024-10-28 22:14:24
+Programming,1ge57zs,Generalist vs specialist?,0,https://alexlazar.dev/on-building-products-with-christian-montoya/,0,,2024-10-28 15:42:11
+Programming,1ge7qau,Apple is Killing Swift (slowly),0,https://blog.jacobstechtavern.com/p/apple-is-killing-swift,75,,2024-10-28 17:22:28
+Programming,1geaeck,When CQRS and DDD Don’t Mix: Recognizing Misfits in Modern Architectures,0,https://argosco.io/when-cqrs-and-ddd-dont-mix-recognizing-misfits-in-modern-architectures/clean-architecture/,0,,2024-10-28 19:10:37
+Programming,1ge6axl,Is Clean Architecture Slowing You Down? When Purity Might Be a Bottleneck,0,https://argosco.io/is-clean-architecture-slowing-you-down-when-purity-might-be-a-bottleneck/clean-architecture/,5,,2024-10-28 16:24:57
+Programming,1ge25aj,Mastering Design Patterns in JavaScript: Part 4 — The Strategy Pattern,0,https://medium.com/@codexstoney/mastering-design-patterns-in-javascript-part-4-the-strategy-pattern-9cad851cd3fe?sk=0af45fc5798c1a1eb9485f9952886b6a,0,,2024-10-28 13:33:12
+Programming,1gedgvh,We're forking Flutter. This is why.,0,https://flutterfoundation.dev/blog/posts/we-are-forking-flutter-this-is-why/,24,,2024-10-28 21:17:34
+Programming,1gdwqv3,Difference Between Statement Level and Row Level Trigger in PLSQL,0,https://youtu.be/sbE8EpgenjY,0,,2024-10-28 07:58:50
+Programming,1gdvegu,Using less memory to look up IP addresses in Mess With DNS,0,https://jvns.ca/blog/2024/10/27/asn-ip-address-memory/,1,,2024-10-28 06:12:45
+Programming,1gd8pen,A brief history of defragging,14,https://eclecticlight.co/2024/10/05/a-brief-history-of-defragging/,4,,2024-10-27 11:17:40
+Programming,1gdxe85,"Using IPipelineBehavior, IRequestPreProcessor, and IRequestPostProcessor in a .NET Core API",0,https://argosco.io/using-ipipelinebehavior-irequestpreprocessor-and-irequestpostprocessor-in-a-net-core-api/net/,0,,2024-10-28 08:50:19
+Programming,1ge1r4s,Convert Natural Language to SQL | Llama 3.2 | Connect AI With Database | NextJS | Postgres | Shadcn,0,https://youtu.be/nJPIoTceo7I,0,,2024-10-28 13:15:28
+Programming,1ge0fbp,Segurança em Go com certificados digitais - Parte 02 [pt-br],0,https://www.youtube.com/watch?v=X97gF3ePblw,0,,2024-10-28 12:10:18
+Programming,1gd2b39,Dosbox-Staging 0.82 Has Been Released,25,https://www.dosbox-staging.org/releases/release-notes/0.82.0/,0,,2024-10-27 03:41:02
+Programming,1ge1ifg,Visual Studio Code vs. Sublime Text: Which code editor should you use?,0,https://www.infoworld.com/article/2263049/visual-studio-code-vs-sublime-text-which-code-editor-should-you-use.html,6,,2024-10-28 13:04:14
+Programming,1gcjilc,Smarter than 'Ctrl+F': Linking Directly to Web Page Content,463,https://alfy.blog/2024/10/19/linking-directly-to-web-page-content.html,55,,2024-10-26 12:03:50
+Programming,1gdlgdp,you-get: Dumb downloader that scrapes the web,1,https://github.com/soimort/you-get,0,,2024-10-27 21:14:08
+Programming,1gcxx35,Homepages of programming language creators,58,https://homepages.pldb.io/,23,,2024-10-26 23:32:13
+Programming,1gdvkly,"Programming language inspired by Perl, Lisp and C",0,https://github.com/galileolajara/glc,2,,2024-10-28 06:25:50
+Programming,1ge2tdm,Does computers are really fast?,0,https://www.youtube.com/watch?v=e093bCTZyvo,10,,2024-10-28 14:02:32
+Programming,1gdnnrl,Engineering With Java: Digest #39,0,https://javabulletin.substack.com/p/engineering-with-java-digest-39,0,,2024-10-27 22:57:12
+Programming,1gdp99v,I ditched JSON for configuration files (in favour of TypeScript) ,0,https://www.carlos-menezes.com/post/type-first-config,4,,2024-10-28 00:14:02
+Programming,1gdpbvz,7 Things I Love about being a Software Engineer,0,https://youtu.be/rL24RdiH8Zg,0,,2024-10-28 00:17:38
+Programming,1gdp9de,Go does what RxJS couldn't... be a good way to handle state,0,https://poxate.com/blog/go-does-what-rxjs-couldnt,2,,2024-10-28 00:14:10
+Programming,1gdbla6,GitHub - Lithax/Fsav: Open source command in-line tool for saving the directories of files and folders and retrieving them for easy acess,0,https://github.com/Lithax/Fsav,0,,2024-10-27 14:00:31
+Programming,1gdgie7,I built class-glue: A lightweight (<450B) utility that extends clsx with CSS Modules and React Native style support,0,https://www.npmjs.com/package/class-glue,0,,2024-10-27 17:38:29
+Programming,1gddgby,LiveAPI v0 Devlogs,0,https://journal.hexmos.com/liveapi-devlogs01,0,,2024-10-27 15:26:01
+Programming,1gciaoh,NimConf 2024 - online Nim conference,57,https://conf.nim-lang.org,0,,2024-10-26 10:43:39
+Programming,1gcq6s0,open source curriculum on must-know cryptography concepts for developers (by freeCodeCamp's JS curriculum contributor); will be forever free like fCC,14,https://cryptography-for-devs.github.io,0,,2024-10-26 17:26:01
+Programming,1gcn43q,Video (4m): TypeScript: Should you use Types or Interfaces?,20,https://www.youtube.com/watch?v=zM9UPcIyyhQ,6,,2024-10-26 15:06:26
+Programming,1gdf9vf," This application allows you to send personalized emails to multiple recipients in batches, using Next.js 15 App Router, TypeScript, and Nodemailer. Each recipient receives a customized greeting, while the email body remains the same for all.It is free and  i have opensourced it ",0,https://github.com/169398/email-sender,1,,2024-10-27 16:45:21
+Programming,1gd8fy5,It All Started with a Perceptron: The Foundation of Today’s A,0,https://medium.com/@vincentlambert0/it-all-started-with-a-perceptron-86bd0fb80b96,0,,2024-10-27 11:00:22
+Programming,1gdbblz,Git Quick Stats – Command-Line Tool to Simplify Git Repo Metrics,0,https://github.com/git-quick-stats,1,,2024-10-27 13:47:10
+Programming,1gdb4fn,I'm currently learning about Hexagonal Architecture and decided to write about it,0,https://pulunomoe.hashnode.dev/building-puluauth-a-journey-in-exploring-hexagonal-architecture,1,,2024-10-27 13:36:52
+Programming,1gdbiuh,2 must-have tools in your React Project for having a consistent codebase. How automated formatting and linting enhance code quality and collaboration?,0,https://thetshaped.dev/p/must-have-tools-in-your-react-project-consistent-codebase-prettier-eslint,2,,2024-10-27 13:57:13
+Programming,1gdaj4s,Simple code is the best code,0,https://newsletter.eng-leadership.com/p/simple-code-is-the-best-code,4,,2024-10-27 13:05:58
+Programming,1gd8mek,JavaScript - A Blessing or a Curse?,0,https://sotergreco.com/javascript-a-blessing-or-a-curse,6,,2024-10-27 11:12:03
+Programming,1gce3mg,I built a tiny tool to find performance regressions ,21,https://theapache64.github.io/posts/finding-performance-regressions/,3,,2024-10-26 05:31:49
+Programming,1gbxhyv,Mastering Code Simplicity: Why Deep Functions Like JSON.parse() Make Programming Easier,172,https://mycolaos.com/blog/mastering-code-simplicity-deep-functions-json-parse,124,,2024-10-25 15:51:42
+Programming,1gd3utq,Generating presigned urls with Cloudflare R2 | Ultimate Cloudflare R2 guide | Part 2,0,https://youtu.be/0Ye9Svizbn8,5,,2024-10-27 05:19:40
+Programming,1gbsm7o,Framework overload: when convenience dulls innovation in software development,256,https://prahladyeri.github.io/blog/2024/10/framework-overload.html,98,,2024-10-25 12:04:25
+Programming,1gd2ln0,How to find the active contributors of each module in a project using git.,0,https://plugins.jetbrains.com/plugin/24154-git-assistant,1,,2024-10-27 03:59:16
+Programming,1gc3j3g,Software Bloat Makes me Sad (2015),48,https://www.bugsink.com/blog/software-bloat-makes-me-sad/,75,,2024-10-25 20:11:28
+Programming,1gc3ump,Inside the CSS Engine: CSSOM Explained,14,https://www.trevorlasn.com/blog/css-object-model-cssom,0,,2024-10-25 20:25:31
+Programming,1gbx76q,Sandblocks: A Projectional Block-Based Editor for Squeak,30,https://news.squeak.org/2024/10/25/sandblocks-a-projectional-block-based-editor-for-squeak/,3,,2024-10-25 15:39:04
+Programming,1gc9vu8,mur - Attempt at for-Focus & Feel Good Music Remix Script [prime number premise],4,https://github.com/mur0110/mur/blob/main/README.md,2,,2024-10-26 01:17:57
+Programming,1gc5v3c,Algorithms for Optimization: Line Search and Trust Region Methods ,7,https://photonlines.substack.com/p/algorithms-for-optimization-explained-f26,0,,2024-10-25 21:56:43
+Programming,1gcp6vy,Stop Worshiping Programming Practices and Start Thinking,0,https://mika.global/post/1729960437.html,45,,2024-10-26 16:40:43
+Programming,1gb3l0c,JetBrains Makes Rider and WebStorm Free for Non-Commercial Use – A Game-Changer for Web Devs!,1518,https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/,293,,2024-10-24 14:12:44
+Programming,1gcnz1q,Escaping the Technical Debt Trap,0,https://youtu.be/LJo72zj0SfI,3,,2024-10-26 15:45:43
+Programming,1gcsoke,Easy Way to Generate Complete Project Source Code with ChatGPT / Claude.ai,0,https://medium.com/@okoanton/easy-way-to-generate-complete-project-source-code-with-chatgpt-claude-ai-d8c10152dd4c,5,,2024-10-26 19:20:12
+Programming,1gbrjpv,From Python to CPU instructions: Part 2,27,https://substack.com/home/post/p-150579248,2,,2024-10-25 11:00:32
+Programming,1gcr8tn,Obtener un tipo a partir de un string en Javascript,0,https://emanuelpeg.blogspot.com/2024/10/obtener-un-tipo-partir-de-un-string-en.html,0,,2024-10-26 18:14:16
+Programming,1gcjlgi,Transpile TypeScript to JavaScript using Deno built-ins,0,https://gist.github.com/guest271314/b835352777dba6267628b155692487ae,8,,2024-10-26 12:08:36
+Programming,1gbshcp,In the future using top-level await might be cause a backwards compatibility break in Node,8,https://evertpot.com/using-top-level-await-is-bc-break/,0,,2024-10-25 11:57:10
+Programming,1gbbl0m,A comprehensive collection of RAG techniques open source tutorials ,170,https://github.com/NirDiamant/RAG_Techniques,26,"Released just two months ago, and it's already reached 8K stars organically.
+
+Whether you're a beginner or looking for advanced topics, you'll find everything RAG-related in this repository.
+
+ The content is organized in the following categories:
+
+1.     Foundational RAG Techniques
+2.     Query Enhancement
+3.     Context and Content Enrichment
+4.     Advanced Retrieval Methods
+5.     Iterative and Adaptive Techniques
+6.     Evaluation
+7.     Explainability and Transparency
+8.     Advanced Architectures
+
+As of today, there are 31 individual lessons.",2024-10-24 19:48:55
+Programming,1gbfhgz,Why Safety Profiles Failed,65,https://www.circle-lang.org/draft-profiles.html#abstract,37,,2024-10-24 22:40:34
+Programming,1gbqla7,"x ping: ping, but with a Graph, using posix shell & awk",5,https://x-cmd.com/mod/ping,5,,2024-10-25 09:55:52
+Programming,1gbpy76,JS Dates Finally Fixed,4,https://docs.timetime.in/blog/js-dates-finally-fixed/,20,,2024-10-25 09:07:50
+Programming,1gbc3z8,MIT’s Missing Semester: Critical CS Topics You Won’t Learn in Class (Bonus: You Can Chat With These Lectures!),42,https://app.humata.ai/ask/folder/6234bd7b-74d1-4bbc-a5ca-a0df1269a7b9?share_link=4e8fd004-1106-491f-8d54-f1cd98a2b796&selected-approach=Grounded,35,,2024-10-24 20:11:05
+Programming,1gby7w4,Validating API Requests with JSON Schema,0,https://zuplo.com/blog/2024/07/19/verify-json-schema,0,,2024-10-25 16:21:51
+Programming,1gcdpo9,State and time are the same thing,0,https://buttondown.com/hillelwayne/archive/state-and-time-are-the-same-thing/,8,,2024-10-26 05:05:41
+Programming,1gbxbhv,Enhanced Search URLs Extractor with Persistent Session,1,https://gist.github.com/dalistic/0ecf3592f356ba8c1b066c9f98e32b92,0,,2024-10-25 15:44:03
+Programming,1gbqw0n,str: yet another string library for C language.,1,https://github.com/maxim2266/str,0,,2024-10-25 10:16:17
+Programming,1gc1p6c,Create a HTTPs/SSL Web Server in C#.NET from Scratch,0,https://www.youtube.com/playlist?list=PL7JwiD5MYNPF_SzDrqOEfe77A3wD5sVfL,0,Create a HTTPs/SSL Web Server in C#.NET from Scratch: https://www.youtube.com/playlist?list=PL7JwiD5MYNPF_SzDrqOEfe77A3wD5sVfL,2024-10-25 18:51:49
+Programming,1gb9or6,A Deep Dive into Statistics,14,https://www.postgresql.eu/events/pgconfeu2024/sessions/session/5747/slides/559/postgres_statistics_presentation.pdf,2,,2024-10-24 18:29:07
+Programming,1gbvhby,"Brush: Gaussian Splatting using Burn, wgpu, egui and Rerun.io",0,https://github.com/ArthurBrussee/brush,1,,2024-10-25 14:24:48
+Programming,1gc1rlr,Simple File Manager Using Visual C# . NET,0,https://youtu.be/oRtME1oJD7M,0,"https://youtu.be/oRtME1oJD7M
+
+Simple File Manager Using Visual C# . NET
+
+Support my channel and please share your opinions and feedbacks. ",2024-10-25 18:54:51
+Programming,1gbz5ak,Secure Coding Practices in Python: A Comprehensive Guide,0,https://cosmicmeta.io/2024/10/25/secure-coding-practices-in-python-a-comprehensive-guide/,0,,2024-10-25 17:01:04
+Programming,1gbxqdm,CI/CD Pipelines with Autonomous Agents for API Integrations,0,https://apidna.ai/?p=4522,0,,2024-10-25 16:01:35
+Programming,1gac15b,I scraped 12M programming job offers for 21 months and here are the most demanded programming languages!,1465,https://www.devjobsscanner.com/blog/top-8-most-demanded-programming-languages/,479,,2024-10-23 14:33:28
+Programming,1gaxd9y,"Awesome Docs Gallery - a crowdsourced, open-source gallery for high-quality dev docs.",49,https://awesome-docs.gallery/,3,,2024-10-24 07:57:17
+Programming,1gbm527,Announcing Loro 1.0:  A High-Performance CRDTs Library with Version Control,1,https://loro.dev/blog/v1.0,0,,2024-10-25 04:32:29
+Programming,1gbx669,Is JIT useless in Python... especially in the context of CPython?,0,https://youtu.be/7_DixOdxC6U,3,,2024-10-25 15:37:49
+Programming,1gbsdjj,Write Huffman Algorithm!,0,https://www.linkedin.com/pulse/writing-huffman-algorithm-from-scratch-ajay-kumar-umhic?utm_source=share&utm_medium=member_ios&utm_campaign=share_via,3,,2024-10-25 11:50:59
+Programming,1gbx02o,"I printed long HTML, CSS and JavaScript codes with ChatGPT without knowing any code",0,https://github.com/dalistic/PDF-Book-Reading-Interface,1,,2024-10-25 15:30:26
+Programming,1gbt5ja,How Amazon S3 Works ,0,https://newsletter.systemdesign.one/p/s3-architecture,1,,2024-10-25 12:33:04
+Programming,1gb2f4h,Jailer: relational data navigation tool,5,https://github.com/Wisser/Jailer,4,,2024-10-24 13:18:15
+Programming,1gbqedh,SOLID Design Principles Rust (with examples),0,https://www.darrenhorrocks.co.uk/solid-principles-rust-with-examples/,14,,2024-10-25 09:42:00
+Programming,1gaf523,The Side Project Dilemma: Why Developers Often Miss The Mark On Monetization,108,https://programmers.fyi/the-side-project-dilemma,30,,2024-10-23 16:42:29
+Programming,1gbky54,What are the SOLID Principles in C#? Explained With Code Examples,0,https://www.freecodecamp.org/news/what-are-the-solid-principles-in-csharp/,10,,2024-10-25 03:22:21
+Programming,1gbkg01,Upstage AI Document Parser: Revolutionise Complex PDF Data Extraction!,0,https://www.youtube.com/watch?v=Y2gXmCM3NMw,0,,2024-10-25 02:55:09
+Programming,1ga8rf8,Windows NT vs. Unix: A design comparison,199,https://blogsystem5.substack.com/p/windows-nt-vs-unix-design,55,,2024-10-23 11:59:45
+Programming,1gb5f1z,Building a better and scalable system for data migrations,1,https://yorickpeterse.com/articles/building-a-better-and-scalable-system-for-data-migrations/,0,,2024-10-24 15:30:53
+Programming,1gbgccg,"Build a Remote Micro Frontend with Vite, React, and TypeScript",0,https://levelup.gitconnected.com/remote-micro-frontend-8c84585ebf69,0,,2024-10-24 23:21:04
+Programming,1gbntt6,New programming language that aims to be as simple as C,0,https://github.com/galileolajara/glc,40,,2024-10-25 06:24:25
+Programming,1gae0vx,Async Rust in Three Parts,40,https://jacko.io/async_intro.html,21,,2024-10-23 15:57:02
+Programming,1ga9g7u,"Postiz: open-source social media scheduling, 11 platforms (Threads, Pinterest, Facebook, TikTok, Reddit, LinkedIn, Dribbble, YouTube, Instagram, Bluesky, Mastodon, Slack, Discord, and X).  AI Copilots, AI auto-complete, Canva-like editor, team support",69,https://github.com/gitroomhq/postiz-app/,42,,2024-10-23 12:35:02
+Programming,1gb4pe3,"💥 Tech Talks Weekly #34: all the recently uploaded talks from tech conferences. This issue includes Voxxed Days Thessaloniki 2024, Copenhagen Developers Festival 2024, PyData Amsterdam 2024 and many more!",0,https://techtalksweekly.substack.com/p/tech-talks-weekly-34,0,,2024-10-24 15:01:15
+Programming,1gawsw6,DuckDB: Crunching Data Anywhere • Gabor Szarnyas,1,https://youtu.be/9Rdwh0rNaf0,0,,2024-10-24 07:12:23
+Programming,1gbatmw,Show Baseline status on your blog posts and presentations,0,https://web.dev/blog/show-baseline-status?hl=en,0,,2024-10-24 19:16:30
+Programming,1ga495u,"LZAV 4.2: Increased decompression speed by 7-20%. Fast In-Memory Data Compression Algorithm (inline C/C++) 460+MB/s compress, 2700+MB/s decompress, ratio% better than LZ4, Snappy, and Zstd@-1",137,https://github.com/avaneev/lzav,17,,2024-10-23 06:53:49
+Programming,1gb4rgi,The Developer's Guide to Working with Legacy Codebases,0,https://newsletter.techworld-with-milan.com/p/the-developers-guide-to-working-with,0,,2024-10-24 15:03:31
+Programming,1gb5twu,Monokai Pro finally has an official light version,0,https://monokai.pro,6,,2024-10-24 15:48:20
+Programming,1gb9mbj,Simple HTTP Authentication: A Beginner’s Guide,0,https://zuplo.com/blog/2024/07/31/simple-api-authentication,2,,2024-10-24 18:26:12
+Programming,1gabdkx,Real Life Tron on an Apple IIgs,19,https://blog.danielwellman.com/2008/10/real-life-tron-on-an-apple-iigs.html,1,,2024-10-23 14:05:04
+Programming,1gb79h2,AWS and Azure are At Least 4x–10x More Expensive Than Hetzner,0,https://learn.umh.app/course/aws-and-azure-are-at-least-4x-10x-more-expensive-than-hetzner/,20,,2024-10-24 16:47:57
+Programming,1gal038,Mastering API Definitions: A Comprehensive Guide,5,https://zuplo.com/blog/2024/09/25/mastering-api-definitions,0,,2024-10-23 20:50:14
+Programming,1gb3pux,Why that one coworker got fired for no reason,0,https://gieseanw.wordpress.com/2024/10/24/why-that-one-coworker-got-fired-for-no-reason/,16,,2024-10-24 14:18:41
+Programming,1g9n6mq,Svelte 5 is alive - Our biggest release yet,342,https://svelte.dev/blog/svelte-5-is-alive,64,,2024-10-22 17:02:33
+Programming,1ga1fmp,"Comparing Auth from Supabase, Firebase, Auth.js, Ory, Clerk and others",45,https://blog.hyperknot.com/p/comparing-auth-providers,13,,2024-10-23 03:52:03
+Programming,1gazygz,Reddit bot cli,0,https://github.com/VashonG/reddit-bot-cli,0,"Hey everyone!
+
+I recently came across an AI Reddit bot on Product Hunt that can search Reddit and use AI to reply to certain posts. I thought it was a really cool concept, so I decided to try building my own version—even though I had no prior experience with Python, machine learning, or AI.
+
+After some trial and error, I managed to create and publish a CLI tool that lets anyone easily build a bot directly from the command line. The bot can search for specific keywords and automatically leave comments on posts that match those keywords.
+
+It’s still an early version and definitely needs more work, but I’m excited about the progress so far. I’d love to get some feedback from this community, so let me know what you think. 
+
+Thanks!",2024-10-24 11:05:28
+Programming,1gb0epd,Bunch of advices for junior and mid devs,0,https://example.com,9,"I’ve just realized I wasted time on commenting on some YouTube random video. However it turns out my thoughts are the ones I’d like to hear 10 years ago so I decided to share it here as well. Hopefully, you’ll find it helpful some day. Criticism is welcome too!
+
+13 years of commercial exp here. Some advices from me:
+1. Stop leetcoding, stop doing tutorials, stop chatGPTing. Instead: read docs, write free software that people wants and be patient - it needs a lot of time! Build projects that seem to be ""a bit too hard"".
+2. Companies tend to promote you too fast on higher levels to make sure you'll stay with them for a longer time and you'll fail interviews for senior roles knowing that you're not a senior. Keep it in mind.
+3. Learn how computers work. No matter what language you pick.
+4. Learn both client and server side software engineering. 
+5. Learn how to deploy your apps on VPS/Dedicated server. Optimize and automate it too.
+6. Whenever you face a difficult error: stop asking chatGPT, copy-pasting stackoverflow answer. Think! Understand what's the problem, why it occurs, how can it be solved. These moment are the ones that make you better SWE
+7. Whenever something is really slow or costs too much: learn how to optimize, research for better architecture, analyze you infrastructure.
+8. Play with new promising but unstable technologies. You'll learn a lot when facing difficulties on configuring it. Just do the same as in point 6.
+9. If you're brave enough: Change jobs and projects often. Especially when they become boring or too easy.
+10. The easiest way to win any tech discussion is by showing numbers.
+11. Every code has one purpose: trash - just a matter of time. The other story is with data. Know the priorities.
+12. Learn to say ""no"". If someone complains: see point 10.
+13. Be responsive for your work.
+14. Security is important. Always.
+
+(Below are things I didn’t agree with this video, but I find this helpful enough to include here too) 
+1. Taking the scrum master role: unless you want to stay in the company forever it's waste of time. It builds up your ego, and that's pretty much it. It might sound cool when you're a team leader, however it should be a side effect only. Otherwise, you'll end up having many useless meetings, and no time for SWE.
+2. Quick replies to urgent requests: it depends. Priorities first. Hard to swallow pillow: it's more important who you help, than what you do when it comes to resolve urgent tickets. Don't be a guy who works 24/7. No one will remember you (maybe only your kids when you're at the office all the time). Do things that MATTER.
+
+And last advice:
+if you have DEMO session in your company, it's - literally - the best way to promote yourself. Don't just show work you've done. Explain why it's important, what's the impact of your change, compare old and new (yours). Just be a f*** Steve Jobs on every DEMO session. This is the EASIEST way how to get promoted. Don't impress your boss - impress their boss.
+
+enjoy and code,
+cheers",2024-10-24 11:33:13
+Programming,1g9upma,"Attacking the Samsung Galaxy A* Boot Chain -- ""The chain of 4 bugs we presented allowed us to execute code in Little Kernel from USB, get a root access on Android with persistency, and finally leak anything from the Secure World's memory which includes the Android Keystore keys.""",103,https://blog.quarkslab.com/attacking-the-samsung-galaxy-a-boot-chain.html,7,,2024-10-22 22:15:53
+Programming,1gb3z9h,OpenAI O1 is here - how will you use it?,0,https://shiftmag.dev/openai-o1-is-here-how-will-you-use-it-4495/,13,,2024-10-24 14:30:07
+Programming,1g9tz9a,Making Uber’s ExperimentEvaluation Engine 100x Faster,71,https://www.uber.com/en-GB/blog/making-ubers-experiment-evaluation-engine-100x-faster/,5,,2024-10-22 21:43:57
+Programming,1gavv3k,git reset vs git revert,0,https://www.pixelstech.net/article/1549115148-git-reset-vs-git-revert,6,,2024-10-24 06:03:13
+Programming,1g9iso2,Introducing Mellum: JetBrains’ New LLM Built for Developers,198,https://blog.jetbrains.com/blog/2024/10/22/introducing-mellum-jetbrains-new-llm-built-for-developers/,135,,2024-10-22 13:58:49
+Programming,1g9ewdz,20 years of Linux on the Desktop,373,https://ploum.net/2024-10-20-20years-linux-desktop-part1.html,185,,2024-10-22 10:29:28
+Programming,1ga5hes,New Typing Features in Python 3.13,6,https://medium.com/techtofreedom/7-new-typing-features-in-python-3-13-58caae5f2f10?sk=6ee66766ba372ea1f62b44a0ef08012d,1,,2024-10-23 08:21:47
+Programming,1gaxkzz,Data engineering is the best kind of software engineering,0,https://datagibberish.com/p/5-data-engineering-traits,9,,2024-10-24 08:14:41
+Programming,1ga4i03,Announcing the PlanetScale vectors public beta,6,https://planetscale.com/blog/announcing-planetscale-vectors-public-beta,6,,2024-10-23 07:11:51
+Programming,1gaf07m,GitHub - georgetdn/SYSCPPCP: Store C++ class data in a file and manipulate it programmatically or using SmallSQL(included),1,https://github.com/georgetdn/SYSCPPCP,1,,2024-10-23 16:36:49
+Programming,1g9iyjf,Cool gamedev war story : How I Defeated An MMO Game Hack Author,124,https://thecodist.com/how-i-defeated-an-mmo-game-hack-author/,19,,2024-10-22 14:05:38
+Programming,1gasimx,Gren: A Language for Modern Software Development,0,https://youtu.be/NMGShaoRAZE,11,,2024-10-24 02:42:26
+Programming,1gaiq31,Navigate Early Development | Simplify Data Storage,0,https://medium.com/@jtbsorensen/navigate-early-development-simplify-data-storage-c76013878cb4,0,,2024-10-23 19:14:29
+Programming,1g9cy2y,What happens when you make a move in lichess.org?,218,https://www.davidreis.me/2024/what-happens-when-you-make-a-move-in-lichess,28,,2024-10-22 08:03:50
+Programming,1ga5u5e,A quick guide on how to speak at Tech Conferences,1,https://neciudan.dev/speaking-at-tech-confrences,1,,2024-10-23 08:49:15
+Programming,1gac3k3,Improving Forecasting for Programmers,0,https://arthur-johnston.com/forecasting/,0,,2024-10-23 14:36:20
+Programming,1gah986,Babbage's Difference Engine in JS,0,https://github.com/divs1210/series-js,1,,2024-10-23 18:08:26
+Programming,1gadhao,What is OpenTelemetry? - Explanation and Demo,0,https://youtu.be/LzLULxhyIpU,0,,2024-10-23 15:34:21
+Programming,1gacwby,Using Nix to Fuzz Test a PDF Parser,0,https://mtlynch.io/nix-fuzz-testing-1/,0,,2024-10-23 15:10:01
+Programming,1gajcwd,"Built a CLI tool that auto generates accurate README files for projects of any size.
+",0,https://github.com/mainnebula/ReadMe-Generator,6,,2024-10-23 19:41:19
+Programming,1gagbmf,Anything you can ACTUALLY do in Basic in Altirra,0,https://www.virtualdub.org/altirra.html,4,This is a “industrial high school” (dont look too hard into it its just the way slovakia works) which is why its a teacher not a professor and thats why i assume we have to use basic but for the near 0.5-1 years i will have to use basic in altirra and it is sooooooo stupid. Ive tried python and c expecting that we would learn in this class but NOPE. So my question is: what can i do with it? Is there anything you can do past number guessing games? The class is super boring😭 all help appreciated. ,2024-10-23 17:30:28
+Programming,1gaaqpa,Convert your Figma design into Python code,0,https://github.com/axorax/tkforge,0,,2024-10-23 13:36:30
+Programming,1gahqww,Why Anthropic (Claude AI) Uses 'Member of Technical Staff' for All Engineers (Including Co-founders),0,https://www.trevorlasn.com/blog/anthropic-anti-talent-poaching-tactics,14,,2024-10-23 18:28:18
+Programming,1gadrvx,Git Reset | Ep.3 Bits and Booze,0,https://www.youtube.com/watch?v=vPgceR2SbMs,0,,2024-10-23 15:46:39
+Programming,1ga7cfj,No EC2 or Kubernetes Allowed: Insights from Building Serverless-Only Architecture at PostNL,0,https://www.infoq.com/news/2024/10/postnl-serverless-enterprise/,4,,2024-10-23 10:36:18
+Programming,1g8xvuv,New Largest Known Prime Number is Discovered by GIMPS (the Great Internet Mersenne Prime Search),691,https://www.mersenne.org/,74,,2024-10-21 19:07:08
+Programming,1ga6x17,Dynamic Teams: Reteaming Patterns & Practices • Heidi Helfand & Charles Humble - GOTO - The Brightest Minds in Tech,0,https://www.buzzsprout.com/1714721/15821223,1,,2024-10-23 10:08:13
+Programming,1g9gltd,"NextCloud Android app update has a bug syncing the whole server content over and over, leaving users with high data bills.",27,https://github.com/nextcloud/android/issues/13738,11,,2024-10-22 12:11:36
+Programming,1gaaodv,"Keep your backend apps alive 24/7 by automating pulse signals, ensuring uninterrupted uptime on free hosting services.",0,https://github.com/Ashif4354/CyclicTasks,5,,2024-10-23 13:33:25
+Programming,1g8vcus,Using AI Generated Code Will Make You a Bad Programmer,588,https://slopwatch.com/posts/bad-programmer/,436,,2024-10-21 17:25:50
+Programming,1ga4lgb,Step-by-Step Guide: Fine-Tuning and Training Stable Diffusion for Images & Videos,0,https://devtoys.io/2024/10/21/step-by-step-guide-fine-tuning-and-training-stable-diffusion-for-images-videos/,0,,2024-10-23 07:18:56
+Programming,1ga0ume,Build a manual assembly QA system,0,https://blog.roboflow.com/manual-assembly-qa-computer-vision/,0,,2024-10-23 03:19:03
+Programming,1g9t969,Pub/Sub in C89 and 256KB of RAM (Microsoft Band OS Deep Dive),3,https://meanderingthoughts.hashnode.dev/subscriptions-on-the-microsoft-band,0,,2024-10-22 21:12:25
+Programming,1g9fu58,Testing REST endpoints with fake HTTP statuses,17,https://coreycleary.me/testing-rest-endpoints-with-fake-http-statuses,8,,2024-10-22 11:29:25
+Programming,1ga9nmh,How Shadcn Cut Through the Noise and Became React’s Default Component Library,0,https://blog.api-fiddle.com/posts/shadcn-for-react,3,,2024-10-23 12:45:06
+Programming,1g9d4lc,Prevent Mistakes with NOMERGE Comments in CI/CD Pipelines,19,https://stevenwaterman.uk/nomerge-comments/,5,,2024-10-22 08:18:05
+Programming,1ga5gue,Mastering Design Patterns in JavaScript: Part 3 - The Observer Pattern,0,https://codexstoney.medium.com/mastering-design-patterns-in-javascript-part-3-the-observer-pattern-06f1a08ade93?sk=7f8254f33f8ce2d387f697c2ccea2564,2,,2024-10-23 08:20:34
+Programming,1g9lf9p,API Consumption Visibility: 6 Essential Metrics to monitor,3,https://www.lunar.dev/post/4-essential-metrics-for-api-consumption-visibility-2-advanced-ones-you-shouldnt-miss,0,,2024-10-22 15:50:20
+Programming,1ga6nnc,A love letter to Golang,0,https://mortenvistisen.com/posts/a-love-letter-to-golang,18,,2024-10-23 09:50:23
+Programming,1ga3wd0,"Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",0,https://www.anthropic.com/news/3-5-models-and-computer-use,0,,2024-10-23 06:27:26
+Programming,1ga3to6,Learn CRUD operations on SQLite Database using C#,0,https://www.youtube.com/watch?v=HqywH0bZJlA,0,,2024-10-23 06:22:07
+Programming,1g8phhy,Understanding Kafka with Factorio,257,https://ruurtjan.com/articles/understanding-kafka-with-factorio,22,,2024-10-21 13:18:35
+Programming,1g9qa77,[Open Source] SwarmGo: Build Scalable AI Agents with Go (MIT License),0,https://github.com/prathyushnallamothu/swarmgo,0,"
+I’m excited to announce that I’ve just open-sourced SwarmGo, a Go framework that makes it easy to build, coordinate, and manage multiple AI agents. Inspired by OpenAI’s Swarm framework, SwarmGo is designed to help developers quickly implement AI-driven workflows with customizable functions and agent handoffs.
+
+Key Features:
+
+	•	Agent Handoffs: Agents can pass control based on context, making it perfect for scenarios where multiple capabilities need coordination.
+	•	Custom Functions: Define specific functions or tools that agents can use to perform tasks.
+	•	Lightweight and Scalable: Designed to handle independent agent interactions without complexity or bloat.
+	•	MIT Licensed: Free to use, modify, and contribute to!
+
+If you’re working with Go and AI or exploring AI-driven workflows, I’d love for you to check it out and let me know what you think! 🎉
+
+👉 https://github.com/prathyushnallamothu/swarmgo
+
+I’d be happy to answer any questions, get feedback, or hear ideas for future improvements. I built this package to contribute back to the Go and AI communities, and I’m excited to see how it can be used in real-world applications.
+
+Looking forward to your thoughts and feedback!
+
+#golang #ai #opensource #machinelearning #OpenAI",2024-10-22 19:09:33
+Programming,1g8w59w,The IPv6 Transition,105,https://www.potaroo.net/ispcol/2024-10/ipv6-transition.html,55,,2024-10-21 17:57:34
+Programming,1g9nybp,A Practitioner's Guide to Wide Events,0,https://jeremymorrell.dev/blog/a-practitioners-guide-to-wide-events/,0,,2024-10-22 17:34:09
+Programming,1ga0yq0,Tipos Unión en Python,0,https://emanuelpeg.blogspot.com/2024/10/tipos-union-en-python.html,0,,2024-10-23 03:25:19
+Programming,1g8jgge,"Spectre flaws continue to haunt Intel and AMD as researchers find fresh attack method -- ""The indirect branch predictor barrier is less of a barrier than hoped""",384,https://www.theregister.com/2024/10/18/spectre_problems_continue_amd_intel,68,,2024-10-21 06:41:52
+Programming,1g8pk8f,LLMs Aren't Any Good at Ranking People,88,https://wilsoniumite.com/2024/10/18/are-llms-any-good-at-ranking-people/,62,,2024-10-21 13:22:21
+Programming,1g9hjwd,"ParadeDB 0.11.0, database access layers, AND YOU!",0,https://moosie.us/paradex,0,,2024-10-22 13:00:42
+Programming,1g9y705,"Borgo, lenguaje de programación que compila a Go.",0,https://emanuelpeg.blogspot.com/2024/10/borgo-lenguaje-de-programacion-que.html,1,,2024-10-23 01:01:14
+Programming,1g8ghsj,"OOP is not that bad, actually",329,https://osa1.net/posts/2024-10-09-oop-good.html,437,,2024-10-21 03:24:04
+Programming,1g9qv1n,Best Practices for API Authentication,0,https://zuplo.com/blog/2024/07/19/api-authentication,0,,2024-10-22 19:33:22
+Programming,1g9es61,"Setting up monitoring with NestJS, Prometheus and Grafana",1,https://shpota.com/2024/10/22/monitoring-with-nestjs-prometheus-grafana.html,0,,2024-10-22 10:21:21
+Programming,1g9e2o1,Made a simple but lightweight performance/traffic tracking library for Svelte,0,https://www.npmjs.com/package/sveltick,0,,2024-10-22 09:30:07
+Programming,1g9dvgp,Container Desktop - Podman Desktop Companion 5.2.13,0,https://www.reddit.com/r/podman/comments/1g9dv4q/container_desktop_podman_desktop_companion_5213/,0,,2024-10-22 09:14:19
+Programming,1g9mya7,BugGPT: LLM powered vulnerable web page generator for testing and educational purposes,0,https://github.com/Trivulzianus/BugGPT,0,"BugGPT is an AI powered generator of insecure static web apps. It consists of a simple generator script, and a main script with which you can interact to choose rooms you want to tackle. 
+It uses GitHub actions to automatically and periodically generate new rooms to add to the list, so that soon there will be a collection of such rooms.
+Currently the rooms are fairly straightforward, but with next releases of AI models, I'm hoping I can create some real challenges.
+
+What do you think?",2024-10-22 16:53:18
+Programming,1g8yl14,Attacking APIs using JSON Injection,7,https://danaepp.com/attacking-apis-using-json-injection,0,,2024-10-21 19:35:39
+Programming,1g9f2ny,Handling Exceptions Gracefully in Spring Boot,0,https://levelup.gitconnected.com/handling-exceptions-gracefully-in-spring-boot-with-exceptionhandler-08e6e92dce22,0,,2024-10-22 10:40:47
+Programming,1g9gidn,From Python to CPU instructions: Part 1,0,https://dilovan.substack.com/p/from-python-to-cpu-instructions-part,5,,2024-10-22 12:06:32
+Programming,1g9k131,Simplifying the AI/ML to Production Pipeline,0,https://www.youtube.com/watch?v=frxbHPuDrgs&t=1s,0,,2024-10-22 14:52:15
+Programming,1g823xn,Software Engineer Titles Have (Almost) Lost All Their Meaning,1028,https://www.trevorlasn.com/blog/software-engineer-titles-have-almost-lost-all-their-meaning,306,,2024-10-20 16:05:27
+Programming,1g9171w,Bugs or features? simple parts working together in weird ways — emergence at work,1,https://l.perspectiveship.com/re-emergence,0,,2024-10-21 21:21:09
+Programming,1g8wr9w,Security in C++ - Hardening Techniques From the Trenches - Louis Dionne - C++Now 2024,5,https://www.youtube.com/watch?v=t7EJTO0-reg,1,,2024-10-21 18:22:05
+Programming,1g8y05s,"BouncyHsm - software simulator of HSM and smartcard simulator with HTML UI, REST API and PKCS#11 interface (better than SoftHsm2)",2,https://github.com/harrison314/BouncyHsm,0,,2024-10-21 19:12:04
+Programming,1g9dn9y,Self-documenting Code,0,https://lackofimagination.org/2024/10/self-documenting-code/,25,,2024-10-22 08:57:39
+Programming,1g9h6pp,Zig is everything I want C to be,0,https://mrcat.au/blog/zig_is_cool/,7,,2024-10-22 12:42:02
+Programming,1g85xbs,"The empire of C++ strikes back with Safe C++ blueprint: « After two years of being beaten with the memory-safety stick, the C++ community has published a proposal to help developers write less vulnerable code. »",269,https://www.theregister.com/2024/09/16/safe_c_plusplus/,158,,2024-10-20 18:49:19
+Programming,1g8pqfy,C++ + OpenGL - Voxel Cone Tracing - test scene - McGuire Archive - breakfast room,7,https://youtu.be/hNg98Cx58b8?feature=shared,1,,2024-10-21 13:30:29
+Programming,1g9c1zt,How to Use a Proxy with Python Requests,0,https://blog.stackademic.com/how-to-use-a-proxy-with-python-requests-in-2025-2c5e527ff921,0,,2024-10-22 06:55:12
+Programming,1g9esnn,Why do some software engineers seem to keep leapfrogging their way up the career ladder?,0,https://thesoftwareengineeringtimes.substack.com/p/why-do-some-software-engineers-leapfrog,3,,2024-10-22 10:22:20
+Programming,1g8xbkc,Effortless ERD Design With Prisma Markdown,2,https://www.i-programmer.info/news/84-database/17561-effortless-erd-design-with-prisma-markdown.html,0,,2024-10-21 18:44:32
+Programming,1g7vv66,QUIC is not Quick Enough over Fast Internet,342,https://arxiv.org/abs/2310.09423,75,,2024-10-20 10:40:07
+Programming,1g7yi6i,REST APIs Turn 25: How They Came To Be and What Could Be Next,129,https://journal.hexmos.com/rest-turns-25/,11,,2024-10-20 13:18:22
+Programming,1g8royg,What Is This OpenTelemetry Thing? • Martin Thwaites,0,https://youtu.be/jC1icupHlMs,0,,2024-10-21 14:57:59
+Programming,1g8gjsp,Futexes in TLA+,9,https://surfingcomplexity.blog/2024/10/05/futexes-in-tla/,0,,2024-10-21 03:27:15
+Programming,1g8vkir,How to Setup Authentication in Rails 8,0,https://medium.com/@azzenabidi/how-to-setup-authentication-in-rails-8-33295a31c356?sk=9db88926dcc11851093a923b63f0e2ec,0,,2024-10-21 17:34:17
+Programming,1g8pyo1,Making Castro’s Feeds Update Faster the Lazy Way,2,https://castro.fm/blog/making-castros-feeds-update-faster-the-lazy-way,0,,2024-10-21 13:41:18
+Programming,1g98i3d,Is Linux collapsing under its own weight? On Rust for Linux,0,https://sporks.space/2024/09/05/is-linux-collapsing-under-its-own-weight-on-rust-for-linux/,28,,2024-10-22 03:10:55
+Programming,1g90jnq,Lou Miller,0,https://www.reddit.com/r/learnprogramming/comments/1g4coto/lou_miller/,1,,2024-10-21 20:54:21
+Programming,1g7z90g,SMURF: Beyond the Test Pyramid,54,https://testing.googleblog.com/2024/10/smurf-beyond-test-pyramid.html,45,,2024-10-20 13:55:25
+Programming,1g8k7q3,How do we run Kafka 100% on the object storage?,4,https://medium.com/thedeephub/how-do-we-run-kafka-100-on-the-object-storage-521c6fec6341,1,,2024-10-21 07:40:23
+Programming,1g8q8go,"I wrote a personal website in Flutter Web, here's my experience",0,https://medium.com/@dmilicic/writing-a-personal-website-in-flutter-web-238cb7e69086,0,,2024-10-21 13:53:47
+Programming,1g8xhaq,The Big 3 JIRA Mistakes,0,https://matt-toigo.com/dev/jira,20,,2024-10-21 18:50:56
+Programming,1g8vm8x,What is JSON Merge Patch?,0,https://zuplo.com/blog/2024/10/11/what-is-json-merge-patch,0,,2024-10-21 17:36:16
+Programming,1g8jr6v,sirikon.me - 0009 PID 1 Bash script for Docker containers explained line by line,0,https://sirikon.me/posts/0009-pid-1-bash-script-docker-container.html,2,,2024-10-21 07:04:51
+Programming,1g83a6s,How to do distributed locking (2016),10,https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html,0,,2024-10-20 16:56:00
+Programming,1g8ribi,Concurrency Is Not Parallelism,0,https://www.thecoder.cafe/p/concurrency-is-not-parallelism,7,,2024-10-21 14:50:10
+Programming,1g8x7bu,Microservices Can Wait,0,https://www.gauge.sh/blog/microservices-can-wait,3,,2024-10-21 18:39:53
+Programming,1g7vkkr,Searching for and navigating Git commits,28,https://alexharri.com/blog/searching-and-navigating-git-commits,3,,2024-10-20 10:18:44
+Programming,1g8sek6,4 Lessons Learned from 2 years of AI-assisted coding,0,https://useai.substack.com/p/4-lessons-learned-from-2-years-of,0,,2024-10-21 15:27:18
+Programming,1g7kdwy,The Part of PostgreSQL We Hate the Most,145,https://www.cs.cmu.edu/~pavlo/blog/2023/04/the-part-of-postgresql-we-hate-the-most.html,32,,2024-10-19 22:28:16
+Programming,1g75r84,How is this Website so fast!? — Breaking down the McMaster Carr website and the techniques they use to make it so dang fast,1212,https://www.youtube.com/watch?v=-Ln-8QM8KhQ,327,,2024-10-19 10:11:04
+Programming,1g8nsf1,Repopack: Pack Your Entire Repository Into A Single File,0,https://www.trevorlasn.com/blog/repopack,18,,2024-10-21 11:51:31
+Programming,1g7homb,The future of Postgres?,138,https://www.craigkerstiens.com/2024/10/18/the-future-of-postgres/,40,,2024-10-19 20:17:20
+Programming,1g8lj4a,Was the Snowflake World Tour London 2024 Just AI Hype? ,0,https://medium.com/@tom.bailey.courses/was-the-snowflake-world-tour-london-2024-just-ai-hype-169a0d1c2b02,0,,2024-10-21 09:24:48
+Programming,1g8k4tb,Blocking code is a leaky abstraction,0,https://notgull.net/blocking-leaky/,3,,2024-10-21 07:33:50
+Programming,1g8i5jp,Unleashing the power of Change Data Capture (CDC),0,https://engineeringatscale.substack.com/p/unleashing-the-power-of-change-data-capture-for-real-time-data-syncing,0,,2024-10-21 05:08:00
+Programming,1g7x2ak,C preprocessor in Python,5,https://github.com/lubomilko/pycpp,13,"Hi. I've made a C language preprocessor in Python. It's nothing too fancy, but it can be useful if you work with C and need to expand macros in a controlled manner for some special purposes. The main highlight is that the expanded macros retain the original formatting, i.e., the whitespaces are preserved (well, mostly...). Feel free to use it if you want.",2024-10-20 11:59:23
+Programming,1g835tz,Boilerplate: Video server using go-lang,1,https://github.com/nicolassps/go-video-server,0,,2024-10-20 16:50:42
+Programming,1g7niq9,Bare metal raycaster in x86 assembly by stillwwater -- boots from floppy image,13,https://github.com/stillwwater/raycaster,2,,2024-10-20 01:10:39
+Programming,1g86uxo,Easy Coin Detection with Python and OpenCV,0,https://eranfeit.net/easy-coin-detection-with-python-and-opencv/,1,,2024-10-20 19:29:28
+Programming,1g7etl7,sf: instant scratch folders,12,https://breckyunits.com/sf.html,13,,2024-10-19 18:05:32
+Programming,1g870tv,Introducing AI Assistance in Chrome DevTools,0,https://addyosmani.com/blog/ai-assistance/,2,,2024-10-20 19:36:29
+Programming,1g81ql9,3 Steps for a Successful Software Migration Plan from a System Design Expert,0,https://read.highgrowthengineer.com/p/3-steps-for-a-successful-migration,0,,2024-10-20 15:49:27
+Programming,1g85ume,Summary of the AJAX frameworks comparison,0,https://blog.frankel.ch/ajax-ssr/7/,3,,2024-10-20 18:46:09
+Programming,1g82963,How to use engineering metrics for the success of engineers and teams,0,https://newsletter.eng-leadership.com/p/how-to-use-engineering-metrics-for,2,,2024-10-20 16:11:44
+Programming,1g85i32,"Don’t Start Coding Yet: The best software engineers learn first about Parkinson's law, artificial deadlines and working backward plans",0,https://strategizeyourcareer.com/p/dont-start-coding-yet-heres-what-great-engineers-do-first,4,,2024-10-20 18:31:28
+Programming,1g7v2p3,When and Where to Use Pointers in Go,0,https://www.pixelstech.net/article/1651389580-When-and-Where-to-Use-Pointers-in-Go,0,,2024-10-20 09:42:15
+Programming,1g7xhhz,8 effective debugging strategies to find and fix bugs like a pro,0,https://thetshaped.dev/p/8-effective-debugging-strategies,20,,2024-10-20 12:23:25
+Programming,1g7dibo,Sampling with SQL,5,https://blog.moertel.com/posts/2024-08-23-sampling-with-sql.html,1,,2024-10-19 17:06:28
+Programming,1g7mic9,Is there an app/messenger that allows people to make communities/groups and exchange information fully anonymously? ,1,https://telegram.org/,2,"Very urgent, please help 
+Is there a messenger that allows groups of individuals to communicate where EACH AND EVERY SENT MESSAGE (by any group member) would be anonymous and untraceable ? The main point is that no group member can know who sent what message. 
+
+Please let me know if you know of anything, any information can help
+
+(The url doesn’t mean anything, I just had to put something there to post)",2024-10-20 00:15:40
+Programming,1g71p2m,Erasure Coding,34,https://transactional.blog/blog/2024-erasure-coding,1,,2024-10-19 05:05:38
+Programming,1g7wmom,Add AI to Your App with Cloudflare Workers – No Headaches!,0,https://youtu.be/YsLDFuifH8Y,0,,2024-10-20 11:31:37
+Programming,1g748bs,Writing system software: code comments.,11,http://antirez.com/news/124,3,,2024-10-19 08:12:31
+Programming,1g6qkai,Designing Secure and Informative API Keys,114,https://glama.ai/blog/2024-10-18-what-makes-a-good-api-key,37,,2024-10-18 19:29:49
+Programming,1g70p4q,The STRINGIFY C preprocessor macro,23,https://henry.precheur.org/code/STRINGIFY/,3,,2024-10-19 04:02:21
+Programming,1g7g1zd,"A Deeper Look into Node.js Docker Images: Help, My Node Image Has Python!",1,https://labs.iximiuz.com/tutorials/how-to-choose-nodejs-container-image,0,,2024-10-19 19:02:00
+Programming,1g7oxrp,"Low Down & Dirty Web Developers - Learn Webassembly, the low level language made just for Web Devs ",0,https://youtu.be/2_x1WsGanAo,0,,2024-10-20 02:31:33
+Programming,1g7qu62,Mastering Time Management as a Staff SWE,0,https://open.substack.com/pub/thehustlingengineer/p/mastering-time-management-by-a-staff?r=yznlc&utm_medium=ios,3,,2024-10-20 04:28:52
+Programming,1g6v6zu,"heic-to: Convert HEIC/HEIF images to JPEG, PNG in browser",28,https://github.com/hoppergee/heic-to,1,,2024-10-18 23:03:16
+Programming,1g6dq2i,"Things you really should know about Windows Input, but would rather not ",285,https://ph3at.github.io/posts/Windows-Input,41,,2024-10-18 09:05:32
+Programming,1g7s8rl,Are LLMs Any Good at Ranking People?,0,https://wilsoniumite.com/2024/10/18/are-llms-any-good-at-ranking-people/,2,,2024-10-20 06:07:09
+Programming,1g6n7os,Continuous Reinvention: A Brief History of Block Storage at AWS,34,https://www.allthingsdistributed.com/2024/08/continuous-reinvention-a-brief-history-of-block-storage-at-aws.html,1,,2024-10-18 17:06:09
+Programming,1g6lsfc,Tech Stack Slot Machine Gacha,37,https://gacha-tech-stack.pages.dev/,22,,2024-10-18 16:06:14
+Programming,1g7dfir,Engineering With Java: Digest #38,0,https://javabulletin.substack.com/p/engineering-with-java-digest-38,0,,2024-10-19 17:02:56
+Programming,1g79wji,Creating a Programming Language From Scratch - Week 01,0,https://www.youtube.com/watch?v=Zh9CqTKU0wE&t=1s,6,,2024-10-19 14:18:07
+Programming,1g68v8i,Poor man's signals,153,https://plainvanillaweb.com/blog/articles/2024-08-30-poor-mans-signals/,69,,2024-10-18 03:21:49
+Programming,1g72zjn,Debugging of a Weird Crash ,0,https://theapache64.github.io/posts/that-weird-compose-crash/,3,,2024-10-19 06:37:26
+Programming,1g6k538,AI Tools Benchmark: Terraform Code Generation,15,https://overmind.tech/blog/ai-tools-benchmark-terraform-code-generation,4,,2024-10-18 15:01:21
+Programming,1g71saf,Introduction to durable execution with Flawless,0,https://flawless.dev/docs/,0,,2024-10-19 05:11:36
+Programming,1g7459r,Asynchronous Bottom-Up State Management,0,https://positive-intentions.com/blog/async-state-management,0,,2024-10-19 08:05:37
+Programming,1g75k6e,"This article provides a practical guideline for unit and integration testing in Apache Flink. Using a financial fraud detection application as an example, we demonstrate how to write effective tests to ensure the correctness of your Flink jobs.",0,https://vkontech.com/unit-and-integration-testing-in-apache-flink/,0,,2024-10-19 09:56:54
+Programming,1g6imbc,Building Roguerrants: Insights into 2.5D Roguelike Development with Squeak,13,https://news.squeak.org/2024/10/18/building-roguerrants-insights-into-2-5d-roguelike-development-with-squeak/,1,,2024-10-18 13:54:26
+Programming,1g6djwn,Comprehensive Python Cheatsheet,23,https://gto76.github.io/python-cheatsheet/,2,,2024-10-18 08:52:26
+Programming,1g77fdd,Mastering Design Patterns in JavaScript: Part 2 — The Factory Pattern 🏭,0,https://codexstoney.medium.com/6a0c96295c01?source=friends_link&sk=9183ec820ab40c936ebe525f8f2ac738,0,,2024-10-19 12:06:35
+Programming,1g6f1f4,RapidUDF - A High-Performance JIT-Based C++ Expression/Script Engine with SIMD Vectorization Support,15,https://github.com/yinqiwen/rapidudf,0,,2024-10-18 10:41:28
+Programming,1g76gti,Understanding SQL Server: A Beginner's Guide,0,https://sqlcompiler.live/blog/understanding-sql-server-a-beginners-guide,5,,2024-10-19 11:03:26
+Programming,1g5kxl2,Microsoft has open sourced its new cross-platform virtual machine layer written in Rust,1155,https://github.com/microsoft/openvmm,95,,2024-10-17 06:55:54
+Programming,1g73ous,"Hexagonal Architecture in Practice, Live Coding That Will Make Your Applications More Sustainable by",0,https://youtu.be/YPmKHm7G19Q?si=LuHlvBslPGCDMgrY,5,,2024-10-19 07:29:34
+Programming,1g6d01p,Full Text Search on PDFs With Postgres,10,https://tselai.com/full-text-search-pdf-postgres,2,,2024-10-18 08:08:54
+Programming,1g6pyr5,"In-Depth Security in Wabe: ACL, Role-Based Permissions",0,https://medium.com/@mr.palixir/in-depth-security-in-wabe-acl-role-based-permissions-2388af9cbb4d,0,,2024-10-18 19:04:09
+Programming,1g640y5,Replicating OpenAI's Assistant Tools using Node.js,37,https://glama.ai/blog/2024-10-17-implementing-tool-functionality-in-conversational-ai,0,,2024-10-17 23:06:20
+Programming,1g5vk7q,"OpenHCL: the new, open source paravisor",68,https://techcommunity.microsoft.com/t5/windows-os-platform-blog/openhcl-the-new-open-source-paravisor/ba-p/4273172,18,,2024-10-17 16:54:06
+Programming,1g5v11l,Unit Tests As Documentation,47,https://www.thecoder.cafe/p/unit-tests-as-documentation,59,,2024-10-17 16:31:44
+Programming,1g6ztcl,Programming With ChatGPT,0,https://henrikwarne.com/2024/08/25/programming-with-chatgpt/,4,,2024-10-19 03:09:21
+Programming,1g5u8qt,pg_parquet: An Extension to Connect Postgres and Parquet,38,https://www.crunchydata.com/blog/pg_parquet-an-extension-to-connect-postgres-and-parquet,0,,2024-10-17 15:58:11
+Programming,1g6rlr1,What Quantum Programming will change (and why we’re not ready),0,https://medium.com/@julien_schmitt/what-quantum-programming-will-change-and-why-were-not-ready-bf314a6019be,1,"A look at how quantum programming could revolutionize tech, from its unique algorithms to the challenges of cost, energy, and complexity.",2024-10-18 20:15:18
+Programming,1g6rd9s,The Painful Journey of Building an AI CodeGen Tool,0,https://therne.substack.com/p/painful-journey-of-building-codegen-ai,0,,2024-10-18 20:04:52
+Programming,1g6nfrq,"Mastering COALESCE in SQL: A Comprehensive Guide
+",0,https://sqlcompiler.live/blog/mastering-coalesce-in-sql-a-comprehensive-guide,3,,2024-10-18 17:15:53
+Programming,1g6q3xz,Legacy Modernization meets GenAI,0,https://martinfowler.com/articles/legacy-modernization-gen-ai.html,0,,2024-10-18 19:10:22
+Programming,1g6nexy,"A Beginner's Guide to SQL Server Management Studio (SSMS)
+",0,https://sqlcompiler.live/blog/a-beginners-guide-to-sql-server-management-studio-,0,,2024-10-18 17:14:55
+Programming,1g5ntpu,Tolgee: open-source web app localization platform,47,https://github.com/tolgee/tolgee-platform,6,,2024-10-17 10:34:26
+Programming,1g6jc95,Git submodule cheat sheet ,0,https://blog.kusho.ai/what-is-a-git-submodule-and-how-do-you-work-with-them/,6,,2024-10-18 14:26:35
+Programming,1g6lua2,"How to Avoid, Handle, and Implement HTTP 431 Errors",0,https://zuplo.com/blog/2024/10/09/http-431-request-header-fields-too-large-guide,1,,2024-10-18 16:08:16
+Programming,1g6jiry,How to show change diffs of a CSV file?,0,https://opral.substack.com/p/how-to-show-change-diffs-of-a-csv,0,,2024-10-18 14:34:39
+Programming,1g61fcz,Python's Chained Stacktraces: an Unintentional Puzzle (but can you solve it?),7,https://www.bugsink.com/blog/chained-stacktraces-puzzle/,2,,2024-10-17 21:05:36
+Programming,1g6ksd0,The Quest to Tame Complex PDFs with AI: Turning Chaos into Markdown,0,https://medium.com/@ali.sheikh_64228/how-we-accidentally-built-the-ai-powered-pdf-parser-we-never-knew-we-needed-the-doctly-story-af5e3f88dc8a,2,,2024-10-18 15:28:55
+Programming,1g6lows,API Documentation Simplified: Using AI for Smarter Automation,0,https://apidna.ai/?p=4509,0,,2024-10-18 16:02:17
+Programming,1g6k80w,For The Love Of Iframes,0,https://elijahpotter.dev/articles/for_the_love_of_iframes,5,,2024-10-18 15:04:45
+Programming,1g6kqoo,Why open source payments should be the way forward? ,0,https://github.com/juspay/hyperswitch/wiki,0,,2024-10-18 15:26:56
+Programming,1g5ir5s,Programming a first person shooter from scratch like it's 1995,63,https://youtu.be/fSjc8vLMg8c?si=QAkuGOlhmcJAfhHp,3,,2024-10-17 04:29:09
+Programming,1g5684n,How we Outsmarted CSGO Cheaters with IdentityLogger,393,https://mobeigi.com/blog/gaming/how-we-outsmarted-csgo-cheaters-with-identitylogger/,105,,2024-10-16 18:20:10
+Programming,1g5yqcg,Opensource - Development Environments & Workspaces,5,http://github.com/kloudlite/kloudlite,0,,2024-10-17 19:08:45
+Programming,1g6f8hr,How to select Git Branching Strategy?,0,https://newsletter.techworld-with-milan.com/p/git-branching-strategies,5,,2024-10-18 10:54:55
+Programming,1g5pylq,A liveness example in TLA+,8,https://surfingcomplexity.blog/2024/10/16/a-liveness-example-in-tla/,1,,2024-10-17 12:42:27
+Programming,1g5c9ok,Successful software is buggy software.,108,https://buttondown.com/hillelwayne/archive/be-suspicious-of-success/,49,,2024-10-16 22:44:02
+Programming,1g6h3kr,Tauri2.0 has been released! Not just on the desktop,0,https://medium.com/@beckmoulton/tauri2-0-has-been-released-not-just-on-the-desktop-4a32a13e453d,2,,2024-10-18 12:41:00
+Programming,1g68j35,Opinionated Non-Restful Json RPC based on POST Request with Open API Spec Support,0,https://yizy.rootxsnowstudio.com/doc/introduction,4,,2024-10-18 03:02:53
+Programming,1g6cktn,How to integrate the ZXing Barcode Scanner into your MAUI app,0,https://scanbot.io/techblog/zxing-maui-barcode-scanner-tutorial/?utm_source=reddit&utm_medium=social&utm_campaign=reddit_content_distribution,1,,2024-10-18 07:34:53
+Programming,1g5lm4d,Pulled this from Hacker News: Hofstadter on Lisp,14,https://gist.github.com/jackrusher/5139396,7,,2024-10-17 07:47:37
+Programming,1g50shm,"GCC Preparing To Set C23 ""GNU23"" As Default C Language Version",333,https://www.phoronix.com/news/GCC-Prepares-std-gnu23-Default,57,,2024-10-16 14:31:59
+Programming,1g6dlbv,Respaldos externos de Gleam,0,https://emanuelpeg.blogspot.com/2024/10/respaldos-externos-de-gleam.html,1,,2024-10-18 08:55:38
+Programming,1g608vt,"Pluggable Stream Processing with Kafka, WebAssembly and XTP",1,https://www.getxtp.com/blog/pluggable-stream-processing-with-xtp-and-kafka,0,,2024-10-17 20:14:15
+Programming,1g6d7qq,"Quick Read: ""Supercharge Your Coding with Cursor""",0,https://medium.com/p/b1656420123e,0,,2024-10-18 08:25:33
+Programming,1g5yykr,Building Multi-Tenant SaaS Architectures • Tod Golding & Bill Tarr,0,https://youtu.be/KYf-3pXANto,0,,2024-10-17 19:18:40
+Programming,1g56ugk,When should I use String vs &str?,74,https://steveklabnik.com/writing/when-should-i-use-string-vs-str/,39,,2024-10-16 18:46:47
+Programming,1g6cxgs,A Startup CTO's thoughts on LLMs writing Code,0,https://rotemtam.com/2024/10/18/ctos-thoughts-on-code-with-llms/,16,,2024-10-18 08:03:05
+Programming,1g5bq8i,How I Beat Programmer's Block to Finish building Apps,30,https://www.beespeed.dev/beeblogs,9,,2024-10-16 22:18:19
+Programming,1g6drmg,CSS finally adds vertical centering in 2024,0,https://build-your-own.org/blog/20240813_css_vertical_center/,3,,2024-10-18 09:08:52
+Programming,1g5hss7,Optional Class in Java – A Comprehensive Tutorial,7,https://javatechonline.com/optional-class-in-java-8-optional/,12,,2024-10-17 03:31:40
+Programming,1g68odx,Exploring Generative AI,0,https://martinfowler.com/articles/exploring-gen-ai.html,1,,2024-10-18 03:10:49
+Programming,1g5qlbv,A/A Testing,1,https://www.votito.com/methods/aa-test/,0,,2024-10-17 13:14:31
+Programming,1g5q2ne,"Collecto - open-source, self-hosted, lightweight, email collection service.",1,https://github.com/Eliran-Turgeman/Collecto/tree/master,0,,2024-10-17 12:48:34
+Programming,1g5pvuv,Code Walkthrough: Tokio - Runtime Initialization,0,https://youtu.be/-Xv521NPko0?si=cLObNHYCRq66GuG7,0,,2024-10-17 12:38:25
+Programming,1g57wnm,5 factors to weigh when building authorization architecture,21,https://cerbos.dev/blog/5-factors-to-weigh-when-building-authorization-architecture,12,,2024-10-16 19:32:16
+Programming,1g57loi,WebRTC Race Condition Flaw Impacts Major Communication Platforms,21,https://cyberinsider.com/webrtc-race-condition-flaw-impacts-major-communication-platforms/,0,,2024-10-16 19:18:55
+Programming,1g4xep3,"Injection Attacks 101: SQL Injection, Code Injection, and XSS",67,https://www.youtube.com/watch?v=wu6FAsiFhv0,19,,2024-10-16 11:47:03
+Programming,1g5w7fr,"💥 Tech Talks Weekly #33: all the recently uploaded talks from tech conferences. This issue includes Devoxx Belgium '24, GOTO 2024, DDD Europe '24 and many more!",0,https://techtalksweekly.substack.com/p/tech-talks-weekly-33-devoxx-belgium,0,,2024-10-17 17:20:58
+Programming,1g4v1g9,Real-time mouse pointers,96,https://www.canva.dev/blog/engineering/realtime-mouse-pointers/,11,,2024-10-16 09:08:01
+Programming,1g56sk0,Forgejo v9.0 is available,14,https://forgejo.org/2024-10-release-v9-0/,0,,2024-10-16 18:44:32
+Programming,1g4tm10,A Missing IDE Feature,95,https://matklad.github.io/2024/10/14/missing-ide-feature.html,62,,2024-10-16 07:16:23
+Programming,1g5wb04,9 Levels of Asynchronous Programming in Python,0,https://medium.com/techtofreedom/9-levels-of-asynchronous-programming-in-python-3755f80403c9?sk=b25b59f33eec6f46caee05b4a3808b47,0,,2024-10-17 17:25:10
+Programming,1g5r3hw,"Wasabi is toolkit designed to trigger and isolate retry bugs by combining static program analysis, large language models (LLMs), fault injection, and unit testing",0,https://github.com/bastoica/wasabi/,1,,2024-10-17 13:38:56
+Programming,1g5todl,Perplexica: An open-source AI-powered search engine.,0,https://github.com/ItzCrazyKns/Perplexica,1,,2024-10-17 15:33:32
+Programming,1g5a66u,"TidesDB - High-performance, durable, transactional embedded storage engine designed for flash and RAM optimization. (C++)",2,https://github.com/tidesdb/tidesdb,0,,2024-10-16 21:08:27
+Programming,1g52nlk,A deep look into our new massive multitenant architecture,5,https://turso.tech/blog/a-deep-look-into-our-new-massive-multitenant-architecture,0,,2024-10-16 15:52:20
+Programming,1g4k6oi,Open source graphics editor and design app written in Rust - Graphite progress report (Q3 2024),97,https://graphite.rs/blog/graphite-progress-report-q3-2024/,16,,2024-10-15 22:24:08
+Programming,1g451ka,LocalStorage vs. IndexedDB vs. Cookies vs. OPFS vs. WASM-SQLite,837,https://rxdb.info/articles/localstorage-indexeddb-cookies-opfs-sqlite-wasm.html,63,,2024-10-15 11:04:46
+Programming,1g5i5z9,"REST, GraphQL, gRPC, and tRPC: Which One Should You Choose?",0,https://javascript.plainenglish.io/rest-graphql-grpc-and-trpc-which-one-should-you-choose-53506388c607,4,,2024-10-17 03:53:01
+Programming,1g5m0sd,Mastering Design Patterns in JavaScript: Part 1 — The Singleton Pattern,0,https://javascript.plainenglish.io/mastering-design-patterns-in-javascript-part-1-the-singleton-pattern-35af89c9a654,0,,2024-10-17 08:19:48
+Programming,1g5gyvg,"Compiling npm to a standalone executable: Which runtime can do this out of the box; node, deno, or bun?",0,https://gist.github.com/guest271314/c9543a19d8ccf72881355b27d0107551,1,,2024-10-17 02:46:07
+Programming,1g5njec,Why AOT beat JIT compilers,0,https://programmers.fyi/why-aot-beat-jit-compilers,7,,2024-10-17 10:14:41
+Programming,1g59pz0,GitHub - cbrgm/cdk-on-demand-minecraft-server: On-Demand Minecraft Server running on ECS(Fargate) and deployed via CDK (Go),0,https://github.com/cbrgm/cdk-on-demand-minecraft-server,0,,2024-10-16 20:49:17
+Programming,1g452ci,Good programmers worry about data structures and their relationships,242,https://read.engineerscodex.com/p/good-programmers-worry-about-data,38,,2024-10-15 11:06:08
+Programming,1g44n9h,Python: range is not an iterator,202,https://treyhunner.com/2018/02/python-range-is-not-an-iterator/,84,,2024-10-15 10:39:12
+Programming,1g4fpwt,Safer with Google: Advancing Memory Safety,41,https://security.googleblog.com/2024/10/safer-with-google-advancing-memory.html,0,,2024-10-15 19:11:04
+Programming,1g56whb,Answering Common Questions About Online SQL Compilers,0,https://sqlcompiler.live/blog/answering-questions-about-online-sql-compilers,0,,2024-10-16 18:49:12
+Programming,1g51gdj,Node v23.0.0 (Current),0,https://nodejs.org/en/blog/release/v23.0.0,0,,2024-10-16 15:01:07
+Programming,1g4l18e,Algorithms we develop software by,18,https://grantslatton.com/software-pathfinding,1,,2024-10-15 23:03:35
+Programming,1g5ezqa,Un ejemplo sencillo de STL en c++,0,https://emanuelpeg.blogspot.com/2024/10/un-ejemplo-sencillo-de-stl-en-c.html,1,,2024-10-17 01:01:07
+Programming,1g5cjzb,Stop waiting for tests to run. There's a better way.,0,https://maelstrom-software.com/blog/why-maelstrom/,7,,2024-10-16 22:57:43
+Programming,1g5ap0n,Abstract Classes in Python,0,https://medium.com/techtofreedom/abstract-classes-in-python-f49cf4efdb3d?sk=387f8eeed519ef1c7f5159a8cc7413a3,0,,2024-10-16 21:31:25
+Programming,1g5269z,[BLOG] Why Do You Need CDC?,0,https://dcbl.link/why-cdc7,0,,2024-10-16 15:31:52
+Programming,1g4zrf8,"Llamafile v0.8.14: a new UI, performance gains, and more",0,https://hacks.mozilla.org/2024/10/llamafile-v0-8-14-a-new-ui-performance-gains-and-more/,1,,2024-10-16 13:46:00
+Programming,1g4hdhv,C++ Exceptions Reduce Firmware Code Size,12,https://www.youtube.com/watch?v=BGmzMuSDt-Y,2,,2024-10-15 20:21:15
+Programming,1g55qto,5 Common Testing Mistakes We've All Made (and How to Avoid Them),0,https://datagibberish.com/p/5-common-testing-mistakes,1,,2024-10-16 18:00:08
+Programming,1g54j65,jamesql: An in-memory NoSQL database implemented in Python.,0,https://github.com/capjamesg/jamesql,17,,2024-10-16 17:09:18
+Programming,1g42bjk,h2tunnel: ngrok alternative for Node.js in 600 LOC and no dependencies,83,https://github.com/boronine/h2tunnel,21,,2024-10-15 07:37:26
+Programming,1g4xzwj,Running a regular SQL on Pongo documents,0,https://event-driven.io/en/sql_support_in_pongo/,0,,2024-10-16 12:19:09
+Programming,1g50t8m,SponsorLink v2: A New Hope (Moq),0,https://www.cazzulino.com/sponsorlink2.html,1,,2024-10-16 14:32:53
+Programming,1g4f4uz,VoidZero: Threat or Catalyst for Open Source JavaScript Tooling?,6,https://www.trevorlasn.com/blog/is-void-zero-a-threat-to-open-source,3,,2024-10-15 18:46:33
+Programming,1g4cv9b,A Checklist of Issues for Progressive Web Apps and How to Fix them,8,https://www.heltweg.org/posts/checklist-issues-progressive-web-apps-how-to-fix/,2,,2024-10-15 17:11:04
+Programming,1g55u4f,17 questions you should ask yourself as a professional software engineer,0,https://youtu.be/L8yKDAPWcEY,2,,2024-10-16 18:03:46
+Programming,1g4qha3,Learn to use C# to connect with SQLite database for Beginners on .NET Platform,0,https://www.xanthium.in/cross-platform-create-connect-update-sqlite3-database-using-csharp-dotnet-platform,8,,2024-10-16 03:45:09
+Programming,1g48yck,A tiny CLI tool I built to self-host my sideprojects on any server,12,https://github.com/d3witt/dockboy,1,,2024-10-15 14:24:59
+Programming,1g4od53,Prepare to tack: Steering Rails apps out of technical debt - Rails World 2024,0,https://www.youtube.com/watch?v=B1xqlkebo4M,2,,2024-10-16 01:50:15
+Programming,1g46e2w,"GitHub - free-news-api/news-crawlers: This project compares five open-source news crawlers—`news-please`, `fundus`, `news-crawler`, `news-crawl`, and `newspaper4k`—focusing on features like extraction accuracy, supported sites, and ease of use, to help users choose the best tool for their needs.",10,https://github.com/free-news-api/news-crawlers,2,,2024-10-15 12:22:43
+Programming,1g4hpm1,Tuple - a Developer’s Guide to Remote Collaboration,0,https://www.git-tower.com/blog/tuple-guide-to-remote-collaboration/,0,,2024-10-15 20:35:24
+Programming,1g55gvi,I Didn’t Believe that AI is the Future of Coding | Sabine Hossenfelder,0,https://www.youtube.com/watch?v=3A-gqHJ1ENI,6,,2024-10-16 17:48:36
+Programming,1g4fjq2,Understanding Linked Lists: A Beginner's Guide to Low-Level Programming with C (with Code Examples),0,https://www.learninglowlevel.com/posts/cm28ealr800009lgz16hgzd6e,2,,2024-10-15 19:03:39
+Programming,1g4934q,"Adding Salesforce-like Extensibility to Twenty, a Modern CRM",0,https://www.getxtp.com/blog/adding-extensibility-to-twenty-a-modern-crm,0,,2024-10-15 14:30:47
+Programming,1g3b0ve,"That's not an abstraction, that's just a layer of indirection",469,https://fhur.me/posts/2024/thats-not-an-abstraction,155,,2024-10-14 08:24:39
+Programming,1g3d5z2,Code review antipatterns,250,https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/code-review-antipatterns/,76,,2024-10-14 11:06:41
+Programming,1g3d9ib,The optimised version of 7-Zip can't be built from source,231,https://pileofhacks.dev/post/the-optimised-version-of-7-zip-cant-be-built-from-source/,50,,2024-10-14 11:13:23
+Programming,1g4fgcc,How to Build a Food Ordering App Step by Step | Android Development Tutorial | Kotlin,0,https://youtu.be/jlzKPiQI0-0,1,,2024-10-15 18:59:59
+Programming,1g3yln4,4 deployment modes of Redis,10,https://www.pixelstech.net/article/1677898933-4-deployment-modes-of-Redis,0,,2024-10-15 03:27:21
+Programming,1g497jr,Software Architecture for Tomorrow • Sam Newman & Julian Wood,0,https://youtu.be/8KntBPOdfWA,0,,2024-10-15 14:36:20
+Programming,1g3d9iq,"Python 3.12 vs Python 3.13 – performance testing. A total of 100 various benchmark tests were conducted on computers with the AMD Ryzen 7000 series and the 13th-generation of Intel Core processors for desktops, laptops or mini PCs. ",156,https://en.lewoniewski.info/2024/python-3-12-vs-python-3-13-performance-testing/,29,,2024-10-14 11:13:24
+Programming,1g3szag,"Python 3.13 release, an overview of its major features
+",15,http://awakenerd.com/2024/10/14/python-3-13-release-an-overview-of-its-major-features/,8,,2024-10-14 22:43:35
+Programming,1g4imf0,9 Levels of Asynchronous Programming in Python,0,https://medium.com/techtofreedom/9-levels-of-asynchronous-programming-in-python-3755f80403c9?sk=b25b59f33eec6f46caee05b4a3808b47,1,,2024-10-15 21:14:05
+Programming,1g3sa3k,The Curious “Case” of the Bearer Scheme,16,https://a0.to/reddit/the-bearer-token-case,5,,2024-10-14 22:11:12
+Programming,1g45n8t,Lizard Optimization • Gojko Adzic & Dave Farley,0,https://www.buzzsprout.com/1714721/15821079,0,,2024-10-15 11:42:23
+Programming,1g41zio,How to Build a Multi-Workspace Slack Application in Go,2,https://www.blinkops.com/blog/how-to-build-a-multi-workspace-slack-application-in-go,0,,2024-10-15 07:10:23
+Programming,1g48cyu,Accessing API: A Comprehensive Guide for eCommerce Software Developers,0,https://api2cart.com/api-technology/accessing-api/?utm_source=reddit&utm_medium=referral&utm_campaign=accessingapin.kov,0,,2024-10-15 13:58:43
+Programming,1g3hvjp,Snap.js - Copy-paste alternatives to Lodash functions,25,https://thescottyjam.github.io/snap.js/#!/nolodash,10,,2024-10-14 15:01:25
+Programming,1g3kvgk,How I built my open-source social media scheduling tool,16,https://nevodavid.hashnode.dev/how-i-built-my-open-source-social-media-scheduling-tool,0,,2024-10-14 17:04:53
+Programming,1g49t14,Rethinking Developer's workflow: A Network-Driven Approach to Faster Development,0,https://kloudlite.io/blog/network-solution,3,,2024-10-15 15:02:36
+Programming,1g4izwj,TypeScript vs JavaScript,0,https://www.osohq.com/post/typescript-vs-javascript,4,,2024-10-15 21:30:19
+Programming,1g4jmg3,We created a tool to let LLM generate a webapp w/ backend in a minute,0,https://github.com/renning22/engy,0,,2024-10-15 21:58:33
+Programming,1g471om,How Cell-Based Architecture Enhances Modern Distributed Systems,0,https://www.infoq.com/articles/cell-based-architecture-distributed-systems/,3,,2024-10-15 12:56:17
+Programming,1g2kz9g,"1 bug, $50,000+ in bounties, how Zendesk intentionally left a backdoor in hundreds of Fortune 500 companies",1100,https://gist.github.com/hackermondev/68ec8ed145fcee49d2f5e2b9d2cf2e52,161,,2024-10-13 08:17:46
+Programming,1g3bhmu,FunkyWeave: a new logger I created to visualize function invocation flows within projects using Graphviz,10,https://www.npmjs.com/package/funkyweave,0,,2024-10-14 09:02:45
+Programming,1g2z70k,Ruby on Rails 8.0 first beta release: A big bet on SQLite in production • DEVCLASS,71,https://devclass.com/2024/10/09/ruby-on-rails-8-0-first-beta-release-a-big-bet-on-sqlite-in-production/,27,,2024-10-13 20:36:28
+Programming,1g3x4f0,Implement Retry Mechanism - Java Interview Question,0,https://javabulletin.substack.com/p/implement-retry-mechanism-java-interview,2,,2024-10-15 02:09:23
+Programming,1g44jf4,Practical guide for building a blockchain from scratch in Go,0,https://github.com/volodymyrprokopyuk/go-blockchain,2,,2024-10-15 10:31:43
+Programming,1g37ca2,What WordPress gets right,10,https://moosie.us/what_wordpress_gets_right,11,,2024-10-14 03:41:20
+Programming,1g2n812,The Art of Programming and Why I Won't Use LLM,231,https://kennethnym.com/blog/why-i-still-wont-use-llm/,397,,2024-10-13 11:05:46
+Programming,1g2q1zl,The Path from Senior Engineer to CTO,115,https://pathtostaff.substack.com/p/the-path-from-senior-engineer-to,80,,2024-10-13 13:49:40
+Programming,1g3fjpb,Two Workflow Tips,0,https://matklad.github.io/2024/10/08/two-tips.html,0,,2024-10-14 13:18:19
+Programming,1g3lbou,Migrating Combine to AsyncAlgorithms,0,https://blog.jacobstechtavern.com/p/migrating-combine-to-asyncalgorithms,0,,2024-10-14 17:22:52
+Programming,1g2vrgn,Lessons from Plain Text,26,https://www.rugu.dev/en/blog/plain-text/,12,,2024-10-13 18:05:44
+Programming,1g3br2i,Using Git the Right Way,0,https://funloop.org/post/2024-10-11-using-git-the-right-way.html,52,,2024-10-14 09:23:49
+Programming,1g3lgxg,Teaching the world's largest programming lesson,0,https://mathspp.com/blog/teaching-the-worlds-largest-programming-lesson,0,,2024-10-14 17:28:40
+Programming,1g2ft0z,Open source royalty and mad kings,260,https://world.hey.com/dhh/open-source-royalty-and-mad-kings-a8f79d16,51,,2024-10-13 02:26:00
+Programming,1g2wfk8,Go’s Flexible Interfaces: Abstraction on Demand,12,https://medium.com/@okoanton/gos-flexible-interfaces-abstraction-on-demand-f081bf877dcb,10,,2024-10-13 18:35:17
+Programming,1g3czpb,"Launch Kubernetes cluster with Grafana, OpenTelemetry, Fluent Bit and Prometheus on AWS",0,https://www.youtube.com/watch?v=EYAnFrywekM,0,,2024-10-14 10:55:16
+Programming,1g42gw7,"After a 10 year break, I started programming again using modern AI. Wow.",0,https://www.linkedin.com/pulse/after-10-year-break-i-started-programming-again-using-matthew-gertner-owyte,31,,2024-10-15 07:49:29
+Programming,1g3d9wj,Mastering Next.js App Directory Structure (2024 Edition),0,https://javascript.plainenglish.io/mastering-next-js-app-directory-structure-2024-edition-2b8902cb0b00,0,,2024-10-14 11:14:11
+Programming,1g3j3zd,NeuronScript: Neural Network Programming Language ,0,https://substack.com/@atayk/note/p-150208981?utm_source=notes-share-action,0,,2024-10-14 15:52:41
+Programming,1g2uxkw,Master System Design Interviews: A 6-Step Framework for Success,3,https://open.substack.com/pub/engineeringatscale/p/system-design-interview-success-six-step-framework?r=8sprj&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true,3,,2024-10-13 17:29:07
+Programming,1g2t9d3,Time duration in Javascript,7,https://docs.timetime.in/blog/time-duration-in-js/,0,,2024-10-13 16:15:52
